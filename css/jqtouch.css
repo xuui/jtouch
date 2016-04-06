@@ -22,7 +22,7 @@ a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;to
 input,button,select,textarea{outline:none}
 input,textarea{-webkit-user-select:auto;user-select:auto}
 ::-webkit-input-placeholder{color:#a3a3c0;text-shadow:#fff 0 1px 0}
-
+.md-icon{vertical-align:middle;}
 
 #jqt{overflow:hidden;position:absolute;right:0;top:0;left:0;bottom:0;-webkit-text-size-adjust:none;-webkit-perspective:1000;perspective:1000}
 [data-ui=view]{position:absolute;left:0;top:0;left:0;right:0;z-index:0;overflow:hidden;background:#efefef;box-shadow:0 0 1px rgba(0,0,0,.13);height:100%;width:100%;
@@ -36,10 +36,14 @@ display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical*
 
 
 [data-ui=toolbar]{background:#fcfcfc;height:44px;}
-[data-ui=toolbar] h1,[data-ui=toolbar] h2,[data-ui=toolbar] h3{margin:0 44px;line-height:44px;text-align:center;font-size:20px;}
-[data-ui=toolbar] .pure-btn{padding:.5em .6em;}
-header[data-ui=toolbar] .pure-btn{position:absolute;z-index:1;top:7px;right:7px;line-height:1;}
-header[data-ui=toolbar] .pure-btn.back,[data-ui=toolbar] .pure-btn.btn-left{right:auto;left:7px;}
+[data-ui=toolbar] h1,[data-ui=toolbar] h2,[data-ui=toolbar] h3{margin:0 64px;line-height:44px;text-align:center;font-size:20px;}
+[data-ui=toolbar] .pure-btn{position:absolute;right:0;padding:10px;line-height:24px;min-width:44px;height:44px;font-size:16px;text-align:center}
+[data-ui=toolbar] .pure-btn i{font-size:24px;}
+[data-ui=toolbar] .btn-icon{padding-left:1.5em}
+[data-ui=toolbar] .btn-icon i{position:absolute;left:0;}
+/*
+header[data-ui=toolbar] .pure-btn{position:absolute;z-index:1;top:0;right:0;line-height:1;}*/
+header[data-ui=toolbar] .pure-btn.back,[data-ui=toolbar] .pure-btn.btn-left{right:auto;left:0;}
 
 
 header,footer{}
@@ -101,5 +105,8 @@ a{padding:6px 10px;display:inline-block;}
 */
 /* Test Skin */
 header[data-ui=toolbar]{background:#009688;color:#fff;}
-header[data-ui=toolbar] .pure-btn{background:none;border:1px solid #fff;color:#fff;}
+header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;color:#fff;}
 .pure-form{margin:0 8px;}
+.icons-cont{padding:20px 0;}
+.icons-cont .pure-u-3{height:90px;text-align:center;}
+.icons-cont .pure-u-3 .caption{font-size:12px;line-height:1.3;}

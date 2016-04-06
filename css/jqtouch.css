@@ -74,20 +74,20 @@ header h1,header h2,header h3{margin:0;}
 
 
 /* toolbar *//*
-#jqt .toolbar{position:relative;z-index:10;background:#fff;border-bottom:1px solid #a7a7ab;-webkit-box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;padding:10px;height:44px;font-weight:700;}
-#jqt.black-translucent .toolbar{padding-top:30px;height:64px}
-#jqt .toolbar h1,#jqt .toolbar h2{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:17px;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;color:#262626;text-shadow:#fff 0 1px 0}
-#jqt.landscape .toolbar h1,#jqt.landscape .toolbar h2{margin-left:-125px;width:250px}
-#jqt .toolbar .add,#jqt .toolbar .back,#jqt .toolbar .button,#jqt .toolbar .cancel{background-image:none;background-color:transparent;border:0 solid transparent;box-shadow:none;color:#007aff;font-weight:lighter;font-size:15px;text-shadow:none;padding:0 7px;margin:0}
-#jqt .toolbar .add.active,#jqt .toolbar .add:active,#jqt .toolbar .back.active,#jqt .toolbar .back:active,#jqt .toolbar .button.active,#jqt .toolbar .button:active,#jqt .toolbar .cancel.active,#jqt .toolbar .cancel:active{color:#99caff;background-image:none;background-color:transparent}
-#jqt .toolbar .back,#jqt .toolbar .cancel{left:2px}
-#jqt .toolbar .back::before,#jqt .toolbar .cancel::before{border-style:solid;border-width:.2em .2em 0 0;position:relative;display:inline-block;top:30%;content:'';height:.6em;width:.6em;-webkit-transform:scale(0.9,1) rotate(225deg);transform:scale(0.9,1) rotate(225deg);vertical-align:top;margin-right:5px}
+#jqt [data-ui=toolbar]{position:relative;z-index:10;background:#fff;border-bottom:1px solid #a7a7ab;-webkit-box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;padding:10px;height:44px;font-weight:700;}
+#jqt.black-translucent [data-ui=toolbar]{padding-top:30px;height:64px}
+#jqt [data-ui=toolbar] h1,#jqt [data-ui=toolbar] h2{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:17px;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;color:#262626;text-shadow:#fff 0 1px 0}
+#jqt.landscape [data-ui=toolbar] h1,#jqt.landscape [data-ui=toolbar] h2{margin-left:-125px;width:250px}
+#jqt [data-ui=toolbar] .add,#jqt [data-ui=toolbar] .back,#jqt [data-ui=toolbar] .button,#jqt [data-ui=toolbar] .cancel{background-image:none;background-color:transparent;border:0 solid transparent;box-shadow:none;color:#007aff;font-weight:lighter;font-size:15px;text-shadow:none;padding:0 7px;margin:0}
+#jqt [data-ui=toolbar] .add.active,#jqt [data-ui=toolbar] .add:active,#jqt [data-ui=toolbar] .back.active,#jqt [data-ui=toolbar] .back:active,#jqt [data-ui=toolbar] .button.active,#jqt [data-ui=toolbar] .button:active,#jqt [data-ui=toolbar] .cancel.active,#jqt [data-ui=toolbar] .cancel:active{color:#99caff;background-image:none;background-color:transparent}
+#jqt [data-ui=toolbar] .back,#jqt [data-ui=toolbar] .cancel{left:2px}
+#jqt [data-ui=toolbar] .back::before,#jqt [data-ui=toolbar] .cancel::before{border-style:solid;border-width:.2em .2em 0 0;position:relative;display:inline-block;top:30%;content:'';height:.6em;width:.6em;-webkit-transform:scale(0.9,1) rotate(225deg);transform:scale(0.9,1) rotate(225deg);vertical-align:top;margin-right:5px}
 /* toolbar End */
 
 /* button *//*
-#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{position:absolute;overflow:hidden;width:auto;height:30px;font-family:inherit;font-size:12px;font-weight:700;line-height:30px;text-overflow:ellipsis;text-decoration:none;white-space:nowrap;background:0 0;bottom:6px;right:10px;margin:0;padding:0 10px;color:#0e0b0b;text-shadow:#fff 0 1px 0;border:1px solid #baabab;-webkit-border-radius:3px;border-radius:3px;background-image:none;background-color:#e8e3e3}
-#jqt .add.active,#jqt .back.active,#jqt .button.active,#jqt .cancel.active{border-color:#af9d9d;background-image:none;background-color:#ddd5d5;color:#000;}
-#jqt .back,#jqt .cancel,#jqt .leftButton{left:10px;right:auto}
+#jqt .add,#jqt .back,#jqt .btn,#jqt .cancel{}
+#jqt .add.active,#jqt .back.active,#jqt .button.active,#jqt .cancel.active{}
+#jqt .back,#jqt .cancel{}
 /* button End */
 /*
 a{padding:6px 10px;display:inline-block;}
@@ -96,18 +96,6 @@ a{padding:6px 10px;display:inline-block;}
 /*
 .webfont-icon-base{color:transparent;-webkit-background-clip:text;background-clip:text;position:absolute;top:0;left:0;text-indent:0;text-shadow:none;-webkit-user-select:none;user-select:none}
 
-#jqt input[type=checkbox].toggle:before,#jqt li input[type=radio].toggle:before{
-content:'';position:absolute;width:30px;height:30px;border-radius:30.5px;top:1px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),-1px 2px 5px rgba(0,0,0,.1);border:0 solid transparent;cursor:pointer;background-color:#fff;transition:left .1s ease-in .1s,box-shadow .2s ease-in .2s
-}
-#jqt input[type=checkbox].toggle:checked,#jqt li input[type=radio].toggle:checked{
-box-shadow:inset 0 0 0 20px #53d76a,-1px 2px 5px rgba(0,0,0,.1)
-}
-#jqt input[type=checkbox].toggle:checked:before,#jqt li input[type=radio].toggle:checked:before{
-left:22px
-}
-#jqt li input[type=checkbox].toggle{
-position:absolute;right:10px;left:auto;margin-top:6px;top:0
-}
 
 */
 /* Test Skin */

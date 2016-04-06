@@ -22,7 +22,7 @@ Licensed under the MIT License.
 #jqt .slideup.out{-webkit-animation-name:slideUpOut;animation-name:slideUpOut}
 #jqt .slidedown.in{-webkit-animation-name:slideDownIn;animation-name:slideDownIn}
 #jqt .slidedown.out{-webkit-animation-name:slideDownOut;animation-name:slideDownOut;z-index:11!important}
-#jqt .slidedown,#jqt .slideleft,#jqt .slideright,#jqt .slideup{-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+#jqt .slidedown,#jqt .slideleft,#jqt .slideright,#jqt .slideup{-webkit-animation-timing-function:ease;animation-timing-function:ease}
 #jqt .flipleft{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 #jqt .flipleft.in{-webkit-animation-name:flipLeftIn;animation-name:flipLeftIn}
 #jqt .flipleft.out{-webkit-animation-name:flipLeftOut;animation-name:flipLeftOut}
@@ -74,11 +74,11 @@ Licensed under the MIT License.
 100%{opacity:0}
 }
 @-webkit-keyframes slideLeftIn{
-0%{-webkit-transform:translate3d(56%,0,0)}
+0%{-webkit-transform:translate3d(70%,0,0)}
 100%{-webkit-transform:translate3d(0,0,0)}
 }
 @keyframes slideLeftIn{
-0%{transform:translate3d(56%,0,0)}
+0%{transform:translate3d(70%,0,0)}
 100%{transform:translate3d(0,0,0)}
 }
 @-webkit-keyframes slideLeftOut{

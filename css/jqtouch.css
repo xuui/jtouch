@@ -11,6 +11,7 @@ may be freely distributed under the MIT license.
 @import url(buttons.css);
 @import url(forms.css);
 @import url(animation.css);
+@import url(../font/material-icons.css);
 
 /* Base UI */
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
@@ -24,9 +25,9 @@ input,textarea{-webkit-user-select:auto;user-select:auto}
 
 
 #jqt{overflow:hidden;position:absolute;right:0;top:0;left:0;bottom:0;-webkit-text-size-adjust:none;-webkit-perspective:1000;perspective:1000}
-[data-ui=view]{position:absolute;left:0;top:0;left:0;right:0;z-index:0;overflow:hidden;background:#efefef;box-shadow:0 0 1px rgba(0,0,0,.13);
+[data-ui=view]{position:absolute;left:0;top:0;left:0;right:0;z-index:0;overflow:hidden;background:#efefef;box-shadow:0 0 1px rgba(0,0,0,.13);height:100%;width:100%;
 /*-webkit-transform:translate3d(0,0,0) rotate(0) scale(1);transform:translate3d(0,0,0) rotate(0) scale(1);
-/*overflow-x:hidden;height:100%;width:100%;
+/*overflow-x:hidden;
 display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical*/
 }
 [data-ui=view].current{z-index:10}

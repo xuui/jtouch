@@ -8,6 +8,7 @@
 <style>
 body{margin:0;padding:0;background:#f5f5f5;color:#424242;}
 h1{background:#009688;margin:0;color:#fff;padding:16px 32px;font-size:30px;font-weight:400;}
+.hide{display:none}
 .mdicons{margin:0 auto;padding:30px 0;min-width:320px;max-width:960px;background:#fff;}
 .itemBox{display:inline-block;margin:0 -4px;padding:10px;width:124px;height:128px;vertical-align:top;text-align:center;}
 .itemBox i{display: block;width:48px;height:48px;font-size:48px;margin:0 auto;}
@@ -16,10 +17,16 @@ h1{background:#009688;margin:0;color:#fff;padding:16px 32px;font-size:30px;font-
 </style>
 <script src="../js/jquery-2.2.1.min.js"></script>
 <script>
-$.getJSON('mdicons.json', function(data) {
+$.getJSON('mdicons.json',function(data){
+  var mdigroups=data.groups;
   var mdicons=data.icons;
+  for(var i=0;i<mdigroups.length;i++){
+    $('h1').after('<span class="hide '+mdigroups[i].data.id+'">'+mdigroups[i].data.name+'</span>');
+  }
   for(var i=0;i<mdicons.length;i++){
-    $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].name+'</span></li>');
+    //if(mdicons[i].group_id=='file'){
+      $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].name+'</span></li>');
+    //}else{continue;}
   }
 });
 </script>

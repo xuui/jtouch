@@ -11,7 +11,7 @@ may be freely distributed under the MIT license.
 @import url(buttons.css);
 @import url(forms.css);
 @import url(animation.css);
-@import url(../font/material-icons.css);
+@import url(../fonts/material-icons.css);
 
 /* Base UI */
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
@@ -32,7 +32,7 @@ display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical*
 }
 [data-ui=view].current{z-index:10}
 [data-ui=view]:not(.current):not(.in):not(.out){display:none}
-#jqt .scroll{position:relative;-webkit-box-flex:1;box-flex:1;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-margin-collapse:separate}
+#jqt .scroll{position:relative;-webkit-box-flex:1;box-flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;-webkit-margin-collapse:separate}
 
 
 [data-ui=toolbar]{background:#fcfcfc;height:44px;}
@@ -54,9 +54,6 @@ header.status .pure-btn{top:27px;}
 footer{border-top:1px solid #ccc;}
 footer .pure-btn{line-height:29px;width:100%}
 
-
-section ul{list-style:none;margin:0;padding:0;}
-section ul li{padding:2px;}
 /*
 
 header{top:0;}
@@ -74,12 +71,19 @@ header h1,header h2,header h3{margin:0;}
 /*
 
 
+/* UI: List */
+.list-items{list-style:none;margin:0;padding:0;}
+.list-items li{line-height:1;min-height:44px;margin-bottom:1px;box-shadow:0 1px 1px 0 rgba(0,0,0,.12)}
+.list-items li a{display:block;padding:16px;text-decoration:none;color:#000;}
+
+/* UI: List End. */
 
 
 
 
 
-/* toolbar *//*
+/* toolbar */
+/*
 #jqt [data-ui=toolbar]{position:relative;z-index:10;background:#fff;border-bottom:1px solid #a7a7ab;-webkit-box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;box-shadow:rgba(255,255,255,.3) 0 1px 0 inset;padding:10px;height:44px;font-weight:700;}
 #jqt.black-translucent [data-ui=toolbar]{padding-top:30px;height:64px}
 #jqt [data-ui=toolbar] h1,#jqt [data-ui=toolbar] h2{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:17px;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;color:#262626;text-shadow:#fff 0 1px 0}
@@ -109,6 +113,11 @@ a{padding:6px 10px;display:inline-block;}
 header[data-ui=toolbar]{background:#009688;color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2)}
 header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;color:#fff;}
 .pure-form{margin:0 8px;}
-.icons-cont{padding:20px 0;}
-.icons-cont .pure-u-3{height:90px;text-align:center;}
-.icons-cont .pure-u-3 .caption{font-size:12px;line-height:1.3;}
+.list-items li{background:#fff;}
+
+#icons-cont{padding:10px 0;margin:0;list-style: none outside;}
+#icons-cont .pure-u-1{text-align:center;}
+#icons-cont .pure-u-3{padding:5px;text-align:center;}
+#icons-cont .pure-u-3 i{font-size:32px;color:#555;}
+#icons-cont .pure-u-3 .caption{display:block;font-size:12px;line-height:1.3;}
+

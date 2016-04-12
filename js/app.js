@@ -54,6 +54,19 @@ $(function(){
   $('#animdemo').bind('pageAnimationStart',function(e,info){
     $(this).find('h2.vtitle').html($(this).data('referrer').data('title'));
   });
+  $('#Micon').bind('pageAnimationEnd',function(e,info){
+    if(info.direction=='in'){
+      $.getJSON('fonts/mdicons.json',function(data){
+        var mdicons=data.icons;
+        $('#Micon #icons-cont').html('');
+        for(var i=0;i<mdicons.length;i++){
+          $('#Micon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].name+'</span></li>');
+        }
+      });
+    }else{
+      $('#Micon #icons-cont').html('<li class="pure-u-1">Loading...</li>');
+    }
+  });
   
   // Page animations end with AJAX callback event,example 1(load remote HTML only first time)
   $('#callback').bind('pageAnimationEnd',function(e,info){

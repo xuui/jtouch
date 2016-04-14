@@ -25,7 +25,7 @@ $.getJSON('mdicons.json',function(data){
   }
   for(var i=0;i<mdicons.length;i++){
     //if(mdicons[i].group_id=='file'){
-      $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].name+'</span></li>');
+      $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
     //}else{continue;}
   }
 });

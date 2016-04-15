@@ -21,7 +21,7 @@ ui(document).ready(function(){
 });})(jQuery);
 
 
-var jQT=new $.jQT({startupScreen:'images/jqt_startup.png',preloadImages:[]});
+var jQT=new $.jQT({preloadImages:[]});
 // Some sample Javascript functions:
 $(function(){
 

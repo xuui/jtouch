@@ -117,7 +117,7 @@ header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;co
 .pure-form{margin:0 8px;}
 .list-items li{background:#fff;}
 
-#icons-cont{padding:10px 0;margin:0;list-style: none outside;}
+#icons-cont{padding:10px 0;margin:0;list-style:none outside;}
 #icons-cont .pure-u-1{text-align:center;}
 #icons-cont .pure-u-3{padding:5px;text-align:center;}
 #icons-cont .pure-u-3 i{font-size:32px;color:#555;}

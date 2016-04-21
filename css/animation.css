@@ -4,8 +4,38 @@ Copyright 2016 XUUI. All rights reserved.
 Licensed under the MIT License.
 */
 
-/* jqt animation */
-#jqt .in,#jqt .out{-webkit-animation-duration:.24s;animation-duration:.24s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+/* Animation */
+/* AJAX Loader */
+.ajaxloader{display:none;position:absolute;top:0;right:0;left:0;right:0;z-index:10000;width:100%;height:100%;background:rgba(0,0,0,.5);text-align:center;}
+.ajaxloader .loader-inner{margin:138px auto 0;width:50px;}
+.ajaxloader .rotate{position:relative;}
+.ajaxloader .rotate > div{-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;left:0;top:0;border:2px solid #fff;border-bottom-color:transparent;border-top-color:transparent;border-radius:100%;height:35px;width:35px;-webkit-animation:rotate 1s 0s ease-in-out infinite;animation:rotate 1s 0s ease-in-out infinite;}
+.ajaxloader .rotate > div:last-child{display:inline-block;top:10px;left:10px;width:15px;height:15px;border-color:#fff transparent #fff transparent;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-direction:reverse;animation-direction:reverse;}
+.ajaxloader .ripple{position:relative;-webkit-transform:translateY(-25px);-ms-transform:translateY(-25px);transform:translateY(-25px);}
+.ajaxloader .ripple > div:nth-child(0){-webkit-animation-delay:-.2s;animation-delay:-.2s;}
+.ajaxloader .ripple > div:nth-child(1){-webkit-animation-delay:0s;animation-delay:0s;}
+.ajaxloader .ripple > div:nth-child(2){-webkit-animation-delay:.2s;animation-delay:.2s;}
+.ajaxloader .ripple > div:nth-child(3){-webkit-animation-delay:.4s;animation-delay:.4s;}
+.ajaxloader .ripple > div{-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;top:0;left:0;width:50px;height:50px;border-radius:100%;border:2px solid #fff;
+-webkit-animation:ripple 1.25s 0s infinite cubic-bezier(.21,.53,.56,.8);animation:ripple 1.25s 0s infinite cubic-bezier(.21,.53,.56,.8);}
+@keyframes rotate{
+0%{-webkit-transform:rotate(0deg) scale(1);transform:rotate(0deg) scale(1);}
+50%{-webkit-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6);}
+100%{-webkit-transform:rotate(360deg) scale(1);transform:rotate(360deg) scale(1);}
+}
+@-webkit-keyframes ripple{
+0%{-webkit-transform:scale(0.1);transform:scale(0.1);opacity:1;}
+70%{-webkit-transform:scale(1);transform:scale(1);opacity:0.7;}
+100%{opacity:0.0;}
+}
+@keyframes ripple{
+0%{-webkit-transform:scale(0.1);transform:scale(0.1);opacity:1;}
+70%{-webkit-transform:scale(1);transform:scale(1);opacity:0.7;}
+100%{opacity:0.0;}
+}
+/* AJAX Loader End */
+
+#jqt .in,#jqt .out{-webkit-animation-duration:.26s;animation-duration:.26s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
 #jqt .in:after,#jqt .out:after{content:"";position:absolute;display:block;top:0;left:0;bottom:0;right:0}
 #jqt .in a,#jqt .in input,#jqt .out a,#jqt .out input{pointer-events:none}
 #jqt .in{z-index:10;}
@@ -74,11 +104,11 @@ Licensed under the MIT License.
 100%{opacity:0}
 }
 @-webkit-keyframes slideLeftIn{
-0%{-webkit-transform:translate3d(80%,0,0)}
+0%{-webkit-transform:translate3d(70%,0,0)}
 100%{-webkit-transform:translate3d(0,0,0)}
 }
 @keyframes slideLeftIn{
-0%{transform:translate3d(80%,0,0)}
+0%{transform:translate3d(70%,0,0)}
 100%{transform:translate3d(0,0,0)}
 }
 @-webkit-keyframes slideLeftOut{
@@ -90,11 +120,11 @@ Licensed under the MIT License.
 100%{transform:translate3d(-50%,0,0)}
 }
 @-webkit-keyframes slideRightIn{
-0%{-webkit-transform:translate3d(-65%,0,0)}
+0%{-webkit-transform:translate3d(-60%,0,0)}
 100%{-webkit-transform:translate3d(0,0,0)}
 }
 @keyframes slideRightIn{
-0%{transform:translate3d(-65%,0,0)}
+0%{transform:translate3d(-60%,0,0)}
 100%{transform:translate3d(0,0,0)}
 }
 @-webkit-keyframes slideRightOut{
@@ -253,4 +283,4 @@ Licensed under the MIT License.
 5%{transform:rotateY(0deg) translateZ(0) translateX(0);opacity:1}
 95%{transform:rotateY(90deg) translateZ(360px);opacity:.5}
 }
-/* jqt animation End */
+/* Animation End */

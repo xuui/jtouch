@@ -24,6 +24,12 @@ ui(document).ready(function(){
 var jQT=new $.jQT({preloadImages:[]});
 // Some sample Javascript functions:
 $(function(){
+  $(document).ajaxStart(function(){
+    $('.ajaxloader').show();
+  });
+  $(document).ajaxComplete(function(){
+    $('.ajaxloader').hide();
+  });
 
   // Show a swipe event on swipe test
   $('#swipeme').swipe(function(evt,data){
@@ -56,15 +62,17 @@ $(function(){
   });
   $('#Micon').bind('pageAnimationEnd',function(e,info){
     if(info.direction=='in'){
-      $.getJSON('fonts/mdicons.json',function(data){
-        var mdicons=data.icons;
-        $('#Micon #icons-cont').html('');
-        for(var i=0;i<mdicons.length;i++){
-          $('#Micon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
-        }
-      });
+      if($('#Micon #icons-cont').html()==''){
+        $.getJSON('fonts/mdicons.json',function(data){
+          var mdicons=data.icons;
+          $('#Micon #icons-cont').html('');
+          for(var i=0;i<mdicons.length;i++){
+            $('#Micon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+          }
+        });
+      }
     }else{
-      $('#Micon #icons-cont').html('<li class="pure-u-1">Loading...</li>');
+      //$('#Micon #icons-cont').html('<li class="pure-u-1">Loading...</li>');
     }
   });
   

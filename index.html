@@ -42,6 +42,16 @@
 <script src="js/app.js"></script>
 </head>
 <body id="jqt">
+  
+  <div class="ajaxloader">
+    <!--div class="loader-inner rotate">
+      <div></div><div></div>
+    </div-->
+    <div class="loader-inner ripple">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+  
   <article data-ui="view" id="home" class="current">
     <header data-ui="toolbar">
       <a class="pure-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
@@ -88,7 +98,7 @@
       <h2>Material Icons</h2>
     </header>
     <section class="scroll">
-      <ul id="icons-cont" class="pure-g"><li class="pure-u-1">Loading...</li></ul>
+      <ul id="icons-cont" class="pure-g"></ul>
     </section>
   </article>
   

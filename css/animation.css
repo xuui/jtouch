@@ -104,11 +104,11 @@ Licensed under the MIT License.
 100%{opacity:0}
 }
 @-webkit-keyframes slideLeftIn{
-0%{-webkit-transform:translate3d(70%,0,0)}
+0%{-webkit-transform:translate3d(56%,0,0)}
 100%{-webkit-transform:translate3d(0,0,0)}
 }
 @keyframes slideLeftIn{
-0%{transform:translate3d(70%,0,0)}
+0%{transform:translate3d(56%,0,0)}
 100%{transform:translate3d(0,0,0)}
 }
 @-webkit-keyframes slideLeftOut{

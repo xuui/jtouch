@@ -65,7 +65,6 @@
         <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> Page Events</a></li>
         <li class="item"><a href="#ui"><i class="md-icon">layers</i> User Interface <small class="counter">5</small></a></li>
         <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> Forms</a></li>
-        <li class="arrow"><a href="#buttons"><i class="md-icon">label</i> Buttons</a></li>
         <li class="item"><a href="#edge"><i class="md-icon">list</i> Edge to Edge</a></li>
         <li class="item"><a href="#plastic"><i class="md-icon">playlist_add</i> Plastic</a></li>
         <li class="item"><a href="#metal"><i class="md-icon">view_list</i> Metal</a></li>
@@ -234,16 +233,19 @@
       <a class="pure-btn back" href="#"><i class="md-icon">arrow_back</i></a>
       <h2>UI Demos</h2>
     </header>
-    <sectiondiv class="scroll">
+    <section class="scroll">
+      <h2 class="pure-menu-heading">Buttons</h2>
+      <p><a href="#" class="pure-btn whiteButton">White</a></p>
+      <p><a href="#" class="pure-btn grayButton">Gray</a></p>
+      <p><a href="#" class="pure-btn redButton">Red</a></p>
+      <p><a href="#" class="pure-btn greenButton">Green</a></p>
+      <p><a href="#" class="pure-btn blueButton">Blue</a></p>
+          
       <h2 class="pure-menu-heading">Lists</h2>
       <ul class="list-items pure-menu rounded">
         <li class="item"><a href="#edge">Edge to Edge</a></li>
         <li class="item"><a href="#plastic">Plastic</a></li>
         <li class="item"><a href="#metal">Metal</a></li>
-      </ul>
-      <h2 class="pure-menu-heading">Buttons</h2>
-      <ul class="list-items pure-menu rounded">
-        <li class="arrow"><a href="#buttons">Buttons</a></li>
       </ul>
       <h2 class="pure-menu-heading">Forms</h2>
       <ul class="list-items pure-menu rounded">
@@ -256,13 +258,37 @@
       </ul>
     </section>
   </article>
+  
+  <article data-ui="view" id="edge">
+    <header data-ui="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <h2>Edge to Edge</h2>
+    </header>
+    <section class="scroll">
+      <ul class="list-items pure-menu edgetoedge">
+        <li class="pure-menu-heading sep">F</li>
+        <li><a href="#">Flintstone, <em>Fred</em> <small>Label</small></a></li>
+        <li><a href="#">Flintstone, <em>Pebble</em> <small class="counter">42</small></a></li>
+        <li><a href="#">Flintstone, <em>Wilma</em></a></li>
+        <li class="pure-menu-heading">J</li>
+        <li class="arrow"><a href="#">Jetson, <em>Elroy</em> <small>Label</small></a></li>
+        <li class="arrow"><a href="#">Jetson, <em>George</em> <small class="counter">42</small></a></li>
+        <li class="arrow"><a href="#">Jetson, <em>Jane</em></a></li>
+        <li class="arrow"><a href="#">Jetson, <em>Judy</em></a></li>
+        <li class="pure-menu-heading">R</li>
+        <li class="forward"><a href="#">Rubble, <em>Bambam</em> <small>Label</small></a></li>
+        <li class="forward"><a href="#">Rubble, <em>Barney</em> <small class="counter">42</small></a></li>
+        <li class="forward"><a href="#">Rubble, <em>Betty</em></a></li>
+      </ul>
+    </section>
+  </article>
 
   <!--
   
   <div data-ui="view" id="ajax">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>AJAX</h2>
-      <a class="back" href="#home"><i class="md-icon">arrow_back</i></a>
     </div>
     <div class="scroll">
       <ul class="rounded">
@@ -273,27 +299,10 @@
       </ul>
     </div>
   </div>
-  <div data-ui="view" id="buttons">
-    <div class="toolbar">
-      <h2>Buttons!</h2>
-      <a href="#" class="back"><i class="md-icon">arrow_back</i></a>
-    </div>
-    <div style="margin-top: 10px;" class="scroll">
-      <a href="#" class="whiteButton">White</a>
-      <br>
-      <a href="#" class="grayButton">Gray</a>
-      <br>
-      <a href="#" class="redButton">Red</a>
-      <br>
-      <a href="#" class="greenButton">Green</a>
-      <br>
-      <a href="#" class="blueButton">Blue</a>
-    </div>
-  </div>
   <div data-ui="view" id="callback">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>AJAX w/Callback</h2>
-      <a class="back" href="#"><i class="md-icon">arrow_back</i></a>
     </div>
   </div>
   <div data-ui="view" id="callbacks">
@@ -311,31 +320,10 @@
     </div>
   </div>
   
-  <div data-ui="view" id="edge">
-    <div class="toolbar">
-      <h2>Edge to Edge</h2>
-      <a href="#" class="back"><i class="md-icon">arrow_back</i></a>
-    </div>
-    <ul class="edgetoedge scroll">
-      <li class="sep">F</li>
-      <li><a href="#">Flintstone, <em>Fred</em> <small>Label</small></a></li>
-      <li><a href="#">Flintstone, <em>Pebble</em> <small class="counter">42</small></a></li>
-      <li><a href="#">Flintstone, <em>Wilma</em></a></li>
-      <li class="sep">J</li>
-      <li class="arrow"><a href="#">Jetson, <em>Elroy</em> <small>Label</small></a></li>
-      <li class="arrow"><a href="#">Jetson, <em>George</em> <small class="counter">42</small></a></li>
-      <li class="arrow"><a href="#">Jetson, <em>Jane</em></a></li>
-      <li class="arrow"><a href="#">Jetson, <em>Judy</em></a></li>
-      <li class="sep">R</li>
-      <li class="forward"><a href="#">Rubble, <em>Bambam</em> <small>Label</small></a></li>
-      <li class="forward"><a href="#">Rubble, <em>Barney</em> <small class="counter">42</small></a></li>
-      <li class="forward"><a href="#">Rubble, <em>Betty</em></a></li>
-    </ul>
-  </div>
   <div data-ui="view" id="extensions">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Extensions</h2>
-      <a class="back" href="#home"><i class="md-icon">arrow_back</i></a>
     </div>
     <div class="scroll">
       <ul class="rounded">
@@ -349,8 +337,8 @@
   
   <div data-ui="view" id="metal">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Metal Lists</h2>
-      <a href="#" class="back"><i class="md-icon">arrow_back</i></a>
     </div>
     <ul class="metal scroll">
       <li class="arrow"><a href="#"><small>AM</small> 9:40 <em>Buenos Aires</em></a></li>
@@ -362,8 +350,8 @@
   </div>
   <div data-ui="view" id="plastic">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Plastic Lists</h2>
-      <a href="#" class="back"><i class="md-icon">arrow_back</i></a>
     </div>
     <ul class="plastic scroll">
       <li class="arrow"><a href="#">Simple list <small>Label</small></a></li>
@@ -386,8 +374,8 @@
   </div>
   <div data-ui="view" id="action_performed">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Action</h2>
-      <a class="back" href="#"><i class="md-icon">arrow_back</i></a>
     </div>
     <div class="info">
       <p>You performed an action.</p>
@@ -404,8 +392,8 @@
   </div>
   <form data-ui="view" id="ajax_post" action="ajax_post.php" method="POST" class="form">
     <div class="toolbar">
+      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Post Demo</h2>
-      <a class="back" href="#"><i class="md-icon">arrow_back</i></a>
     </div>
     <div class="scroll">
       <ul class="rounded">

@@ -23,7 +23,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 .pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar{display:none}
 .pure-menu-separator{background-color:#ccc;height:1px;margin:.3em 0}
 .pure-menu-horizontal .pure-menu-separator{width:1px;height:1.3em;margin:0 .3em}
-.pure-menu-heading{text-transform:uppercase;color:#565d64}
+.pure-menu-heading{text-transform:uppercase;color:#565d64;font-size:14px;margin-bottom:0;}
 .pure-menu li a{color:#777}
 .pure-menu-children{background-color:#fff}
 .pure-menu li a,.pure-menu-disabled,.pure-menu-heading{padding:.5em 1em}

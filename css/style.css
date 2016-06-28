@@ -116,7 +116,8 @@ header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;co
 
 #icons-cont{padding:10px 0;margin:0;list-style:none outside;}
 #icons-cont .pure-u-1{text-align:center;}
-#icons-cont .pure-u-3{padding:5px;text-align:center;}
-#icons-cont .pure-u-3 i{font-size:32px;color:#555;}
-#icons-cont .pure-u-3 .caption{display:block;font-size:12px;line-height:1.3;}
+#icons-cont .pure-u-4{padding:5px;text-align:center;}
+#icons-cont .pure-u-4 i{font-size:32px;color:#555;}
+#icons-cont .pure-u-4 .caption{display:block;font-size:12px;line-height:1.3;}
+#icons-cont .pure-u-4:hover,#icons-cont .pure-u-4:hover i{color:#09f}
 

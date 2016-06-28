@@ -67,7 +67,7 @@ $(function(){
           var mdicons=data.icons;
           $('#Micon #icons-cont').html('');
           for(var i=0;i<mdicons.length;i++){
-            $('#Micon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+            $('#Micon #icons-cont').append('<li class="pure-u-4 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
           }
         });
       }

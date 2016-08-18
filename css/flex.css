@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import url(base.css);
+/* flex-box */
+
+*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
+html,body{height:100%;}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+body{position:relative;background:#eee;color:#333;font:400 14px/1.42857143 -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen-Sans','Ubuntu','Cantarell','Lucida Grande','Helvetica Neue Ultra Light','Helvetica Neue Interface M3',Helvetica,'Microsoft YaHei',FreeSans,Arimo,'Droid Sans','wenquanyi micro hei','Hiragino Sans GB','Hiragino Sans GB W3',Arial,sans-serif;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
+a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;touch-action:manipulation;}
+input,button,select,textarea{outline:none}
+input,textarea{-webkit-user-select:auto;user-select:auto}
+::-webkit-input-placeholder{color:#a3a3c0;text-shadow:#fff 0 1px 0}
+.md-icon{vertical-align:middle;}
+
+.page{height:100%;width:100%;}
+.flex{display:-webkit-box;display:-webkit-flex;display:flex;}
+.flex-ver{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;width:100%;height:100%;}
+.flex-item{-webkit-box-flex:1;-webkit-flex:1;flex:1;width:0%;}
+
+.tool-bar{background:#fff;height:45px;line-height:45px;text-align:center;}
+.cont-box{overflow:auto;background:#e2e2e2;width:100%;height:auto;-webkit-overflow-scrolling:touch;}
+

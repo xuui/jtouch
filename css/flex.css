@@ -30,7 +30,6 @@ p{margin:0;}
 .f-icon{display:block;width:20px;height:20px;background:#31BBEE;flex:none;}
 .f-btn{border:0;width:50px;height:25px;text-align:center;background:#31BBEE;margin:10px;line-height:25px;color:#fff;flex:none;}
 
-
 /*导航*/
 .flex-nav{height:44px;line-height:44px;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
 .flex-nav .nav-title{text-align:center;line-height:1.2;width:0%;-webkit-box-flex:1;-webkit-flex:1;flex:1;}
@@ -48,13 +47,27 @@ p{margin:0;}
 .flex-search{-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;background:#f1f1f1;border-bottom:1px solid #ccc;}
 .flex-search .input{width:0%;-webkit-box-flex:1;-webkit-flex:1;flex:1;margin-left:10px;padding:2px;border:1px solid #aaa;}
 .flex-search .input input{border:none;width:100%}
-.flex-search span{display:block;flex:none;padding:0;padding-right:0;width:50px;}
+.flex-search span{display:block;flex:none;padding:0;padding-right:0;width:50px;text-align:center;}
 .flex-search .f-icon{margin-left:10px;}
 
-/*列表*/
+/* 列表 */
 .flex-simple{-webkit-box-align:center;-webkit-align-items:center;align-items:center;padding:10px 15px;background:#fff;border-bottom:1px solid #ccc;}
 .s-img{width:50px;height:50px;margin-right:10px;background:#31BBEE;}
 .s-tit{font-size:20px;font-weight:bold;}
 .s-tit,.s-desc{line-height:1.2;}
+
+/* 消息提示 */
+.flex-info{-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;margin:10px 0;border-bottom:1px solid #ddd;border-top:1px solid #ddd;padding:10px;background:#f2f2f2;}
+.flex-info .f-icon{margin:0 15px 0 10px;}
+.flex-info-center{-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+
+/* 垂直居中 */
+.flex-centerbox{width:100%;height:300px;background:#fafafa;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;border-top:1px solid #ddd;border-bottom: 1px solid #ddd;padding:10px 0;margin:10px 0;}
+.center-cont{display:block;background:#ddd;text-align:center;padding:20px;margin:10px;}
+
+
+
+
+
 
 

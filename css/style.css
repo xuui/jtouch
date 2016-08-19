@@ -17,7 +17,7 @@ may be freely distributed under the MIT license.
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
 html,body{height:100%;}
 html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-body{position:relative;background:#000;color:#333;font:400 14px/1.42857143 -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen-Sans','Ubuntu','Cantarell','Lucida Grande','Helvetica Neue Ultra Light','Helvetica Neue Interface M3',Helvetica,'Microsoft YaHei',FreeSans,Arimo,'Droid Sans','wenquanyi micro hei','Hiragino Sans GB','Hiragino Sans GB W3',Arial,sans-serif;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
+body{position:relative;background:#000;font:400 14px/1.42857143 -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen-Sans','Ubuntu','Cantarell','Lucida Grande','Helvetica Neue Ultra Light','Helvetica Neue Interface M3',Helvetica,'Microsoft YaHei',FreeSans,Arimo,'Droid Sans','wenquanyi micro hei','Hiragino Sans GB','Hiragino Sans GB W3',Arial,sans-serif;color:#333;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
 a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;touch-action:manipulation;}
 input,button,select,textarea{outline:none}
 input,textarea{-webkit-user-select:auto;user-select:auto}
@@ -42,16 +42,14 @@ input,textarea{-webkit-user-select:auto;user-select:auto}
 header[data-ui=toolbar] .pure-btn{position:absolute;z-index:1;top:0;right:0;line-height:1;}
 header[data-ui=toolbar] .pure-btn.back,[data-ui=toolbar] .pure-btn.btn-left{right:auto;left:0;}
 
-
 header,footer{}
-header{border-bottom:1px solid rgba(0,0,0,.16);}
+header{border-bottom:1px solid rgba(0,0,0,.16);font-weight:300;}
 header.status{padding-top:20px;min-height:66px;}
 header.status .pure-btn{top:22px;}
 footer{border-top:1px solid #ccc;}
 footer .pure-btn{line-height:29px;width:100%;border-radius:0}
 
 /*
-
 header{top:0;}
 /*
 header{position:absolute;top:0;left:0;right:0;
@@ -108,7 +106,7 @@ a{padding:6px 10px;display:inline-block;}
 
 */
 /* Test Skin */
-[data-ui=toolbar]{box-shadow:0 0 2px rgba(0,0,0,.2)}
+[data-ui=toolbar]{box-shadow:0 0 2px rgba(0,0,0,.2);}
 header[data-ui=toolbar]{background:#009688;color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2)}
 header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;color:#fff;}
 .pure-form{margin:0 8px;}

@@ -30,7 +30,7 @@ $(function(){
   $(document).ajaxComplete(function(){
     $('.ajaxloader').hide();
   });
-
+jQT.goTo('#home');
   // Show a swipe event on swipe test
   $('#swipeme').swipe(function(evt,data){
     var details=!data ? '':'<strong>'+data.direction+'/'+data.deltaX+':'+data.deltaY+'</strong>!';
@@ -63,11 +63,11 @@ $(function(){
   $('#Micon').bind('pageAnimationEnd',function(e,info){
     if(info.direction=='in'){
       if($('#Micon #icons-cont').html()==''){
-        $.getJSON('fonts/mdicons.json',function(data){
+        $.getJSON('resources/fonts/mdicons.json',function(data){
           var mdicons=data.icons;
           $('#Micon #icons-cont').html('');
           for(var i=0;i<mdicons.length;i++){
-            $('#Micon #icons-cont').append('<li class="pure-u-4 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+            $('#Micon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
           }
         });
       }

@@ -24,8 +24,8 @@ p{margin:0;}
 .tool-bar{background:#fff;height:45px;line-height:45px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.13);position:relative;z-index:1}
 .cont-box{overflow:auto;background:#e2e2e2;width:100%;height:auto;-webkit-overflow-scrolling:touch;}
 
-.f-icon{display:block;width:20px;height:20px;background:#31bbee;flex:none;}
-.f-btn{border:0;width:50px;height:25px;text-align:center;background:#31bbee;margin:10px;line-height:25px;color:#fff;flex:none;}
+.f-icon{display:block;flex:none;width:20px;height:20px;}
+.f-btn{flex:none;background:transparent;border:0;margin:10px;width:50px;height:25px;line-height:25px;text-align:center;color:#09f;}
 
 /*导航*/
 .flex-nav{height:44px;line-height:44px;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}

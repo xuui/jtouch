@@ -1,13 +1,13 @@
 /*!
-Pure v0.6.1-pre
-Copyright 2014 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
+Xu.css v1.0
+Copyright (c) 2016 Xuhel. All rights reserved.
+Licensed under The MIT License (MIT).
+LICENSE.md
 */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;}
-body{margin:0;line-height:1.15;}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+body{margin:0;font:400 14px/1.42857143 -apple-system,BlinkMacSystemFont,'Myriad Set Pro','Segoe UI','Roboto','Oxygen-Sans','Ubuntu','Cantarell','Helvetica Neue Ultra Light','Helvetica Neue Interface M3','Lucida Grande','Helvetica Neue',Helvetica,'PingFang SC','STHeitiSC-Light','Microsoft YaHei',FreeSans,Arimo,'Droid Sans','Hiragino Sans GB','Hiragino Sans GB W3','WenQuanYi Micro Hei',Arial,sans-serif;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
 article,aside,footer,header,nav,section{display:block}
 figcaption,figure,main{display:block}
 figure{margin:1em 40px}
@@ -50,4 +50,4 @@ canvas{display:inline-block}
 template{display:none}
 [hidden]{display:none}
 h1{font-size:2em;margin:.67em 0}
-.pure-img{max-width:100%;height:auto;display:block}
+.xu-img{max-width:100%;height:auto;display:block}

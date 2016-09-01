@@ -32,22 +32,22 @@ input,textarea{-webkit-user-select:auto;user-select:auto}
 
 
 [data-ui=toolbar]{background:#fcfcfc;height:48px;}
-[data-ui=toolbar] h1,[data-ui=toolbar] h2,[data-ui=toolbar] h3{margin:0 64px;line-height:48px;text-align:center;font-size:20px;}
-[data-ui=toolbar] .pure-btn{padding:12px;line-height:24px}
+[data-ui=toolbar] h1,[data-ui=toolbar] h2,[data-ui=toolbar] h3{margin:0 64px;line-height:48px;text-align:center;font-size:20px;font-weight:400;}
+[data-ui=toolbar] .xu-btn{padding:12px;line-height:24px}
 /*
-[data-ui=toolbar] .pure-btn i{font-size:24px;}
+[data-ui=toolbar] .xu-btn i{font-size:24px;}
 [data-ui=toolbar] .btn-icon{padding-left:1.5em}
 [data-ui=toolbar] .btn-icon i{position:absolute;left:0;line-height:24px;min-width:44px;height:44px;font-size:16px;text-align:center}
 */
-header[data-ui=toolbar] .pure-btn{position:absolute;z-index:1;top:0;right:0;line-height:1;}
-header[data-ui=toolbar] .pure-btn.back,[data-ui=toolbar] .pure-btn.btn-left{right:auto;left:0;}
+header[data-ui=toolbar] .xu-btn{position:absolute;z-index:1;top:0;right:0;line-height:1;}
+header[data-ui=toolbar] .xu-btn.back,[data-ui=toolbar] .xu-btn.btn-left{right:auto;left:0;}
 
 header,footer{}
 header{border-bottom:1px solid rgba(0,0,0,.16);font-weight:300;}
 header.status{padding-top:20px;min-height:66px;}
-header.status .pure-btn{top:22px;}
+header.status .xu-btn{top:22px;}
 footer{border-top:1px solid #ccc;}
-footer .pure-btn{line-height:29px;width:100%;border-radius:0}
+footer .xu-btn{line-height:29px;width:100%;border-radius:0}
 
 /*
 header{top:0;}
@@ -108,14 +108,23 @@ a{padding:6px 10px;display:inline-block;}
 /* Test Skin */
 [data-ui=toolbar]{box-shadow:0 0 2px rgba(0,0,0,.2);}
 header[data-ui=toolbar]{background:#009688;color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2)}
-header[data-ui=toolbar] .pure-btn{background:none;border:1px solid transition;color:#fff;}
-.pure-form{margin:0 8px;}
+header[data-ui=toolbar] .xu-btn{background:none;border:1px solid transition;color:#fff;}
+.xu-form{margin:0 8px;}
 .list-items li{background:#fff;}
 
 #icons-cont{padding:10px 0;margin:0;list-style:none outside;}
-#icons-cont .pure-u-1{text-align:center;}
-#icons-cont .pure-u-3{padding:5px;text-align:center;}
-#icons-cont .pure-u-3 i{font-size:32px;color:#555;}
-#icons-cont .pure-u-3 .caption{display:block;font-size:12px;line-height:1.3;word-break:break-all;}
-#icons-cont .pure-u-3:hover,#icons-cont .pure-u-3:hover i{color:#09f}
+#icons-cont .xu-u-1{text-align:center;}
+#icons-cont .xu-u-3{padding:5px;text-align:center;}
+#icons-cont .xu-u-3 i{font-size:32px;color:#555;}
+#icons-cont .xu-u-3 .caption{display:block;font-size:12px;line-height:1.3;word-break:break-all;}
+#icons-cont .xu-u-3:hover,#icons-cont .xu-u-3:hover i{color:#09f}
 
+.page-io{background:#fff;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px 0 rgba(0,0,0,.24);font-size:14px;}
+.page-io h1,.page-io h2{color:#333;line-height:1.2;margin:0 0 10px;}
+.page-io h1{font-size:20px;}
+.page-io h2{font-size:14px;display:none}
+.page-io p{margin:0 0 1em;}
+.page-io a{color:#06f;}
+.page-io a.button{display:inline-block;background:transparent url(../io/download-button.png) 0 0 no-repeat;background-size:101px 39px;padding-top:5px;padding-left:34px;width:101px;height:39px;line-height:1.2;font-family:'Architects Daughter','Helvetica Neue',Helvetica,Arial,serif;font-size:13px;color:#fff;text-decoration:none;}
+.page-io a.button small{display:block;font-size:11px;}
+.page-io .pbotm{margin:0;}

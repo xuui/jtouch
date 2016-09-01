@@ -56,18 +56,30 @@
   
   <article data-ui="view" id="home" class="current">
     <header data-ui="toolbar">
-      <a class="pure-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
-      <a class="pure-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
+      <a class="xu-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
+      <a class="xu-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
       <h1>XUUI-jTouch</h1>
     </header>
-    <section class="scroll pure-menu">
-      <ul class="list-items pure-menu">
+    <section class="scroll xu-menu">
+	  <div class="page-io">
+      <h1>Xuui-jtouch</h1>
+      <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
+      <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
+        <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
+      </p>
+      <p>
+        <a href="https://github.com/xuui/xuui-jtouch/zipball/master" class="button"><small>Download</small> .zip file</a>
+        <a href="https://github.com/xuui/xuui-jtouch/tarball/master" class="button"><small>Download</small> .tar.gz file</a>
+      </p>
+      <p class="pbotm"><a href="https://github.com/xuui/xuui-jtouch"><small>View project on</small> GitHub</a></p>
+	  </div>
+      <ul class="list-items xu-menu">
         <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
         <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
+        <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
+        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <!--small class="counter">5</small--></a></li>
+        <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li> 
         <!--
-        <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> Page Events</a></li>
-        <li class="item"><a href="#ui"><i class="md-icon">layers</i> User Interface <small class="counter">5</small></a></li>
-        <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> Forms</a></li>
         <li class="item"><a href="#edge"><i class="md-icon">list</i> Edge to Edge</a></li>
         <li class="item"><a href="#plastic"><i class="md-icon">playlist_add</i> Plastic</a></li>
         <li class="item"><a href="#metal"><i class="md-icon">view_list</i> Metal</a></li>
@@ -80,19 +92,19 @@
   
       </ul>
     </section>
-    <footer data-ui="toolbar" class="pure-g">
-      <div class="pure-u-1-5"><a class="pure-btn"  href="#main">footer</a></div>
-      <div class="pure-u-1-5"><a class="pure-btn"  href="#main">footer</a></div>
-      <div class="pure-u-1-5"><a class="pure-btn"  href="#main">footer</a></div>
-      <div class="pure-u-1-5"><a class="pure-btn"  href="#main">footer</a></div>
-      <div class="pure-u-1-5"><a class="pure-btn"  href="#main">footer</a></div>
+    <footer data-ui="toolbar" class="xu-g">
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
     </footer>
   </article>
   
   <article data-ui="view" id="M">
     <header data-ui="toolbar">
-      <a class="pure-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
-      <h2>菜单</h2>
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <h2>M</h2>
     </header>
     <section class="scroll">
       <p><strong>XUUI-jTouch</strong> Version 0.1 by <a href="http://xuui.net">By Xu.hel</a></p>
@@ -102,18 +114,18 @@
 
   <article data-ui="view" id="MaterialIcon">
     <header data-ui="toolbar">
-      <a class="pure-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
-      <a class="pure-btn" href="#home"><i class="md-icon">search</i></a>
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn" href="#home"><i class="md-icon">search</i></a>
       <h2>Material 图标</h2>
     </header>
     <section class="scroll">
-      <ul id="icons-cont" class="pure-g"></ul>
+      <ul id="icons-cont" class="xu-g"></ul>
     </section>
   </article>
   
   <article data-ui="view" id="animations">
     <header data-ui="toolbar">
-      <a class="pure-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
       <h2>动画</h2>
     </header>
     <section class="scroll">
@@ -131,20 +143,20 @@
   </article>
   <article data-ui="view" id="animdemo">
     <header data-ui="toolbar">
-      <a class="pure-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
       <h2 class="vtitle">动画演示</h2>
     </header>
     <section class="scroll">
       <div style="font-size: 1.5em; text-align: center; margin: 160px 0 90px;">
         漂亮吗?
       </div>
-      <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="pure-btn goback">返回</a>
+      <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="xu-btn goback">返回</a>
     </section>
   </article>
   
   <article data-ui="view" id="about">
     <header data-ui="toolbar">
-      <a class="pure-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
       <h2>关于</h2>
     </header>
     <section class="scroll">
@@ -155,34 +167,42 @@
     </section>
   </article>
   
-  <!--
+  <article data-ui="view" id="pageevents">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#"><i class="md-icon">arrow_back</i></a>
+      <h2>Page Events</h2>
+    </header>
+    <section class="info scroll" style="font-weight: normal;">
+    </section>
+  </article>
+
   <article data-ui="view" id="forms">
     <header data-ui="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Forms</h2>
     </header>
     <section class="scroll">
-      <form class="pure-form">
-        <fieldset class="pure-group">
-          <input type="text" class="pure-input-1" placeholder="Username">
-          <input type="text" class="pure-input-1" placeholder="Password">
-          <input type="email" class="pure-input-1" placeholder="Email">
+      <form class="xu-form">
+        <fieldset class="xu-group">
+          <input type="text" class="xu-input-1" placeholder="Username">
+          <input type="text" class="xu-input-1" placeholder="Password">
+          <input type="email" class="xu-input-1" placeholder="Email">
         </fieldset>
-        <fieldset class="pure-group">
-          <input type="text" class="pure-input-1" placeholder="A title">
-          <textarea class="pure-input-1" placeholder="Textareas work too"></textarea>
+        <fieldset class="xu-group">
+          <input type="text" class="xu-input-1" placeholder="A title">
+          <textarea class="xu-input-1" placeholder="Textareas work too"></textarea>
         </fieldset>
         <fieldset>
           <label for="state">State</label>
-          <select id="state" class="pure-input-1">
+          <select id="state" class="xu-input-1">
             <option>AL</option>
             <option>CA</option>
             <option>IL</option>
           </select>
         </fieldset>
         <fieldset>
-          <input type="text" class="pure-input-rounded">
-          <button type="submit" class="pure-btn">Search</button>
+          <input type="text" class="xu-input-rounded">
+          <button type="submit" class="xu-btn">Search</button>
         </fieldset>
         <fieldset>
           <legend>A compact inline form</legend>
@@ -190,7 +210,7 @@
             <input id="remember" type="checkbox"> Remember me
           </label>
         </fieldset>
-        <button type="submit" class="pure-btn pure-input-1 pure-btn-primary">Sign in</button>
+        <button type="submit" class="xu-btn xu-input-1 xu-btn-primary">Sign in</button>
 
         <ul class="edit rounded">
           <li><input type="text" name="name" placeholder="Text" id="some_name" /></li>
@@ -227,43 +247,31 @@
   
   <!-->
   
-  
-  <!--
-  <article data-ui="view" id="pageevents">
-    <header data-ui="toolbar">
-      <a class="pure-btn back" href="#"><i class="md-icon">arrow_back</i></a>
-      <h2>Page Events</h2>
-    </header>
-    <section class="info scroll" style="font-weight: normal;">
-    </section>
-  </article>
-  
-  <!--
   <article data-ui="view" id="ui">
     <header data-ui="toolbar">
-      <a class="pure-btn back" href="#"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn back" href="#"><i class="md-icon">arrow_back</i></a>
       <h2>UI Demos</h2>
     </header>
     <section class="scroll">
-      <h2 class="pure-menu-heading">Buttons</h2>
-      <p><a href="#" class="pure-btn whiteButton">White</a></p>
-      <p><a href="#" class="pure-btn grayButton">Gray</a></p>
-      <p><a href="#" class="pure-btn redButton">Red</a></p>
-      <p><a href="#" class="pure-btn greenButton">Green</a></p>
-      <p><a href="#" class="pure-btn blueButton">Blue</a></p>
+      <h2 class="xu-menu-heading">Buttons</h2>
+      <p><a href="#" class="xu-btn whiteButton">White</a></p>
+      <p><a href="#" class="xu-btn grayButton">Gray</a></p>
+      <p><a href="#" class="xu-btn redButton">Red</a></p>
+      <p><a href="#" class="xu-btn greenButton">Green</a></p>
+      <p><a href="#" class="xu-btn blueButton">Blue</a></p>
           
-      <h2 class="pure-menu-heading">Lists</h2>
-      <ul class="list-items pure-menu rounded">
+      <h2 class="xu-menu-heading">Lists</h2>
+      <ul class="list-items xu-menu rounded">
         <li class="item"><a href="#edge">Edge to Edge</a></li>
         <li class="item"><a href="#plastic">Plastic</a></li>
         <li class="item"><a href="#metal">Metal</a></li>
       </ul>
-      <h2 class="pure-menu-heading">Forms</h2>
-      <ul class="list-items pure-menu rounded">
+      <h2 class="xu-menu-heading">Forms</h2>
+      <ul class="list-items xu-menu rounded">
         <li class="arrow"><a href="#forms">Forms</a></li>
       </ul>
-      <h2 class="pure-menu-heading">Sheets</h2>
-      <ul class="list-items pure-menu rounded">
+      <h2 class="xu-menu-heading">Sheets</h2>
+      <ul class="list-items xu-menu rounded">
         <li class="arrow"><a class="action" href="#actionsheet">Action</a></li>
         <li class="arrow"><a class="menu" href="#menusheet">Menu</a></li>
       </ul>
@@ -273,21 +281,21 @@
   <!--
   <article data-ui="view" id="edge">
     <header data-ui="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Edge to Edge</h2>
     </header>
     <section class="scroll">
-      <ul class="list-items pure-menu edgetoedge">
-        <li class="pure-menu-heading sep">F</li>
+      <ul class="list-items xu-menu edgetoedge">
+        <li class="xu-menu-heading sep">F</li>
         <li><a href="#">Flintstone, <em>Fred</em> <small>Label</small></a></li>
         <li><a href="#">Flintstone, <em>Pebble</em> <small class="counter">42</small></a></li>
         <li><a href="#">Flintstone, <em>Wilma</em></a></li>
-        <li class="pure-menu-heading">J</li>
+        <li class="xu-menu-heading">J</li>
         <li class="arrow"><a href="#">Jetson, <em>Elroy</em> <small>Label</small></a></li>
         <li class="arrow"><a href="#">Jetson, <em>George</em> <small class="counter">42</small></a></li>
         <li class="arrow"><a href="#">Jetson, <em>Jane</em></a></li>
         <li class="arrow"><a href="#">Jetson, <em>Judy</em></a></li>
-        <li class="pure-menu-heading">R</li>
+        <li class="xu-menu-heading">R</li>
         <li class="forward"><a href="#">Rubble, <em>Bambam</em> <small>Label</small></a></li>
         <li class="forward"><a href="#">Rubble, <em>Barney</em> <small class="counter">42</small></a></li>
         <li class="forward"><a href="#">Rubble, <em>Betty</em></a></li>
@@ -299,7 +307,7 @@
   
   <div data-ui="view" id="ajax">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>AJAX</h2>
     </div>
     <div class="scroll">
@@ -313,7 +321,7 @@
   </div>
   <div data-ui="view" id="callback">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>AJAX w/Callback</h2>
     </div>
   </div>
@@ -334,7 +342,7 @@
   
   <div data-ui="view" id="extensions">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Extensions</h2>
     </div>
     <div class="scroll">
@@ -349,7 +357,7 @@
   
   <div data-ui="view" id="metal">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Metal Lists</h2>
     </div>
     <ul class="metal scroll">
@@ -362,7 +370,7 @@
   </div>
   <div data-ui="view" id="plastic">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Plastic Lists</h2>
     </div>
     <ul class="plastic scroll">
@@ -386,7 +394,7 @@
   </div>
   <div data-ui="view" id="action_performed">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Action</h2>
     </div>
     <div class="info">
@@ -404,7 +412,7 @@
   </div>
   <form data-ui="view" id="ajax_post" action="ajax_post.php" method="POST" class="form">
     <div class="toolbar">
-      <a href="#" class="pure-btn back"><i class="md-icon">arrow_back</i></a>
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
       <h2>Post Demo</h2>
     </div>
     <div class="scroll">

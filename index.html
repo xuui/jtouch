@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="theme-color" content="#009688">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- default or black-->
+<title>XUUI-jTouch</title>
+<!--link rel="shortcut icon" type="image/x-icon" href="resources/icons/favicon.ico"-->
+<link rel="icon" type="image/png" href="resources/icons/touch-icon.png">
+<link rel="icon" sizes="192x192" href="resources/icons/touch-icon.png">
+
+<link rel="apple-touch-icon" href="resources/icons/touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="resources/icons/touch-icon.png">
+<link rel="apple-touch-icon" sizes="120x120" href="resources/icons/touch-icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="resources/icons/touch-icon.png">
+<link rel="apple-touch-startup-image" href="resources/splashs/touch_startup.png">
+
+<!--link rel="stylesheet" href="css/jqtouch.min.css" data-jqt-theme-->
+<link rel="stylesheet" href="css/style.css">
+
+<script src="cordova.js"></script>
+<script src="frameworks/jquery.min.js"></script>
+<script src="js/jqt.js"></script>
+<script src="js/jqtouch-jquery2.js"></script>
+<!--
+<script src="js/jqt.min.js"></script>
+<script src="js/jqtouch-jquery2.min.js"></script>
+-->
+<!--
+<script src="js/extensions/jqt.themeswitcher.min.js"></script>
+<script src="js/extensions/jqt.actionsheet.min.js"></script>
+<script src="js/extensions/jqt.menusheet.min.js"></script>
+-->
+
+<script src="js/app.js"></script>
+</head>
+<body id="jqt">
+  
+  <div class="ajaxloader">
+    <!--div class="loader-inner rotate">
+      <div></div><div></div>
+    </div-->
+    <div class="loader-inner ripple">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+  
+  
+  <article data-ui="view" id="home" class="current">
+    <header data-ui="toolbar">
+      <a class="xu-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
+      <a class="xu-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
+      <h1>XUUI-jTouch</h1>
+    </header>
+    <section class="scroll xu-menu">
+	  <div class="page-io">
+      <h1>Xuui-jtouch</h1>
+      <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
+      <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
+        <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
+      </p>
+      <p>
+        <a href="https://github.com/xuui/xuui-jtouch/zipball/master" class="button"><small>Download</small> .zip file</a>
+        <a href="https://github.com/xuui/xuui-jtouch/tarball/master" class="button"><small>Download</small> .tar.gz file</a>
+      </p>
+      <p class="pbotm"><a href="https://github.com/xuui/xuui-jtouch"><small>View project on</small> GitHub</a></p>
+	  </div>
+      <ul class="list-items xu-menu">
+        <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
+        <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
+        <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
+        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <small class="counter">5</small></a></li>
+        <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li> 
+      </ul>
+    </section>
+    <footer data-ui="toolbar" class="xu-g">
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+    </footer>
+  </article>
+  
+  <article data-ui="view" id="M">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <h2>M</h2>
+    </header>
+    <section class="scroll">
+      <p><strong>XUUI-jTouch</strong> Version 0.1 by <a href="http://xuui.net">By Xu.hel</a></p>
+      <p>使用 HTML, CSS, and jQuery.</p>
+    </section>
+  </article>
+
+  <article data-ui="view" id="MaterialIcon">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <a class="xu-btn" href="#home"><i class="md-icon">search</i></a>
+      <h2>Material 图标</h2>
+    </header>
+    <section class="scroll">
+      <ul id="icons-cont" class="xu-g"></ul>
+    </section>
+  </article>
+  
+  <article data-ui="view" id="animations">
+    <header data-ui="toolbar">
+      <a class="xu-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
+      <h2>动画</h2>
+    </header>
+    <section class="scroll">
+      <ul class="list-items rounded">
+        <li><a href="#animdemo" data-title="Slide" class="">滑入</a></li>
+        <li><a href="#animdemo" data-title="Slide Up" class="slideup">向上滑入</a></li>
+        <li><a href="#animdemo" data-title="Dissolve" class="dissolve">溶解</a></li>
+        <li><a href="#animdemo" data-title="Pop" class="pop">弹出</a></li>
+        <li><a href="#animdemo" data-title="Flip right" class="flipright">右翻转</a></li>
+        <li><a href="#animdemo" data-title="Flip left" class="flipleft">左翻转</a></li>
+        <li><a href="#animdemo" data-title="Cube" class="cube">立方体</a></li>
+        <li><a href="#animdemo" data-title="Swap" class="swap">交换</a></li>
+      </ul>
+    </section>
+  </article>
+  <article data-ui="view" id="animdemo">
+    <header data-ui="toolbar">
+      <a class="xu-btn back slideup" href="#"><i class="md-icon">arrow_back</i></a>
+      <h2 class="vtitle">动画演示</h2>
+    </header>
+    <section class="scroll">
+      <div style="font-size: 1.5em; text-align: center; margin: 160px 0 90px;">
+        漂亮吗?
+      </div>
+      <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="xu-btn goback">返回</a>
+    </section>
+  </article>
+  
+  <article data-ui="view" id="about">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <h2>关于</h2>
+    </header>
+    <section class="scroll">
+      <p>基于 jQTouch(http://jqtjs.com/) 的客制化优化版本。使用 MIT 协议。</p>
+      <p>以 jqtouch 为蓝本的，手机 WebApp 框架。</p>
+      <p><strong>XUUI-jTouch</strong> Version 0.1 by <a href="http://xuui.net">By Xu.hel</a></p>
+      <p>使用 HTML, CSS, and jQuery.</p>
+    </section>
+  </article>
+  
+  <article data-ui="view" id="forms">
+    <header data-ui="toolbar">
+      <a href="#" class="xu-btn back"><i class="md-icon">arrow_back</i></a>
+      <h2>表单</h2>
+    </header>
+    <section class="scroll">
+      <form class="xu-form">
+        <fieldset class="xu-group">
+          <input type="text" class="xu-input-1" placeholder="Username">
+          <input type="text" class="xu-input-1" placeholder="Password">
+          <input type="email" class="xu-input-1" placeholder="Email">
+        </fieldset>
+        <fieldset class="xu-group">
+          <input type="text" class="xu-input-1" placeholder="A title">
+          <textarea class="xu-input-1" placeholder="Textareas work too"></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="state">State</label>
+          <select id="state" class="xu-input-1">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <input type="text" class="xu-input-rounded">
+          <button type="submit" class="xu-btn">Search</button>
+        </fieldset>
+        <fieldset>
+          <legend>A compact inline form</legend>
+          <label for="remember">
+            <input id="remember" type="checkbox"> Remember me
+          </label>
+        </fieldset>
+        <button type="submit" class="xu-btn xu-input-1 xu-btn-primary">Sign in</button>
+
+        <ul class="edit rounded">
+          <li><input type="text" name="name" placeholder="Text" id="some_name" /></li>
+          <li><input type="search" name="search" placeholder="Search" id="some_name" /></li>
+          <li><input type="tel" name="phone" placeholder="Phone" id="some_name" /></li>
+          <li><input type="number" pattern="[0-9]*" name="number" placeholder="Numbers" id="some_name" /></li>
+          <li><input type="number" name="zip" placeholder="Numbers 2" id="some_name" /></li>
+          <li><input type="email" name="email" placeholder="Email" id="some_name" /></li>
+          <li><input type="url" name="url" placeholder="Url" id="some_name" /></li>
+          <li><textarea placeholder="Textarea"></textarea></li>
+          <li>Sample Toggle <span class="toggle"><input type="checkbox" /></span></li>
+          <li>Toggle Style 2<input type="checkbox" class="toggle" /></li>
+          <li class="arrow">
+            <select id="lol">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+          </li>
+          <li><input type="password" name="some_name" value="iphonedelcopon" id="some_name" /></li>
+          <li><input type="checkbox" name="food" value="punch" title="Punch" /></li>
+          <li><input type="checkbox" name="food" value="pie" checked="checked" title="Pie" /></li>
+          <li><input type="radio" name="bag" value="paper" title="Paper" /></li>
+          <li><input type="radio" name="bag" value="plastic" title="Plastic" /></li>
+        </ul>
+      </form>
+    </section>
+  </article>
+  
+  <article data-ui="view" id="pageevents">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#"><i class="md-icon">arrow_back</i></a>
+      <h2>页面事件</h2>
+    </header>
+    <section class="info scroll" style="font-weight: normal;">
+    </section>
+  </article>
+  
+  <article data-ui="view" id="ui">
+    <header data-ui="toolbar">
+      <a class="xu-btn back" href="#"><i class="md-icon">arrow_back</i></a>
+      <h2>界面</h2>
+    </header>
+    <section class="scroll">
+      <h2 class="xu-menu-heading">按钮</h2>
+      <p><a href="#" class="xu-btn whiteButton">White</a></p>
+      <p><a href="#" class="xu-btn grayButton">Gray</a></p>
+      <p><a href="#" class="xu-btn redButton">Red</a></p>
+      <p><a href="#" class="xu-btn greenButton">Green</a></p>
+      <p><a href="#" class="xu-btn blueButton">Blue</a></p>
+          
+      <h2 class="xu-menu-heading">列表</h2>
+      <ul class="list-items xu-menu rounded">
+        <li class="item"><a href="#edge">Edge to Edge</a></li>
+        <li class="item"><a href="#plastic">Plastic</a></li>
+        <li class="item"><a href="#metal">Metal</a></li>
+      </ul>
+      <h2 class="xu-menu-heading">表单</h2>
+      <ul class="list-items xu-menu rounded">
+        <li class="arrow"><a href="#forms">Forms</a></li>
+      </ul>
+      <h2 class="xu-menu-heading">覆盖层</h2>
+      <ul class="list-items xu-menu rounded">
+        <li class="arrow"><a class="action" href="#actionsheet">Action</a></li>
+        <li class="arrow"><a class="menu" href="#menusheet">Menu</a></li>
+      </ul>
+    </section>
+  </article>
+  
+</body>
+</html>

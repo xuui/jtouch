@@ -1,0 +1,26 @@
+/*!
+Xu.css v1.0
+Copyright (c) 2016 Xuhel. All rights reserved.
+Licensed under The MIT License (MIT).
+LICENSE.md
+*/
+.xu-g{letter-spacing:-.31em;*letter-spacing:normal;*word-spacing:-.43em;text-rendering:optimizespeed;font-family:FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;display:-webkit-flex;-webkit-flex-flow:row wrap;display:-ms-flexbox;-ms-flex-flow:row wrap;-ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start}
+.opera-only:-o-prefocus,.xu-g{word-spacing:-.43em}
+.xu-g [class *="pure-u"]{font-family:sans-serif}
+.xu-u,.xu-u-1,.xu-u-1-5,.xu-u-2-5,.xu-u-3-5,.xu-u-4-5,.xu-u-5-5,.xu-u-1,.xu-u-2,.xu-u-3,.xu-u-4,.xu-u-5,.xu-u-6,.xu-u-7,.xu-u-8,.xu-u-9,.xu-u-10,.xu-u-11,.xu-u-12{display:inline-block;*display:inline;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}
+.xu-u-1-5{width:20%;*width:19.969%}
+.xu-u-2-5{width:40%;*width:39.969%}
+.xu-u-3-5{width:60%;*width:59.969%}
+.xu-u-4-5{width:80%;*width:79.969%}
+.xu-u-1{width:8.3333%;*width:8.3023%}
+.xu-u-2{width:16.6667%;*width:16.6357%}
+.xu-u-3{width:25%;*width:24.969%}
+.xu-u-4{width:33.3333%;*width:33.3023%}
+.xu-u-5{width:41.6667%;*width:41.6357%}
+.xu-u-6{width:50%;*width:49.969%}
+.xu-u-7{width:58.3333%;*width:58.3023%}
+.xu-u-8{width:66.6667%;*width:66.6357%}
+.xu-u-9{width:75%;*width:74.969%}
+.xu-u-10{width:83.3333%;*width:83.3023%}
+.xu-u-11{width:91.6667%;*width:91.6357%}
+.xu-u,.xu-u-5-5,.xu-u-12{width:100%}

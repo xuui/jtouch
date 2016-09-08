@@ -25,13 +25,14 @@ p{margin:0;}
 .cont-box{overflow:auto;background:#e2e2e2;width:100%;height:auto;-webkit-overflow-scrolling:touch;}
 
 .f-icon{display:block;flex:none;width:20px;height:20px;}
-.f-btn{flex:none;background:transparent;border:0;margin:10px;width:50px;height:25px;line-height:25px;text-align:center;color:#09f;}
+.f-btn{flex:none;background:transparent;border:0;padding:10px;width:44px;height:44px;line-height:24px;text-align:center;color:#09f;}
 
 /*导航*/
-.flex-nav{height:44px;line-height:44px;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+.flex-nav{height:48px;line-height:48px;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
 .flex-nav .nav-title{text-align:center;line-height:1.2;}
 .flex-nav .nav-title p{color:#aaa;font-size:12px;}
 .flex-nav .nav-title h1,.flex-nav .nav-title h2,.flex-nav .nav-title h3,.flex-nav .nav-title h4,.flex-nav .nav-title h5,.flex-nav .nav-title h6{font-weight:400;}
+.flex-nav .f-btn{width:48px;height:48px;padding:12px;}
 
 /* tab 栏 */
 .flex-tab{width:100%;height:44px;line-height:44px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}

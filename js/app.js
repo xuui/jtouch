@@ -67,12 +67,12 @@ jQT.goTo('#home');
           var mdicons=data.icons;
           $('#MaterialIcon #icons-cont').html('');
           for(var i=0;i<mdicons.length;i++){
-            $('#MaterialIcon #icons-cont').append('<li class="pure-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+            $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
           }
         });
       }
     }else{
-      //$('#Micon #icons-cont').html('<li class="pure-u-1">Loading...</li>');
+      //$('#Micon #icons-cont').html('<li class="xu-u-1">Loading...</li>');
     }
   });
   

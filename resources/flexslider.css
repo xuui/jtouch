@@ -27,8 +27,8 @@ html[xmlns] .flexslider .slides{display:block;}
 .no-js .flexslider .slides > li:first-child{display:block;}
 
 .flex-direction-nav{*height:0;}
-.flex-direction-nav a{position:absolute;top:50%;z-index:10;overflow:hidden;display:block;width:40px;height:40px;margin:-20px 0 0;opacity:0;cursor:pointer;color:rgba(0,0,0,.8);text-decoration:none;text-shadow:1px 1px 0 rgba(255,255,255,.3);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
-.flex-direction-nav a:before{font-family:"Material Icons";font-size:40px;display:inline-block;content:'chevron_left';color:rgba(255,255,255,1);}
+.flex-direction-nav a{position:absolute;top:50%;z-index:10;overflow:hidden;display:block;width:40px;height:40px;margin:-20px 0 0;opacity:0;cursor:pointer;color:rgba(0,0,0,.8);text-decoration:none;text-shadow:1px 1px 0 rgba(0,0,0,.5);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.flex-direction-nav a:before{font-family:"Material Icons";font-size:40px;display:inline-block;content:'chevron_left';color:rgba(0,0,0,1);}
 .flex-direction-nav a.flex-next:before{content:'chevron_right';}
 .flex-direction-nav .flex-prev{left:-50px;}
 .flex-direction-nav .flex-next{right:-50px;text-align:right;}
@@ -50,8 +50,8 @@ html[xmlns] .flexslider .slides{display:block;}
 
 .flex-control-paging li a{display:block;background:#888;background:rgba(0,0,0,.5);width:11px;height:11px;
 cursor:pointer;text-indent:-9999px;-webkit-border-radius:20px;border-radius:20px;}
-.flex-control-paging li a:hover{background:#aaa;background:rgba(255,255,255,.7);}
-.flex-control-paging li a.flex-active{background:#fff;background:rgba(255,255,255,1);cursor:default;}
+.flex-control-paging li a:hover{background:#aaa;background:rgba(0,0,0,.7);}
+.flex-control-paging li a.flex-active{background:#000;background:rgba(0,0,0,1);cursor:default;}
 
 .flex-control-thumbs{margin:5px 0 0;position:static;overflow:hidden;}
 .flex-control-thumbs li{width:25%;float:left;margin:0;}

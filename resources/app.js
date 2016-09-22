@@ -4,7 +4,7 @@ $(function(){
 
 $('#splash_slider').flexslider({
   animation:"slide",
-  //animationLoop:false,
+  animationLoop:false,
   directionNav:false,
   slideshow:false
   ,end:function(){

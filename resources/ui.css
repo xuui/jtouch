@@ -51,7 +51,7 @@ position:relative;z-index:1;background:#fff;height:48px;line-height:48px;text-al
 .flex-nav .nav-title p{color:#aaa;font-size:12px;}
 .flex-nav .btn{flex:none;background:transparent;border:0;width:48px;padding:12px;line-height:24px;font-size:24px;text-align:center;
 color:#09f;}
-.flex-nav .btn .md-icon{line-height:24px;vertical-align:baseline}
+.flex-nav .btn .md-icon{line-height:24px;}
 /* flex Nav End */
 
 

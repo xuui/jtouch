@@ -18,63 +18,68 @@
 <link href="resources/style.css" rel="stylesheet">
 </head>
 <body id="jqt">
-  <article data-ui="splash" id="Splash" class="current">
+  <article data-ui="splash" id="splash" class="">
     <section class="flexslider" id="splash_slider">
       <ul class="slides">
         <li style="background-image:url(images/slide1.jpg)"></li>
         <li style="background-image:url(images/slide2.jpg)"></li>
         <li style="background-image:url(images/slide3.jpg)"></li>
         <li style="background-image:url(images/slide4.jpg)">
-          <a class="xu-btn xu-btn-primary" href="#home">继续</a>
+          <a class="xu-btn xu-btn-primary" href="#main">继续</a>
         </li>
       </ul>
     </section>
   </article>
   
-  <article data-ui="view" id="shome" class="">
-    <header data-ui="toolbar">
+  <article data-ui="view" id="main" class="page flex flex-ver current">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn"><i class="md-icon">menu</i></a>
+      <!--<button class="btn"><i class="md-icon">menu</i></button>
+      <!--button class="btn"><i class="md-icon">keyboard_arrow_left</i></button-->
+      <div class="nav-title">
+        <h2>XUUI-jTouch</h2>
+      </div>            
+      <!--button class="f-btn md-icon">more_vert</button-->
+      <a class="btn slideup" id="-infoButton" href="#splash"><i class="md-icon">new_releases</i></a>
+    </header><!-- /header -->
+    
+    <!--header data-ui="toolbar">
       <a class="xu-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
       <a class="xu-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
-      <h1>XUUI-jTouch</h1>
-    </header>
+    </header-->
     <section class="scroll xu-menu">
 	  <div class="page-io">
-      <h1>Xuui-jtouch</h1>
-      <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
-      <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
-        <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
-      </p>
-      <p>
-        <a href="https://github.com/xuui/xuui-jtouch/zipball/master" class="button"><small>Download</small> .zip file</a>
-        <a href="https://github.com/xuui/xuui-jtouch/tarball/master" class="button"><small>Download</small> .tar.gz file</a>
-      </p>
-      <p class="pbotm"><a href="https://github.com/xuui/xuui-jtouch"><small>View project on</small> GitHub</a></p>
+        <h1>Xuui-jtouch</h1>
+        <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
+        <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
+          <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
+        </p>
+        <p>
+          <a href="https://github.com/xuui/xuui-jtouch/zipball/master" class="button"><small>Download</small> .zip file</a>
+          <a href="https://github.com/xuui/xuui-jtouch/tarball/master" class="button"><small>Download</small> .tar.gz file</a>
+        </p>
+        <p class="pbotm"><a href="https://github.com/xuui/xuui-jtouch"><small>View project on</small> GitHub</a></p>
 	  </div>
+    <!--
       <ul class="list-items xu-menu">
         <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
         <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
         <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
-        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <!--small class="counter">5</small--></a></li>
+        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <small class="counter">5</small></a></li>
         <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li>
       </ul>
+      -->
     </section>
-    <footer data-ui="toolbar" class="xu-g">
+    <!--footer data-ui="toolbar" class="xu-g">
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
-    </footer>
+    </footer-->
   </article>
   
-  <!--article class="page flex flex-ver">
-    <header class="tool-bar flex flex-nav">
-      <button class="f-btn md-icon">keyboard_arrow_left</i></button>
-      <div class="nav-title">
-        <h2>header</h2>
-      </div>            
-      <button class="f-btn md-icon">more_vert</button>
-    </header><!-- /header --><!--
+   <!--
     <section class="flex-item cont-box">
       <div class="flex flex-search">
         <span>搜索</span>
@@ -205,7 +210,7 @@
       </div>
 
     </section><!-- /section --><!--
-    <footer class="tool-bar">
+    <footer class="">
       <ul role="tablist" class="flex flex-tab">
         <li class="current"><a href="javascript:void(0)" role="tab"><span class="tab-title">title1</span></a></li>
         <li><a href="javascript:void(0)" role="tab"><span class="tab-title">title2</span></a></li>

@@ -25,9 +25,6 @@ input,textarea{-webkit-user-select:auto;user-select:auto}
 .md-icon{vertical-align:middle;}
 
 #jqt{overflow:hidden;position:absolute;right:0;top:0;left:0;bottom:0;-webkit-text-size-adjust:none;-webkit-perspective:1000;perspective:1000}
-[data-ui=view]{position:absolute;left:0;top:0;left:0;right:0;z-index:0;overflow:hidden;background:#efefef;box-shadow:0 0 9px rgba(0,0,0,.2);height:100%;width:100%;-webkit-transform:translate3d(0,0,0) rotate(0) scale(1);transform:translate3d(0,0,0) rotate(0) scale(1);display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical;}
-[data-ui=view].current{z-index:10}
-[data-ui=view]:not(.current):not(.in):not(.out){display:none}
 #jqt .scroll{position:relative;-webkit-box-flex:1;box-flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;-webkit-margin-collapse:separate}
 
 

@@ -1,6 +1,6 @@
 $(function(){
 'use strict';
-//var jQT=new $.jQT({preloadImages:[]});
+var jQT=new $.jQT({preloadImages:[]});
 
 $('#splash_slider').flexslider({
   animation:"slide",

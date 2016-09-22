@@ -17,8 +17,8 @@
 <title>XUUI-jTouch</title>
 <link href="resources/style.css" rel="stylesheet">
 </head>
-<body>
-  <article data-ui="splash" id="Splash" class="">
+<body id="jqt">
+  <article data-ui="splash" id="Splash" class="current">
     <section class="flexslider" id="splash_slider">
       <ul class="slides">
         <li style="background-image:url(images/slide1.jpg)"></li>
@@ -30,17 +30,14 @@
       </ul>
     </section>
   </article>
-  <!--
-  <article data-ui="view" id="home">
-  </article>
-  <article data-ui="view" id="home" class="current">
-    
-    <!--header data-ui="toolbar">
+  
+  <article data-ui="view" id="shome" class="">
+    <header data-ui="toolbar">
       <a class="xu-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
       <a class="xu-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
       <h1>XUUI-jTouch</h1>
-    </header-->
-    <!--section class="scroll xu-menu">
+    </header>
+    <section class="scroll xu-menu">
 	  <div class="page-io">
       <h1>Xuui-jtouch</h1>
       <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
@@ -57,17 +54,17 @@
         <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
         <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
         <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
-        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <!--small class="counter">5</small-></a></li>
+        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <!--small class="counter">5</small--></a></li>
         <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li>
       </ul>
-    </section-->
-    <!--footer data-ui="toolbar" class="xu-g">
+    </section>
+    <footer data-ui="toolbar" class="xu-g">
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
       <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
-    </footer->
+    </footer>
   </article>
   
   <!--article class="page flex flex-ver">
@@ -215,11 +212,14 @@
         <li><a href="javascript:void(0)" role="tab"><span class="tab-title">long title3</span></a></li>
         <li><a href="javascript:void(0)" role="tab"><span class="tab-title">title4</span></a></li>
       </ul>
-    </footer><!-- /footer -->
+    </footer><!-- /footer ->
   </article-->
 
 <!-- script -->
+<script src="cordova.js"></script>
 <script src="frameworks/jquery.min.js"></script>
+<script src="js/jqt.js"></script>
+<script src="js/jqtouch-jquery2.js"></script>
 <script src="frameworks/slides.js"></script>
 <script src="resources/app.js"></script>
 <script>

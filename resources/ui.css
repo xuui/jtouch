@@ -64,6 +64,10 @@ body{position:relative;}
 [data-ui=view],[data-ui=splash],
 .page{position:relative;height:100%;width:100%;}
 [data-ui=splash]{margin:0;}
+[data-ui=view]{position:absolute;left:0;top:0;left:0;right:0;z-index:0;overflow:hidden;background:#efefef;box-shadow:0 0 9px rgba(0,0,0,.2);height:100%;width:100%;-webkit-transform:translate3d(0,0,0) rotate(0) scale(1);transform:translate3d(0,0,0) rotate(0) scale(1);display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical;}
+[data-ui=view].current{z-index:10}
+[data-ui=view]:not(.current):not(.in):not(.out){display:none}
+
 
 
 

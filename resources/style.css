@@ -8,6 +8,7 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 @import url(xu/base.css);
 @import url(xu/buttons.css);
 @import url(ui.css);
+@import url(../css/animation.css);
 @import url(flexslider.css);
 
 body{background:#eee;color:#212121;}

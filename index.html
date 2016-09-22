@@ -14,18 +14,70 @@
 <meta name="theme-color" content="#343">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<title>XUUI-jTouch flex</title>
+<title>XUUI-jTouch</title>
 <link href="resources/style.css" rel="stylesheet">
 </head>
 <body>
-  <article class="page flex flex-ver">
+  <article data-ui="splash" id="Splash" class="">
+    <section class="flexslider" id="splash_slider">
+      <ul class="slides">
+        <li style="background-image:url(images/slide1.jpg)"></li>
+        <li style="background-image:url(images/slide2.jpg)"></li>
+        <li style="background-image:url(images/slide3.jpg)"></li>
+        <li style="background-image:url(images/slide4.jpg)">
+          <a class="xu-btn" href="#home">继续</a>
+        </li>
+      </ul>
+    </section>
+  </article>
+  <!--
+  <article data-ui="view" id="home">
+  </article>
+  <article data-ui="view" id="home" class="current">
+    
+    <!--header data-ui="toolbar">
+      <a class="xu-btn slideup" id="infoButton" href="#about"><i class="md-icon">new_releases</i></a>
+      <a class="xu-btn slideright btn-left"  href="#M"><i class="md-icon">menu</i></a>
+      <h1>XUUI-jTouch</h1>
+    </header-->
+    <!--section class="scroll xu-menu">
+	  <div class="page-io">
+      <h1>Xuui-jtouch</h1>
+      <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
+      <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
+        <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
+      </p>
+      <p>
+        <a href="https://github.com/xuui/xuui-jtouch/zipball/master" class="button"><small>Download</small> .zip file</a>
+        <a href="https://github.com/xuui/xuui-jtouch/tarball/master" class="button"><small>Download</small> .tar.gz file</a>
+      </p>
+      <p class="pbotm"><a href="https://github.com/xuui/xuui-jtouch"><small>View project on</small> GitHub</a></p>
+	  </div>
+      <ul class="list-items xu-menu">
+        <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
+        <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
+        <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
+        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <!--small class="counter">5</small-></a></li>
+        <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li>
+      </ul>
+    </section-->
+    <!--footer data-ui="toolbar" class="xu-g">
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+      <div class="xu-u-1-5"><a class="xu-btn"  href="#main">footer</a></div>
+    </footer->
+  </article>
+  
+  <!--article class="page flex flex-ver">
     <header class="tool-bar flex flex-nav">
       <button class="f-btn md-icon">keyboard_arrow_left</i></button>
       <div class="nav-title">
         <h2>header</h2>
       </div>            
       <button class="f-btn md-icon">more_vert</button>
-    </header><!-- /header -->
+    </header><!-- /header --><!--
     <section class="flex-item cont-box">
       <div class="flex flex-search">
         <span>搜索</span>
@@ -155,7 +207,7 @@
         <p>tentcontetcontentcontentcontent</p>
       </div>
 
-    </section><!-- /section -->
+    </section><!-- /section --><!--
     <footer class="tool-bar">
       <ul role="tablist" class="flex flex-tab">
         <li class="current"><a href="javascript:void(0)" role="tab"><span class="tab-title">title1</span></a></li>
@@ -164,11 +216,14 @@
         <li><a href="javascript:void(0)" role="tab"><span class="tab-title">title4</span></a></li>
       </ul>
     </footer><!-- /footer -->
-  </article>
+  </article-->
 
 <!-- script -->
 <script src="frameworks/jquery.min.js"></script>
+<script src="frameworks/slides.js"></script>
 <script src="resources/app.js"></script>
+<script>
+</script>
 <!-- script End -->
 </body>
 </html>

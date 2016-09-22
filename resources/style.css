@@ -5,9 +5,23 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 @charset "UTF-8";
 @import url(./fonts/material-icons.css);
 
-@import url(../css/base.css);
+@import url(xu/base.css);
+@import url(xu/buttons.css);
 @import url(ui.css);
+@import url(flexslider.css);
 
+body{background:#eee;color:#212121;}
+
+a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;touch-action:manipulation;}
+input,button,select,textarea{outline:none}
+input,textarea{-webkit-user-select:auto;user-select:auto}
+::-webkit-input-placeholder{color:#a3a3c0;text-shadow:#fff 0 1px 0}
+
+h1,h2,h3,h4,h5,h6{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+p{margin:0;}
+
+.list-view{background:#fafafa}
 
 .text-3d{color:#333;text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,
 0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,
@@ -15,3 +29,8 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),
 0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),
 0 20px 20px rgba(0,0,0,.15);}
+
+#splash_slider,#splash_slider .flex-viewport,#splash_slider .slides,#splash_slider .slides li{width:100%;height:100%;}
+#splash_slider .slides li{background:no-repeat 50% 50%;background-size:cover;text-align:center;/*padding:32px;*/}
+#splash_slider .slides li .xu-btn{position:absolute;bottom:40px;margin-left:-60px;width:120px;background:transparent;border:1px solid #fff;color:#fff;}
+

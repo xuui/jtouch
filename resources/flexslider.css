@@ -48,10 +48,10 @@ html[xmlns] .flexslider .slides{display:block;}
 .flex-control-nav{width:100%;position:absolute;bottom:0;text-align:center;}
 .flex-control-nav li{margin:0 5px;display:inline-block;zoom:1;*display:inline;}
 
-.flex-control-paging li a{display:block;overflow:hidden;background:rgba(0,0,0,.2);width:9px;height:9px;
+.flex-control-paging li a{display:block;overflow:hidden;background:rgba(255,255,255,.5);width:9px;height:9px;
 cursor:pointer;text-indent:-9999px;-webkit-border-radius:10px;border-radius:10px;}
-.flex-control-paging li a:hover{background:rgba(0,0,0,.6);}
-.flex-control-paging li a.flex-active{background:rgba(0,0,0,1);cursor:default;}
+.flex-control-paging li a:hover{background:rgba(255,255,255,.6);}
+.flex-control-paging li a.flex-active{background:rgba(255,255,255,1);cursor:default;}
 
 .flex-control-thumbs{margin:5px 0 0;position:static;overflow:hidden;}
 .flex-control-thumbs li{width:25%;float:left;margin:0;}

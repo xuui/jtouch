@@ -69,14 +69,16 @@ header.status{padding-top:20px;height:68px;}
 
 
 /* flex 列表 */
-.flex-simple{-webkit-box-align:center;-webkit-align-items:center;align-items:center;background:#fff;border-bottom:1px solid #ccc;padding:10px 15px;}
-.s-img{background:#31bbee;margin-right:10px;width:50px;height:50px;}
+.flex-simple{-webkit-box-align:center;-webkit-align-items:center;align-items:center;border-bottom:1px solid;padding:10px 15px;}
+.s-img{margin-right:10px;width:50px;height:50px;}
 .s-tit{font-size:20px;font-weight:400;}
 .s-tit,.s-desc{line-height:1.2;}
+.flex-simple{background:#fff;border-color:#ccc;}
+.s-img{background:#0bd;}
 
 
 /* flex 消息提示 */
-.flex-info{-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;background:#f2f2f2;border-bottom:1px solid #ddd;border-top:1px solid #ddd;margin:10px 0;padding:10px;}
+.flex-info{-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;border-bottom:1px solid;border-top:1px solid;margin:10px 0;padding:10px;}
 .flex-info .f-icon{margin:0 15px 0 10px;}
 .flex-info-center{-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
 
@@ -92,16 +94,16 @@ header.status{padding-top:20px;height:68px;}
 [data-ui=view]{background:#efefef;}
 [data-ui=toolbar]{background:#fff;}
 .cont-box{background:#e2e2e2;}
-.f-btn{background:transparent;color:#09f;}
+.f-btn{background:transparent;color:#0bd;}
 
-.flex-nav{background-color:#09f;}
+.flex-nav{background-color:#0bd;}
 .flex-nav .nav-title{color:#fff;}
 .flex-nav .nav-title p{color:#aaa;}
 .flex-nav .btn{color:#fff;}
 
 .flex-tab li{color:#777;border-color:#ddd;}
 .flex-tab li .tab-title{color:#777;}
-.flex-tab li.current .tab-title{color:#259ade;}
+.flex-tab li.current .tab-title{color:#0bd;}
 
 .flex-search{background:#f1f1f1;border-color:#ccc;}
 .flex-search .input{border-color:#aaa;}

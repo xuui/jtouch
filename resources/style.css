@@ -6,6 +6,8 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 @import url(./fonts/material-icons.css);
 
 @import url(xu/base.css);
+@import url(xu/grids.css);
+@import url(xu/grids-responsive.css);
 @import url(xu/buttons.css);
 @import url(ui.css);
 @import url(animation.css);
@@ -47,5 +49,9 @@ text-shadow:0 1px 0 #ccc,
 #splash_slider .flex-control-nav{bottom:20px}
 #splash_slider .flex-control-paging li a.flex-active{background:#0078e7}
 
+.page-io .btn{margin-bottom:10px;}
+
 .center-cont{background:rgba(255,255,255,.5)}
 .center-cont h2{margin-bottom:1em;}
+
+.card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px}

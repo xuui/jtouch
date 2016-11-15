@@ -6,7 +6,7 @@ if(window.navigator.standalone){
   $('header').addClass('status');
 }
 $('#splash_slider').flexslider({
-  animation:"slide",
+  animation:'slide',
   animationLoop:false,
   directionNav:false,
   slideshow:false

@@ -54,4 +54,6 @@ text-shadow:0 1px 0 #ccc,
 .center-cont{background:rgba(255,255,255,.5)}
 .center-cont h2{margin-bottom:1em;}
 
+.popmenu{background:rgba(240,240,240,.9)}
+
 .card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px}

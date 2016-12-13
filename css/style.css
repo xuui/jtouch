@@ -8,9 +8,9 @@ may be freely distributed under the MIT license.
 @import url(base.css);
 @import url(../resources/xu/grids.css);
 @import url(menus.css);
-@import url(buttons.css);
+@import url(../resources/xu/buttons.css);
 @import url(forms.css);
-@import url(../css/animation.css);
+@import url(animation.css);
 @import url(fonts/material-icons.css);
 
 /* Base UI *//*

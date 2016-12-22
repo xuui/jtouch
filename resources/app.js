@@ -25,7 +25,7 @@ $('#splash').bind('pageAnimationEnd',function(e,info){
 $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
   if(info.direction=='in'){
     if($('#MaterialIcon #icons-cont').html()==''){
-      $('#MaterialIcon #icons-cont').html('<li class="xu-u-1">Loadind Material Icon</li>');
+      $('#MaterialIcon #icons-cont').html('<li class="xu-u">Loadind Material Icon...</li>');
       $.getJSON('resources/fonts/mdicons.json',function(data){
         var mdicons=data.icons;
         $('#MaterialIcon #icons-cont').html('');
@@ -34,9 +34,7 @@ $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
         }
       });
     }
-  }else{
-    //$('#MaterialIcon #icons-cont').html('<li class="xu-u-1">Loading...</li>');
-  }
+  }else{}
 });
 /*if(window.navigator.standalone){
   $('header').addClass('status');

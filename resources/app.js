@@ -13,12 +13,12 @@ $('#splash').bind('pageAnimationEnd',function(e,info){
       animationLoop:false,
       directionNav:false,
       slideshow:false,
-      start:function(){
-      },end:function(){
+      end:function(slider){
         console.log('Splash slider End.');
       }
     });
   }else{
+    $('#splash_slider').flexslider(0);
   }
 });
 

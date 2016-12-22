@@ -15,6 +15,22 @@ $('#splash_slider').flexslider({
   }
 });
 
+$('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
+  if(info.direction=='in'){
+    if($('#MaterialIcon #icons-cont').html()==''){
+      $('#MaterialIcon #icons-cont').html('<li class="xu-u-1">Loadind Material Icon</li>');
+      $.getJSON('resources/fonts/mdicons.json',function(data){
+        var mdicons=data.icons;
+        $('#MaterialIcon #icons-cont').html('');
+        for(var i=0;i<mdicons.length;i++){
+          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+        }
+      });
+    }
+  }else{
+    //$('#MaterialIcon #icons-cont').html('<li class="xu-u-1">Loading...</li>');
+  }
+});
 /*if(window.navigator.standalone){
   $('header').addClass('status');
 }*/

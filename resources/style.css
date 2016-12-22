@@ -13,7 +13,7 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 @import url(animation.css);
 @import url(flexslider.css);
 
-body{background:#eee;color:#212121;}
+body{background:#eee;color:#424242;}
 
 a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;touch-action:manipulation;}
 input,button,select,textarea{outline:none}
@@ -21,6 +21,7 @@ input,textarea{-webkit-user-select:auto;user-select:auto}
 ::-webkit-input-placeholder{color:#a3a3c0;text-shadow:#fff 0 1px 0}
 
 h1,h2,h3,h4,h5,h6{margin:0;}
+
 ul{margin:0;padding:0;list-style:none;}
 p{margin:0;}
 
@@ -56,4 +57,18 @@ text-shadow:0 1px 0 #ccc,
 
 .popmenu{background:rgba(240,240,240,.9)}
 
-.card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px}
+.card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px;font-size:12px;}
+.card h1,.card h2{margin-bottom:.4em;}
+.card h1{font-size:20px;}
+.card h2{font-size:16px;}
+.card p{margin-bottom:5px;}
+.card .btn{margin-bottom:.5em;}
+
+#icons-cont{padding:10px 0;margin:0;list-style:none outside;}
+#icons-cont .xu-u-1{text-align:center;}
+#icons-cont .xu-u-3{padding:5px;text-align:center;}
+#icons-cont .xu-u-3 i{font-size:32px;color:#555;}
+#icons-cont .xu-u-3 .caption{display:block;font-size:12px;line-height:1.3;word-break:break-all;}
+#icons-cont .xu-u-3:hover,#icons-cont .xu-u-3:hover i{color:#09f}
+
+

@@ -23,7 +23,6 @@ body{position:relative;}
 header.status{padding-top:20px;height:68px;}
 /* Tool bar End */
 
-
 /* flex box */
 .flex{display:-webkit-box;display:-webkit-flex;display:flex;}
 .flex-ver{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;}
@@ -57,7 +56,6 @@ header.status{padding-top:20px;height:68px;}
 .flex-search span{display:block;flex:none;padding:0;padding-right:0;width:50px;text-align:center;}
 .flex-search .f-icon{margin-left:10px;}
 /* flex Search Bar End */
-
 
 /* flex Line Item */
 .flex-litem{-webkit-box-align:center;-webkit-align-items:center;align-items:center;border-bottom:1px solid;margin-bottom:1px;padding:10px 15px;text-decoration:none;}

@@ -5,13 +5,20 @@ if(window.navigator.standalone){
   //alert('0');
   $('header').addClass('status');
 }
-$('#splash_slider').flexslider({
-  animation:'slide',
-  animationLoop:false,
-  directionNav:false,
-  slideshow:false
-  ,end:function(){
-    console.log('Splash slider End.');
+  
+$('#splash').bind('pageAnimationEnd',function(e,info){
+  if(info.direction=='in'){
+    $('#splash_slider').flexslider({
+      animation:'slide',
+      animationLoop:false,
+      directionNav:false,
+      slideshow:false,
+      start:function(){
+      },end:function(){
+        console.log('Splash slider End.');
+      }
+    });
+  }else{
   }
 });
 

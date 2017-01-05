@@ -44,6 +44,22 @@ text-shadow:0 1px 0 #ccc,
             0 20px 20px rgba(0,0,0,.15);
 }
 
+#depth{margin:16px;background:#fff;border-radius:4px;padding:16px;}
+
+.z-depth-1{box-shadow:0 -1px 1px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.24);}
+.z-depth-2{box-shadow:0 -3px 3px rgba(0,0,0,.16),0 3px 3px rgba(0,0,0,.23);}
+.z-depth-3{box-shadow:0 -10px 10px rgba(0,0,0,.19),0 6px 3px rgba(0,0,0,.23);}
+.z-depth-4{box-shadow:0 -14px 14px rgba(0,0,0,.25),0 10px 5px rgba(0,0,0,.22);}
+.z-depth-5{box-shadow:0 -19px 19px rgba(0,0,0,.3),0 15px 6px rgba(0,0,0,.22);}
+
+
+.btn-z-depth-1{box-shadow:0 1px 1px rgba(0,0,0,.24);}
+.btn-z-depth-2{box-shadow:0 3px 3px rgba(0,0,0,.23);}
+.btn-z-depth-3{box-shadow:0 6px 3px rgba(0,0,0,.23);}
+.btn-z-depth-4{box-shadow:0 10px 5px rgba(0,0,0,.22);}
+.btn-z-depth-5{box-shadow:0 15px 6px rgba(0,0,0,.22);}
+
+
 #splash_slider,#splash_slider .flex-viewport,#splash_slider .slides,#splash_slider .slides li{width:100%;height:100%;}
 #splash_slider .slides li{background:no-repeat 50% 50%;background-size:cover;text-align:center;/*padding:32px;*/}
 #splash_slider .slides li .xu-btn{position:absolute;bottom:5.2em;margin-left:-60px;width:120px;}
@@ -57,7 +73,7 @@ text-shadow:0 1px 0 #ccc,
 
 .popmenu{background:rgba(240,240,240,.9)}
 
-.card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px;font-size:12px;}
+.card{background:#fff;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.15);margin:16px;border-radius:3px;font-size:14px;}
 .card h1,.card h2{margin-bottom:.4em;}
 .card h1{font-size:20px;}
 .card h2{font-size:16px;}

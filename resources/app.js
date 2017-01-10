@@ -30,7 +30,7 @@ $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
         var mdicons=data.icons;
         $('#MaterialIcon #icons-cont').html('');
         for(var i=0;i<mdicons.length;i++){
-          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><a href="javascript:;"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></a></li>');
         }
       });
     }

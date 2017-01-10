@@ -67,6 +67,7 @@ text-shadow:0 1px 0 #ccc,
 #splash_slider .flex-control-paging li a.flex-active{background:#0078e7}
 
 .page-io .btn{margin-bottom:10px;}
+.page-io .btn small{display:block;font-size:10px;}
 
 .center-cont{background:rgba(255,255,255,.5)}
 .center-cont h2{margin-bottom:1em;}

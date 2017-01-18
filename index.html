@@ -75,14 +75,11 @@
       <!--button class="btn"><i class="md-icon">navigate_before</i></button-->
       <div class="nav-title">
         <h2>XUUI-jTouch</h2>
-      </div>            
+      </div>
       <!--button class="btn md-icon">more_vert</button-->
       <a class="btn slideup" id="-infoButton" href="#splash"><i class="md-icon">new_releases</i></a>
     </header><!-- /header -->
     <section class="flex-item cont-box scroll xu-menu">
-      
-      <div id="depth" class="depth z-depth-1">sda</div>
-      
       <div class="card page-io">
           <h1>Xuui-jtouch</h1>
           <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
@@ -116,17 +113,8 @@
           <div class="s-img"><i class="md-icon">view_carousel</i></div>
           <div class="flex-item s-word">
             <p class="s-tit">动画</p>
-            <p class="s-desc">description</p>
-            <p class="s-desc">description</p>
-          </div>
-          <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-        <li>
-          <a class="flex flex-litem" href="#pageevents" data-custom="WOOT!">
-          <div class="s-img"><i class="md-icon">toc</i></div>
-          <div class="flex-item s-word">
-            <p class="s-tit">页面事件</p>
+            <p class="s-desc">UI Animation</p>
+            <p class="s-desc">Powered by CSS3</p>
           </div>
           <i class="f-icon md-icon">keyboard_arrow_right</i>
           </a>
@@ -136,6 +124,15 @@
           <div class="s-img"><i class="md-icon">layers</i></div>
           <div class="flex-item s-word">
             <p class="s-tit">界面</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#pageevents" data-custom="WOOT!">
+          <div class="s-img"><i class="md-icon">toc</i></div>
+          <div class="flex-item s-word">
+            <p class="s-tit">页面事件</p>
           </div>
           <i class="f-icon md-icon">keyboard_arrow_right</i>
           </a>
@@ -233,7 +230,7 @@
       <a class="btn back" href="#main"><i class="md-icon">navigate_before</i></a>
       <div class="nav-title">
         <h2>Material 图标</h2>
-      </div>            
+      </div>
       <button class="btn"></button>
     </header>
     <section class="flex-item cont-box scroll">
@@ -246,19 +243,141 @@
       <a class="btn back" href="#main"><i class="md-icon">navigate_before</i></a>
       <div class="nav-title">
         <h2>UI 组件</h2>
-      </div>            
+      </div>
       <button class="btn"></button>
     </header>
     <section class="flex-item cont-box scroll xu-menu">
-      <ul class="list-items xu-menu">
-        <li class="item"><a href="#MaterialIcon"><i class="md-icon">dialpad</i> Material 图标</a></li>
-        <li class="item"><a href="#animations"><i class="md-icon">view_carousel</i> 动画</a></li>
-        <li class="item"><a href="#pageevents" data-custom="WOOT!"><i class="md-icon">toc</i> 页面事件</a></li>
-        <li class="item"><a href="#ui"><i class="md-icon">layers</i> 界面 <small class="counter">5</small></a></li>
-        <li class="item"><a href="#forms"><i class="md-icon">playlist_add_check</i> 表单</a></li>
+      
+      <div id="depth" class="depth z-depth-1">sda</div>
+      
+      <ul>
+        <li>
+          <a class="flex flex-litem" href="#MaterialIcon">
+            <div class="s-img"><i class="md-icon">dialpad</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">Material 图标</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#animations">
+            <div class="s-img"><i class="md-icon">view_carousel</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">动画</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#pageevents">
+            <div class="s-img"><i class="md-icon">toc</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">页面事件</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#ui">
+            <div class="s-img"><i class="md-icon">layers</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">界面</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#forms">
+            <div class="s-img"><i class="md-icon">playlist_add_check</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">表单</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
       </ul>
     </section>
   </article><!-- / #uico -->
+  
+  <article data-ui="view" id="animations" class="page flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#main"><i class="md-icon">navigate_before</i></a>
+      <div class="nav-title">
+        <h2>UI 动画</h2>
+      </div>
+      <button class="btn"></button>
+    </header>
+    <section class="flex-item cont-box scroll xu-menu">
+      <ul>
+        <li><a class="flex flex-litem" data-title="滑入 Slide" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">滑入</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem slideup" data-title="向上滑入 Slide Up" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">向上滑入</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem dissolve" data-title="溶解 Dissolve" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">溶解</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem pop" data-title="弹出 Pop" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">弹出</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem flipright" data-title="右翻转 Flip right" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">右翻转</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem flipleft" data-title="左翻转 Flip left" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">左翻转</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem cube" data-title="立方体 Cube" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">立方体</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem swap" data-title="交换 Swap" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">交换</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+      </ul>
+    </section>
+  </article><!-- / #animations -->
+  
+  <article data-ui="view" id="animdemo" class="page flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#animations"><i class="md-icon">navigate_before</i></a>
+      <div class="nav-title">
+        <h2 class="vtitle">动画演示</h2>
+      </div>
+      <button class="btn"></button>
+    </header>
+    <section class="flex-item cont-box scroll xu-menu">
+      <div style="font-size:1.5em;text-align:center;margin:160px 0 90px;">
+        效果漂亮吗?
+      </div>
+      <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#animations" class="xu-btn goback">返回</a>
+    </section>
+  </article><!-- / #animdemo -->
+  
   
    <!--
     <section class="flex-item cont-box">

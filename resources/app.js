@@ -36,6 +36,11 @@ $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
     }
   }else{}
 });
+
+$('#animdemo').bind('pageAnimationStart',function(e,info){
+  $(this).find('h2.vtitle').html($(this).data('referrer').data('title'));
+});
+
 /*if(window.navigator.standalone){
   $('header').addClass('status');
 }*/

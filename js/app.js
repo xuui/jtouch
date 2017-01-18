@@ -57,9 +57,6 @@ jQT.goTo('#home');
     $(this).find('.info').append('Finished animating '+info.direction+'.<br><br>');
   });
   
-  $('#animdemo').bind('pageAnimationStart',function(e,info){
-    $(this).find('h2.vtitle').html($(this).data('referrer').data('title'));
-  });
   $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
     if(info.direction=='in'){
       if($('#MaterialIcon #icons-cont').html()==''){

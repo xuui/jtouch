@@ -51,7 +51,7 @@ Licensed under the MIT License.
 #jqt .slideup.in{-webkit-animation-name:slideUpIn;animation-name:slideUpIn;}
 #jqt .slideup.out{-webkit-animation-name:slideUpOut;animation-name:slideUpOut}
 #jqt .slidedown.in{-webkit-animation-name:slideDownIn;animation-name:slideDownIn}
-#jqt .slidedown.out{-webkit-animation-name:slideDownOut;animation-name:slideDownOut;z-index:11!important}
+#jqt .slidedown.out{-webkit-animation-name:slideDownOut;animation-name:slideDownOut;}
 #jqt .slidedown,#jqt .slideleft,#jqt .slideright,#jqt .slideup{-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}
 #jqt .flipleft{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 #jqt .flipleft.in{-webkit-animation-name:flipLeftIn;animation-name:flipLeftIn}

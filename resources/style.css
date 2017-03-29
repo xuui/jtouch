@@ -3,7 +3,7 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 */
 
 @charset "UTF-8";
-@import url(./fonts/material-icons.css);
+@import url(fonts/material-icons.css);
 
 @import url(xu/base.css);
 @import url(xu/grids.css);
@@ -89,4 +89,18 @@ text-shadow:0 1px 0 #ccc,
 #icons-cont .xu-u-3 .caption{display:block;font-size:12px;line-height:1.3;word-break:break-all;}
 #icons-cont .xu-u-3:hover,#icons-cont .xu-u-3:hover i{color:#09f}
 
+.xu-kit{padding:8px;}
+.xu-kit h3{font-weight:400;padding:8px 4px;border-bottom:1px solid #ccc;margin:0 0 16px}
+.xu-kit .kitbox{padding-bottom:1em;}
+.kitbox p{margin-bottom:1em;}
+
+.kitbox .xu-btn{margin:4px;}
+
+
+.kitbox .tool-bar{background:#fff;}
+
+
+.key_shadow {
+  box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24)，0 1px 6.86px 0.14px rgba(0, 0, 0, 0.16);
+}
 

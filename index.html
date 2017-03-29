@@ -32,11 +32,12 @@
 <link href="resources/style.css" rel="stylesheet">
 </head>
 <body id="jqt">
-  <article data-ui="loading" id="loading" class="">
+  <article data-ui="view" id="loading" class="flex flex-ver">
     <!-- -->
+    loading
     <!-- -->
   </article><!-- / #loading -->
-  <article data-ui="splash" id="splash" class="page flex flex-ver">
+  <article data-ui="view" id="splash" class="flex flex-ver">
     <section class="flexslider" id="splash_slider">
       <ul class="slides">
         <li style="background-image:url(images/slide1.jpg)">
@@ -80,7 +81,7 @@
     </section>
   </article><!-- / #splash -->
   
-  <article data-ui="view" id="main" class="page flex flex-ver current">
+  <article data-ui="view" id="main" class="flex flex-ver">
     <header data-ui="toolbar" class="flex flex-nav">
       <a class="btn" href="#uico"><i class="md-icon">menu</i></a>
       <!--button class="btn"><i class="md-icon">arrow_back</i></button-->
@@ -183,7 +184,7 @@
     </footer>
   </article><!-- / #main -->
   
-  <article data-ui="view" id="MaterialIcon" class="page flex flex-ver">
+  <article data-ui="view" id="MaterialIcon" class="flex flex-ver">
     <header data-ui="toolbar" class="flex flex-nav">
       <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
       <div class="nav-title">
@@ -196,69 +197,104 @@
     </section>
   </article><!-- / #MaterialIcon -->
   
-  <article data-ui="view" id="uico" class="page flex flex-ver">
+  <article data-ui="view" id="uico" class="flex flex-ver current">
     <header data-ui="toolbar" class="flex flex-nav">
       <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
       <div class="nav-title">
-        <h2>UI 组件</h2>
+        <h2>UI Kit</h2>
       </div>
       <button class="btn"></button>
     </header>
-    <section class="flex-item cont-box scroll xu-menu">
+    <section class="flex-item cont-box scroll xu-kit">
+      <!-- xu-kit -->
+      <div class="kitbox">
+        <h3>按钮</h3>
+        <button type="button" class="xu-btn">Button</button>
+        <button type="button" class="xu-btn xu-btn-default">Default</button>
+        <button type="button" class="xu-btn xu-btn-primary">Primary</button>
+        <button type="button" class="xu-btn xu-btn-success">Success</button>
+        <button type="button" class="xu-btn xu-btn-info">Info</button>
+        <button type="button" class="xu-btn xu-btn-warning">Warning</button>
+        <button type="button" class="xu-btn xu-btn-danger">Danger</button>
+        <button type="button" class="xu-btn xu-btn-link">Link</button>
+      </div>
       
-      <div id="depth" class="depth z-depth-1">sda</div>
+      <div class="kitbox">
+        <h3>输入 Input</h3>
+        <!--
+        <input type="checkbox">
+        <input type="radio">
+        <input type="range">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        --><!--
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="time">
+        <input type="datetime">
+        <input type="datetime-local">
+        --><!--
+        <input type="button" value="button">
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        --><!--
+        <input type="color">
+        -->     
+        <p><input type="text" placeholder="text"></p>
+        <p><input type="email" placeholder="email"></p>
+        <p><input type="password" placeholder="password"></p>
+        <p><input type="url" placeholder="url"></p>
+        <p><input type="number" placeholder="number"></p>
+        <p><input type="search" placeholder="search"></p>
+        <p><textarea placeholder="textarea"></textarea></p>
+        
+        
+      </div>
+      <div class="kitbox">
+        <h3>-</h3>
+      </div>
+      <div class="kitbox">
+        <h3>-</h3>
+      </div>
+      <div class="kitbox">
+        <h3>导航栏</h3>
+        <div class="flex flex-nav">
+          <a class="btn"><i class="md-icon">arrow_back</i></a>
+          <div class="nav-title">
+            <h2>导航栏标题</h2>
+          </div>
+          <button class="btn"><i class="md-icon">more_horiz</i></button>
+        </div>
+      </div>
+      <div class="kitbox">
+        <h3>工具栏</h3>
+        <div class="tool-bar">
+          <ul role="tablist" class="flex flex-tab">
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">apps</i></span></a></li>
+            <li class="current"><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">playlist_add_check</i></span></a></li>
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">gamepad</i></span></a></li>
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">more_vert</i></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="kitbox">
+        <h3>搜索栏</h3>
+        <div class="flex flex-search">
+          <span>搜索</span>
+          <div class="input"><input type="text" placeholder="请输入搜索..."></div>
+          <button class="f-btn md-icon">search</button>
+        </div>
+      </div>
       
-      <ul>
-        <li>
-          <a class="flex flex-litem" href="#MaterialIcon">
-            <div class="s-img"><i class="md-icon">dialpad</i></div>
-            <div class="flex-item s-word">
-              <p class="s-tit">Material 图标</p>
-            </div>
-            <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-        <li>
-          <a class="flex flex-litem" href="#animations">
-            <div class="s-img"><i class="md-icon">view_carousel</i></div>
-            <div class="flex-item s-word">
-              <p class="s-tit">动画</p>
-            </div>
-            <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-        <li>
-          <a class="flex flex-litem" href="#pageevents">
-            <div class="s-img"><i class="md-icon">toc</i></div>
-            <div class="flex-item s-word">
-              <p class="s-tit">页面事件</p>
-            </div>
-            <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-        <li>
-          <a class="flex flex-litem" href="#ui">
-            <div class="s-img"><i class="md-icon">layers</i></div>
-            <div class="flex-item s-word">
-              <p class="s-tit">界面</p>
-            </div>
-            <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-        <li>
-          <a class="flex flex-litem" href="#forms">
-            <div class="s-img"><i class="md-icon">playlist_add_check</i></div>
-            <div class="flex-item s-word">
-              <p class="s-tit">表单</p>
-            </div>
-            <i class="f-icon md-icon">keyboard_arrow_right</i>
-          </a>
-        </li>
-      </ul>
+      
+      <!-- / xu-kit -->
+      
     </section>
   </article><!-- / #uico -->
   
-  <article data-ui="view" id="animations" class="page flex flex-ver">
+  <article data-ui="view" id="animations" class="flex flex-ver">
     <header data-ui="toolbar" class="flex flex-nav">
       <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
       <div class="nav-title">
@@ -320,7 +356,7 @@
     </section>
   </article><!-- / #animations -->
   
-  <article data-ui="view" id="animdemo" class="page flex flex-ver">
+  <article data-ui="view" id="animdemo" class="flex flex-ver">
     <header data-ui="toolbar" class="flex flex-nav">
       <a class="btn back" href="#animations"><i class="md-icon">arrow_back</i></a>
       <div class="nav-title">
@@ -339,11 +375,6 @@
   
    <!--
     <section class="flex-item cont-box">
-      <div class="flex flex-search">
-        <span>搜索</span>
-        <div class="input"><input type="text"></div>
-        <button class="f-btn md-icon">search</button>
-      </div>
       <ul>
         <li>
           <div class="flex flex-litem">

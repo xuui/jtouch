@@ -17,7 +17,10 @@ input[type=search],
 textarea{background:#fff;margin:0px 0;padding:8px;border-radius:8px;border:1px solid #c8c8cd;box-sizing:border-box;width:100%;font-size:16px;}
 textarea{resize:vertical;}
 
-input[type=button],input[type=reset],input[type=submit],button{}
+input[type=button],
+input[type=reset],
+input[type=submit],
+button{}
 input[type=image]{}
 input[type=checkbox]{}
 input[type=radio]{}
@@ -79,7 +82,7 @@ header.status{padding-top:20px;}
 
 /* flex Search Bar */
 .flex-search{-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;border-bottom:1px solid;}
-.flex-search .input{border:1px solid;margin-left:10px;padding:0;}
+.flex-search .input{border:1px solid;margin-left:10px;}
 .flex-search .input input{border:none;width:100%;height:100%;}
 .flex-search span{display:block;flex:none;padding:0;padding-right:0;width:50px;text-align:center;}
 .flex-search .f-icon{margin-left:10px;}

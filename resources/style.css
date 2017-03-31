@@ -66,8 +66,9 @@ text-shadow:0 1px 0 #ccc,
 #splash_slider .flex-control-nav{bottom:20px}
 #splash_slider .flex-control-paging li a.flex-active{background:#0078e7}
 
-.page-io .btn{margin-bottom:10px;}
-.page-io .btn small{display:block;font-size:10px;}
+.page-io .button{background:transparent url(../images/download-button.png) no-repeat 0 0 / 126px 39px;border-radius:5px;margin-bottom:12px;padding:7px 16px 7px 34px;width:126px;text-align:left;font-size:13px;line-height:1;color:#fff;}
+.page-io .button small{display:block;font-size:8px;margin-bottom:4px;}
+.page-io .pbotm,.page-io .pbotm .btn{margin-bottom:0;}
 
 .center-cont{background:rgba(255,255,255,.5)}
 .center-cont h2{margin-bottom:1em;}
@@ -93,12 +94,7 @@ text-shadow:0 1px 0 #ccc,
 .xu-kit h3{font-weight:400;padding:8px 4px;border-bottom:1px solid #ccc;margin:0 0 16px}
 .xu-kit .kitbox{padding-bottom:1em;}
 .kitbox p{margin-bottom:1em;}
-
-.kitbox .xu-btn{margin:4px;}
-
-
 .kitbox .tool-bar{background:#fff;}
-
 
 .key_shadow {
   box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24)，0 1px 6.86px 0.14px rgba(0, 0, 0, 0.16);

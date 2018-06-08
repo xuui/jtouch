@@ -15,10 +15,12 @@ Documentation and issue tracking on GitHub <http://github.com/xuui/xuui-jtouch.g
 
 body{background:#eee;color:#424242;}
 
+/*
 article{padding:12px;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);}
 @supports(padding:max(0)){
 article{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));}
 }
+*/
 /*ipx*/
 
 a,button,.btn{-ms-touch-action:manipulation;-webkit-touch-action:manipulation;touch-action:manipulation;}

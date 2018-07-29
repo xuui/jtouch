@@ -1,0 +1,43 @@
+/*
+jQTouch may be freely distributed under the MIT license.
+*/
+
+@charset "UTF-8";
+/*! normalize.css 2011-07-12T10:51 UTC · http://github.com/necolas/normalize.css */
+@import url(jqtouch-animation.css);
+
+*{margin:0;padding:0}
+body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
+#jqt{-webkit-text-size-adjust:none;-webkit-user-select:none;user-select:none;position:absolute;right:0;top:0;left:0;bottom:0;}
+#jqt a{-webkit-tap-highlight-color:transparent;-webkit-user-drag:none}
+#jqt .selectable,#jqt input,#jqt textarea{-webkit-user-select:auto}
+#jqt.notransform{-webkit-transform:none!important}
+#jqt>[data-ui=view]{left:0;top:0;min-height:100%;width:100%;overflow-x:hidden;position:absolute;z-index:0;display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical}
+#jqt>.current{z-index:10}
+#jqt>:not(.current):not(.in):not(.out){display:none}
+#jqt.autoscroll:not(.animating3d),#jqt.touchscroll:not(.animating3d){overflow-y:auto;-webkit-overflow-scrolling:touch}
+#jqt.autoscroll:not(.animating3d)>*,#jqt.touchscroll:not(.animating3d)>*{height:100%}
+#jqt.autoscroll:not(.animating3d) .scroll,#jqt.touchscroll:not(.animating3d) .scroll{position:relative;-webkit-box-flex:1;box-flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+#jqt.touchscroll:not(.animating3d) .scroll{overflow-y:auto;}
+#jqt .scroll{-webkit-margin-collapse:separate}
+#jqt .toolbar{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;z-index:10;padding:10px;height:44px;}
+#jqt .toolbar>h1{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:20px;font-weight:700;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
+
+#jqt.black-translucent .toolbar{padding-top:30px;height:64px}
+#jqt.landscape .toolbar>h1{margin-left:-125px;width:250px}
+#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{position:absolute;overflow:hidden;width:auto;height:30px;font-family:inherit;font-size:12px;font-weight:700;line-height:30px;text-overflow:ellipsis;text-decoration:none;white-space:nowrap;bottom:6px;right:10px;margin:0;padding:0 10px;-webkit-border-radius:4px;border-radius:4px;}
+#jqt .back{max-width:60px;overflow:visible;}
+#jqt .back,#jqt .cancel{left:10px;right:auto}
+#jqt .add{font-size:24px;line-height:24px;font-weight:700}
+
+/* UI Theme */
+body{background:#000}
+#jqt>[data-ui=view]{background-color:#eee;color:rgba(0,0,0,.87);}
+#jqt .toolbar{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.13);}
+#jqt .toolbar>h1{color:rgba(0,0,0,.87);}
+#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{background-color:rgba(0,0,0,0);border:1px solid rgba(0,0,0,.16);color:rgba(0,0,0,.87);}
+#jqt .add.active,#jqt .back.active,#jqt .button.active,#jqt .cancel.active{background-color:rgba(0,0,0,.08);border-color:rgba(0,0,0,.32);}
+
+.scroll{padding:0 16px;}
+#jqt ul{list-style:none;padding:0 0 16px;}
+#jqt ul li{padding:8px 0;}

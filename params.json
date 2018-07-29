@@ -1,6 +1,0 @@
-{
-  "name": "Xuui-jtouch",
-  "tagline": "基于 jQTouch 的客制化优化版本。使用 MIT 协议。",
-  "body": "# xuui-jtouch\r\n基于 jQTouch(http://jqtjs.com/) 的客制化优化版本。使用 MIT 协议。  \r\n以 jqtouch 为蓝本的，手机 WebApp 框架。  \r\n\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}

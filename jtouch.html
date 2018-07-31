@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<!--
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- default or black-->
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="http://xuui.net/about">
+<meta name="theme-color" content="#009688">
+<meta name="theme-color" content="#343">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>XUUI-Touch</title>
+  
+<!-- Add to home screen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Weather PWA">
+<link rel="apple-touch-icon" href="resources/icons/icon-152x152.png">
+<meta name="msapplication-TileImage" content="resources/icons/icon-144x144.png">
+<meta name="msapplication-TileColor" content="#2F3BA2">
+<!-- TODO add manifest here -->
+<link rel="manifest" href="manifest.json">
+  
+<link href="resources/style.css" rel="stylesheet">
+</head>
+<body id="jqt">
+  <article data-ui="view" id="loading" class="flex flex-ver">
+    <!-- -->
+    loading
+    <!-- -->
+  </article><!-- / #loading -->
+  <article data-ui="view" id="splash" class="flex flex-ver">
+    <section class="flexslider" id="splash_slider">
+      <ul class="slides">
+        <li style="background-image:url(images/slide1.jpg)">
+          <div class="flex flex-centerbox">
+            <div class="center-cont">
+              <h2 class="text-3d">Splash 1</h2>
+              <p>infomation </p>
+              <p>infomation </p>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url(images/slide2.jpg)">
+          <div class="flex flex-centerbox">
+            <div class="center-cont">
+              <h2 class="text-3d">Splash 2</h2>
+              <p>infomation </p>
+              <p>infomation </p>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url(images/slide3.jpg)">
+          <div class="flex flex-centerbox">
+            <div class="center-cont">
+              <h2 class="text-3d">Splash 3</h2>
+              <p>infomation </p>
+              <p>infomation </p>
+            </div>
+          </div>
+        </li>
+        <li style="background-image:url(images/slide4.jpg)">
+          <div class="flex flex-centerbox">
+            <div class="center-cont">
+              <h2 class="text-3d">Splash 4</h2>
+              <p>infomation </p>
+              <p>infomation </p>
+            </div>
+          </div>
+          <a class="xu-btn xu-btn-primary" href="#main">继续</a>
+        </li>
+      </ul>
+    </section>
+  </article><!-- / #splash -->
+  
+  <article data-ui="view" id="main" class="flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn" href="#uico"><i class="md-icon">menu</i></a>
+      <!--button class="btn"><i class="md-icon">arrow_back</i></button-->
+      <div class="nav-title">
+        <h2>XUUI-jTouch</h2>
+      </div>
+      <!--button class="btn md-icon">more_vert</button-->
+      <a class="btn slideup" id="-infoButton" href="#splash"><i class="md-icon">new_releases</i></a>
+    </header><!-- /header -->
+    <section class="flex-item cont-box scroll xu-menu">
+      <div class="card page-io">
+          <h1>Xuui-jtouch</h1>
+          <h2>基于 jQTouch 的客制化优化版本。使用 MIT 协议。</h2>
+          <p>基于 jQTouch(<a href="http://jqtjs.com/">http://jqtjs.com/</a>) 的客制化优化版本。使用 MIT 协议。
+            <br> 以 jqtouch 为蓝本的，手机 WebApp 框架。
+          </p>
+          <div class="xu-g">
+            <div class="xu-u-6">
+              <a href="https://github.com/xuui/jtouch/zipball/master" class="button xu-btn md-btn"><small>Download</small> .zip file</a>
+            </div>
+            <div class="xu-u-6">
+              <a href="https://github.com/xuui/jtouch/tarball/master" class="button xu-btn md-btn"><small>Download</small> .tar.gz file</a>
+            </div>
+          </div>
+          <p class="pbotm"><a href="https://github.com/xuui/jtouch" class="btn xu-btn xu-btn-info md-btn"><small>View project on</small> GitHub</a></p>
+      </div><!-- /.card -->
+      
+      <ul>
+        <li>
+          <a class="flex flex-litem" href="#MaterialIcon">
+            <div class="s-img"><i class="md-icon">dialpad</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">Material 图标</p>
+              <p class="s-desc">Material Font Icon</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#animations">
+            <div class="s-img"><i class="md-icon">view_carousel</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">动画</p>
+              <p class="s-desc">UI Animation</p>
+              <p class="s-desc">Powered by CSS3</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#uico">
+            <div class="s-img"><i class="md-icon">layers</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">界面</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#pageevents" data-custom="WOOT!">
+            <div class="s-img"><i class="md-icon">toc</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">页面事件</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-litem" href="#forms">
+            <div class="s-img"><i class="md-icon">playlist_add_check</i></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">表单</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        
+        <!--
+        <li>
+          <a class="flex flex-litem" href="#">
+            <div class="s-img"></div>
+            <div class="flex-item s-word">
+              <p class="s-tit">item</p>
+              <p class="s-desc">description</p>
+            </div>
+            <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </a>
+        </li>
+        -->
+      </ul>
+      
+    </section>
+    <footer class="tool-bar">
+      <ul role="tablist" class="flex flex-tab">
+        <li class="current"><a href="javascript:void(0)" role="tab"><span class="tab-title">title1</span></a></li>
+        <li><a href="javascript:void(0)" role="tab"><span class="tab-title">title2</span></a></li>
+        <li><a href="javascript:void(0)" role="tab"><span class="tab-title">long title3</span></a></li>
+        <li><a href="javascript:void(0)" role="tab"><span class="tab-title">title4</span></a></li>
+      </ul>
+    </footer>
+  </article><!-- / #main -->
+  
+  <article data-ui="view" id="MaterialIcon" class="flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
+      <div class="nav-title">
+        <h2>Material 图标</h2>
+      </div>
+      <button class="btn"></button>
+    </header>
+    <section class="flex-item cont-box scroll">
+      <ul id="icons-cont" class="xu-g"></ul>
+    </section>
+  </article><!-- / #MaterialIcon -->
+  
+  <article data-ui="view" id="uico" class="flex flex-ver current">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
+      <div class="nav-title">
+        <h2>UI Kit</h2>
+      </div>
+      <button class="btn"></button>
+      <a class="btn" href="#main"><i class="md-icon">home</i></a>
+    </header>
+    <section class="flex-item cont-box scroll xu-kit">
+      <!-- xu-kit -->
+      <div class="kitbox">
+        <h3>按钮</h3>
+        <button type="button" class="xu-btn">Button</button>
+        <button type="button" class="xu-btn xu-btn-default">Default</button>
+        <button type="button" class="xu-btn xu-btn-primary">Primary</button>
+        <button type="button" class="xu-btn xu-btn-success">Success</button>
+        <button type="button" class="xu-btn xu-btn-info">Info</button>
+        <button type="button" class="xu-btn xu-btn-warning">Warning</button>
+        <button type="button" class="xu-btn xu-btn-danger">Danger</button>
+        <button type="button" class="xu-btn xu-btn-link">Link</button>
+      </div>
+      
+      <div class="kitbox">
+        <h3>输入 Input</h3>
+        <!--
+        <input type="checkbox">
+        <input type="radio">
+        <input type="range">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        --><!--
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="time">
+        <input type="datetime">
+        <input type="datetime-local">
+        --><!--
+        <input type="button" value="button">
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        --><!--
+        <input type="color">
+        -->     
+        <p><input type="text" placeholder="text"></p>
+        <p><input type="email" placeholder="email"></p>
+        <p><input type="password" placeholder="password"></p>
+        <p><input type="url" placeholder="url"></p>
+        <p><input type="number" placeholder="number"></p>
+        <p><input type="search" placeholder="search"></p>
+        <p><textarea placeholder="textarea"></textarea></p>
+        
+        
+      </div>
+      <div class="kitbox">
+        <h3>-</h3>
+      </div>
+      <div class="kitbox">
+        <h3>-</h3>
+      </div>
+      <div class="kitbox">
+        <h3>导航栏</h3>
+        <div class="flex flex-nav">
+          <a class="btn"><i class="md-icon">arrow_back</i></a>
+          <div class="nav-title">
+            <h2>导航栏标题</h2>
+          </div>
+          <button class="btn"><i class="md-icon">more_horiz</i></button>
+        </div>
+      </div>
+      <div class="kitbox">
+        <h3>工具栏</h3>
+        <div class="tool-bar">
+          <ul role="tablist" class="flex flex-tab">
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">apps</i></span></a></li>
+            <li class="current"><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">playlist_add_check</i></span></a></li>
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">gamepad</i></span></a></li>
+            <li><a href="javascript:void(0)" role="tab"><span class="tab-title"><i class="md-icon">more_vert</i></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="kitbox">
+        <h3>搜索栏</h3>
+        <div class="flex flex-search">
+          <span>搜索</span>
+          <div class="input"><input type="text" placeholder="请输入搜索..."></div>
+          <button class="f-btn md-icon">search</button>
+        </div>
+      </div>
+      
+      
+      <!-- / xu-kit -->
+      
+    </section>
+  </article><!-- / #uico -->
+  
+  <article data-ui="view" id="animations" class="flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#main"><i class="md-icon">arrow_back</i></a>
+      <div class="nav-title">
+        <h2>UI 动画</h2>
+      </div>
+      <button class="btn"></button>
+    </header>
+    <section class="flex-item cont-box scroll xu-menu">
+      <ul>
+        <li><a class="flex flex-litem" data-title="滑入 Slide" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">滑入</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem slideup" data-title="向上滑入 Slide Up" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">向上滑入</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem dissolve" data-title="溶解 Dissolve" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">溶解</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem pop" data-title="弹出 Pop" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">弹出</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem flipright" data-title="右翻转 Flip right" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">右翻转</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem flipleft" data-title="左翻转 Flip left" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">左翻转</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem cube" data-title="立方体 Cube" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">立方体</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+        <li><a class="flex flex-litem swap" data-title="交换 Swap" href="#animdemo">
+          <div class="flex-item s-word">
+            <p class="s-tit">交换</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+        </a></li>
+      </ul>
+    </section>
+  </article><!-- / #animations -->
+  
+  <article data-ui="view" id="animdemo" class="flex flex-ver">
+    <header data-ui="toolbar" class="flex flex-nav">
+      <a class="btn back" href="#animations"><i class="md-icon">arrow_back</i></a>
+      <div class="nav-title">
+        <h2 class="vtitle">动画演示</h2>
+      </div>
+      <button class="btn"></button>
+    </header>
+    <section class="flex-item cont-box scroll xu-menu">
+      <div style="font-size:1.5em;text-align:center;margin:160px 0 90px;">
+        效果漂亮吗?
+      </div>
+      <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#animations" class="xu-btn goback">返回</a>
+    </section>
+  </article><!-- / #animdemo -->
+  
+  
+   <!--
+    <section class="flex-item cont-box">
+      <ul>
+        <li>
+          <div class="flex flex-litem">
+          <div class="s-img"></div>
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+            <p class="s-desc">description</p>
+            <p class="s-desc">description</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-litem">
+          <div class="s-img"></div>
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+            <p class="s-desc">description</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-litem">
+          <div class="s-img"></div>
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-litem">
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-litem">
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+            <p class="s-desc">description</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-litem">
+          <div class="flex-item s-word">
+            <p class="s-tit">title</p>
+            <p class="s-desc">description</p>
+            <p class="s-desc">description</p>
+          </div>
+          <i class="f-icon md-icon">keyboard_arrow_right</i>
+          </div>
+        </li>
+      </ul>
+
+      <div class="flex flex-info">
+        <i class="f-icon md-icon">info</i>
+        <div class="flex-item s-word">
+          <p class="s-desc">Description,xxx</p>
+          <p class="s-desc">test,test,test,test,test,test,test，test.hitest,test,test,test,</p>
+          <p class="s-desc">test,test,test,test,test,test,test</p>
+        </div>
+      </div>
+      <div class="flex flex-info flex-info-center">
+        <i class="f-icon md-icon">cancel</i>
+        <div class="flex-item s-word">
+          <p class="s-desc">Description,xxx</p>
+          <p class="s-desc">test,test,test,test,test,test,test，test.hitest,test,test,test,</p>
+          <p class="s-desc">test,test,test,test,test,test,test</p>
+        </div>
+      </div>
+
+      <div class="flex flex-centerbox">
+        <div class="center-cont">
+          <h2 class="text-3d">Title</h2>
+          <p>infomation </p>
+          <p>infomation </p>
+          <button class="f-btn">btn</button>
+        </div>
+      </div>
+      <div class="flex flex-centerbox">
+        <div class="center-cont">
+          <h2 class="text-3d">Title</h2>
+          <p>infomation </p>
+          <p>infomation </p>
+          <button class="f-btn">btn</button>
+        </div>
+        <div class="center-cont">
+          <h2 class="text-3d">Title</h2>
+          <p>infomation </p>
+          <p>infomation </p>
+          <button class="f-btn">btn</button>
+        </div>
+      </div>
+
+      <div>
+        <h1>content</h1>
+        <h2>contentconten</h2>
+        <h3>tcontentcontentc</h3>
+        <h4>ontentconte</h4>
+        <h5>ntcontentcontentc</h5>
+        <h6>ontentcontentcontentconte</h6>
+        <p>ntcontentcontentcontentcon</p>
+        <p>tentcontentcontentcontent</p>
+        <p>contentcontentcontentc</p>
+        <p>ontentcontentcon</p>
+        <p>tentcontentcontentconten</p>
+        <p>contentcontentcontentco</p>
+        <p>ntentcontentconte</p>
+        <p>ntcontentcontentcontentcontentcon</p>
+        <p>tentcontentconte</p>
+        <p>ntcontentco</p>
+        <p>ntentcontentconte</p>
+        <p>ntcontentc</p>
+        <p>ontentcontentcontentcontentcon</p>
+        <p>tentcontetcontentcontentcontent</p>
+      </div>
+
+    </section><!-- /section ->
+  </article-->
+
+<!-- script -->
+<script src="cordova.js"></script>
+<script src="frameworks/jquery.min.js"></script>
+<script src="js/jqt.js"></script>
+<script src="js/jqtouch-jquery2.js"></script>
+<script src="frameworks/slides.js"></script>
+<script src="resources/app.js"></script>
+<script>
+</script>
+<!-- script End -->
+</body>
+</html>

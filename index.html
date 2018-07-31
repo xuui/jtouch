@@ -15,33 +15,36 @@
 <meta name="theme-color" content="#343">
 <title>Xu-jQTouch</title>
   
-<link href="resources/styles/jqtouch.css" rel="stylesheet">
+<link href="resources/jqtouch.css" rel="stylesheet">
 </head>
 
 <body>
 <div id="jqt" class="">
 
   <div data-ui="view" id="home" class="current">
-    <div class="toolbar">
-      <h1>Xu-jTouch</h1>
-      <a class="button slideup" href="#about">About</a>
-    </div>
-    <div class="scroll">
-      <h2>Most Popular</h2>
-      <ul class="rounded">
-        <li><a href="#animdemo">Slide</a></li>
-        <li><a href="#animdemo" class="slideup">Slide Up</a></li>
-        <li><a href="#animdemo" class="dissolve">Dissolve</a></li>
-        <li><a href="#animdemo" class="pop">Pop</a></li>
-      </ul>
-      <h2>3d Transitions</h2>
-      <ul class="rounded">
-        <li><a href="#animdemo" class="flipright">Flip right</a></li>
-        <li><a href="#animdemo" class="flipleft">Flip left</a></li>
-        <li><a href="#animdemo" class="cube">Cube</a></li>
-        <li><a href="#animdemo" class="swap">Swap</a></li>
-      </ul>
-    </div>
+    <header class="toolbar">
+        <h1>Xu-jTouch</h1>
+        <a class="button slideup" href="#about">About</a>
+    </header>
+    <section class="scroll">
+        <h2>Most Popular</h2>
+        <ul class="rounded">
+          <li><a href="#animdemo">Slide</a></li>
+          <li><a href="#animdemo" class="slideup">Slide Up</a></li>
+          <li><a href="#animdemo" class="dissolve">Dissolve</a></li>
+          <li><a href="#animdemo" class="pop">Pop</a></li>
+        </ul>
+        <h2>3d Transitions</h2>
+        <ul class="rounded">
+          <li><a href="#animdemo" class="flipright">Flip right</a></li>
+          <li><a href="#animdemo" class="flipleft">Flip left</a></li>
+          <li><a href="#animdemo" class="cube">Cube</a></li>
+          <li><a href="#animdemo" class="swap">Swap</a></li>
+        </ul>
+    </section>
+    <footer>
+      footer
+    </footer>
   </div>
   <!-- -->
   
@@ -73,8 +76,8 @@
 
 </div>
 </body>
-<script src="resources/scripts/jquery.slim.min.js"></script>
-<script src="resources/scripts/jqt.js"></script>
+<script src="frameworks/jquery.slim.min.js"></script>
+<script src="frameworks/jqt.js"></script>
 <script>
 var jQT=new $.jQT({
   preloadImages:[]

@@ -1,13 +1,9 @@
 /*
-jQTouch may be freely distributed under the MIT license.
+* jqtouch-core.css
 */
-
-@charset "UTF-8";
-/*! normalize.css 2011-07-12T10:51 UTC · http://github.com/necolas/normalize.css */
-@import url(jqtouch-animation.css);
-
-*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}*{margin:0;padding:0}
-
+/* Core */
+*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
+*{margin:0;padding:0}
 body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 #jqt{-webkit-text-size-adjust:none;-webkit-user-select:none;user-select:none;position:absolute;right:0;top:0;left:0;bottom:0;}
 #jqt a{-webkit-tap-highlight-color:transparent;-webkit-user-drag:none}
@@ -30,15 +26,3 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 #jqt .back{max-width:60px;overflow:visible;}
 #jqt .back,#jqt .cancel{left:10px;right:auto}
 #jqt .add{font-size:24px;line-height:24px;font-weight:700}
-
-/* UI Theme */
-body{background:#000}
-#jqt>[data-ui=view]{background-color:#eee;color:rgba(0,0,0,.87);}
-#jqt .toolbar{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.13);}
-#jqt .toolbar>h1{color:rgba(0,0,0,.87);}
-#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{background-color:rgba(0,0,0,0);border:1px solid rgba(0,0,0,.16);color:rgba(0,0,0,.87);}
-#jqt .add.active,#jqt .back.active,#jqt .button.active,#jqt .cancel.active{background-color:rgba(0,0,0,.08);border-color:rgba(0,0,0,.32);}
-
-.scroll{padding:0 16px;}
-#jqt ul{list-style:none;padding:0 0 16px;}
-#jqt ul li{padding:8px 0;}

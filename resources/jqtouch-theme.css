@@ -1,0 +1,14 @@
+/*
+* jqtouch-theme.css
+*/
+/* UI Theme */
+body{background:#000}
+#jqt>[data-ui=view]{background-color:#eee;color:rgba(0,0,0,.87);}
+#jqt .toolbar{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.13);}
+#jqt .toolbar>h1{color:rgba(0,0,0,.87);}
+#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{background-color:rgba(0,0,0,0);border:1px solid rgba(0,0,0,.16);color:rgba(0,0,0,.87);}
+#jqt .add.active,#jqt .back.active,#jqt .button.active,#jqt .cancel.active{background-color:rgba(0,0,0,.08);border-color:rgba(0,0,0,.32);}
+
+.scroll{padding:0 16px;}
+#jqt ul{list-style:none;padding:0 0 16px;}
+#jqt ul li{padding:8px 0;}

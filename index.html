@@ -21,12 +21,21 @@
 <body>
 <div id="jqt" class="">
 
-  <div data-ui="view" id="home" class="current">
+  <article data-ui="view" id="home" class="page current">
+    <header class="tool-bar flex flex-nav">
+      <button class="f-btn">back</button>
+      <div class="nav-title">
+        <h2>header</h2>
+      </div>
+      <button class="f-btn">right</button>
+    </header><!-- /header -->
+    <!--
     <header class="toolbar">
         <h1>Xu-jTouch</h1>
         <a class="button slideup" href="#about">About</a>
     </header>
-    <section class="scroll">
+    -->
+    <section class="scroll cont-box">
         <h2>Most Popular</h2>
         <ul class="rounded">
           <li><a href="#animdemo">Slide</a></li>
@@ -43,35 +52,51 @@
         </ul>
     </section>
     <footer>
-      footer
+      <div class="tabbar">
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab1</span></a>
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab2</span></a>
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab3</span></a>
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab4</span></a>
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab5</span></a>
+      </div>
     </footer>
-  </div>
+  </article>
   <!-- -->
   
-  <div data-ui="view" id="about" class="selectable">
-    <div class="toolbar">
-      <h1>About...</h1>
+  <article data-ui="view" id="about" class="page selectable">
+    <header class="tool-bar flex flex-nav">
+      <div class="nav-title">
+        <h2>About...</h2>
+      </div>
       <a class="button slidedown" href="#home">Close</a>
-    </div>
-    <div class="scroll">
+    </header>
+    <section class="scroll cont-box">
       <p><strong>jQTouch</strong><br>Version 1.0 beta</p>
       <p><a href="#" class="goback">Close</a></p>
-    </div>
-  </div>
+    </section>
+    <footer>
+      footer
+    </footer>
+  </article>
   <!-- -->
   
-  <div data-ui="view" id="animdemo">
-    <div class="toolbar">
-      <h1>Animations</h1>
+  <article data-ui="view" id="animdemo" class="page">
+    <header class="tool-bar flex flex-nav">
+      <div class="nav-title">
+        <h2>Animations...</h2>
+      </div>
       <a class="back" href="#">Back</a>
-    </div>
-    <div class="scroll">
+    </header>
+    <section class="scroll cont-box">
       <div style="font-size: 1.5em; text-align: center; margin: 160px 0 90px; font-family: Marker felt;">
         Pretty smooth, eh?
       </div>
       <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="whiteButton goback">Go back</a>
-    </div>
-  </div>
+    </section>
+    <footer>
+      footer
+    </footer>
+  </article>
   <!-- -->
 
 </div>

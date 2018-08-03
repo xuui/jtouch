@@ -43,7 +43,7 @@
 
 
 
-[data-ui=view].page .cont-box{
+[data-ui=view] .cont-box{
   overflow: auto;
   background: #e2e2e2;
   width: 100%;
@@ -54,7 +54,7 @@
   flex: 1;
 }
 
-[data-ui=view].page footer{
+[data-ui=view] footer{
   background:#fff;
   height:48px;
   line-height:48px;
@@ -64,7 +64,7 @@
   z-index:1;
 }
 
-[data-ui=view].page footer .tabbar{
+[data-ui=view] footer .tabbar{
   display:-webkit-box;
   display:-webkit-flex;
   display:flex;
@@ -79,7 +79,7 @@
   height:48px;
   line-height:48px;
 }
-[data-ui=view].page footer .tabbar a{
+[data-ui=view] footer .tabbar a{
   display:block;
   width:100%;
   height:100%;

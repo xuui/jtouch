@@ -73,24 +73,3 @@
 
 
 
-
-
-[data-ui=view] .f-btn{
-  flex:none;
-  background:#31bbee;
-  border:none;
-  width:56px;
-  height:44px;
-  line-height:44px;
-  color:#fff;
-  text-align:center;
-}
-
-[data-ui=view] header .f-btn{
-  width:64px;
-  height:48px;
-  line-height:48px;
-}
-
-
-

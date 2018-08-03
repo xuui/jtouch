@@ -46,6 +46,3 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 #jqt .back{max-width:60px;overflow:visible;}
 #jqt .back,#jqt .cancel{left:10px;right:auto}
 #jqt .add{font-size:24px;line-height:24px;font-weight:700}
-
-
-.scroll a{padding:16px 24px;}

@@ -35,13 +35,8 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 
 /*.*************************************************.*/
 
-#jqt .toolbar{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;z-index:10;padding:10px;height:44px;}
 #jqt .toolbar>h1{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:20px;font-weight:700;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
 
 #jqt.black-translucent .toolbar{padding-top:30px;height:64px}
 #jqt.landscape .toolbar>h1{margin-left:-125px;width:250px}
-#jqt .add,#jqt .back,#jqt .button,#jqt .cancel{position:absolute;overflow:hidden;width:auto;height:30px;font-family:inherit;font-size:12px;font-weight:700;line-height:30px;text-overflow:ellipsis;text-decoration:none;white-space:nowrap;bottom:6px;right:10px;margin:0;padding:0 10px;-webkit-border-radius:4px;border-radius:4px;}
-#jqt .back{max-width:60px;overflow:visible;}
-#jqt .back,#jqt .cancel{left:10px;right:auto}
-#jqt .add{font-size:24px;line-height:24px;font-weight:700}
 

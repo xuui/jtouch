@@ -3,6 +3,7 @@
 */
 /* ui */
 
+/* header */
 [data-ui=view] header{
   display:-webkit-box;display:-webkit-flex;display:flex;
   -webkit-box-align:center;box-align:center;
@@ -16,7 +17,10 @@
   line-height:48px;
   text-align:center;
 }
-[data-ui=view] header .nav-title{
+
+
+
+[data-ui=view] header .title{
   text-align:center;
   line-height:1.2;
   -webkit-box-flex:1;
@@ -38,26 +42,21 @@
   flex: 1;
 }
 
+/* footer */
 [data-ui=view] footer{
+  position:relative;z-index:1;
   background:#fff;
+  box-shadow:0 0 3px rgba(0,0,0,.24);
   height:48px;
   line-height:48px;
   text-align:center;
-  box-shadow:0 0 3px rgba(0,0,0,.24);
-  position:relative;
-  z-index:1;
 }
 
 [data-ui=view] footer .tabbar{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-box-pack:justify;
-  -webkit-justify-content:space-between;
-  justify-content:space-between;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-  align-items:center;
+  display:-webkit-box;display:-webkit-flex;display:flex;
+  -webkit-box-pack:justify;box-pack:justify;
+  -webkit-justify-content:space-between;justify-content:space-between;
+  -webkit-box-align:center;-webkit-align-items:center;align-items:center;
 
   width:100%;
   height:48px;

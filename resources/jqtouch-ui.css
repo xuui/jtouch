@@ -2,43 +2,24 @@
 * jqtouch-ui.css
 */
 /* ui */
-#jqt>[data-ui=view]{
-display:-webkit-box;display:-webkit-flex;display:flex;
--webkit-box-orient:vertical;box-orient:vertical;
--webkit-box-direction:normal;box-direction:normal;
--webkit-flex-direction:column;flex-direction:column;
-position:absolute;
-left:0;
-top:0;
-z-index:0;
-overflow-x:hidden;
-min-height:100%;width:100%;
-}
 
 [data-ui=view] header{
+  display:-webkit-box;display:-webkit-flex;display:flex;
+  -webkit-box-align:center;box-align:center;
+  -webkit-align-items:center;align-items:center;
+  -webkit-box-pack:justify;box-pack:justify;
+  -webkit-justify-content:space-between;justify-content:space-between;
+  position:relative;z-index:1;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.13);
   height:48px;
   line-height:48px;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-  align-items:center;
-  -webkit-box-pack:justify;
-  -webkit-justify-content:space-between;
-  justify-content:space-between;
-  
-  background:#fff;
   text-align:center;
-  box-shadow:0 1px 3px rgba(0,0,0,.13);
-  position:relative;
-  z-index:1;
-  
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
 }
 [data-ui=view] .f-btn{
   flex:none;
-  border:none;
   background:#31bbee;
+  border:none;
   width:56px;
   height:44px;
   line-height:44px;

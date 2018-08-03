@@ -2,6 +2,15 @@
 * jqtouch-core.css
 */
 /* Core */
+/*
+#jqt>[data-ui=view]{
+display:-webkit-box;display:box;
+-webkit-box-orient:vertical;box-orient:vertical;
+position:absolute;left:0;top:0;z-index:0;
+overflow-x:hidden;min-height:100%;width:100%;
+}
+
+*/
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
 *{margin:0;padding:0}
 body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
@@ -9,35 +18,23 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 #jqt a{-webkit-tap-highlight-color:transparent;-webkit-user-drag:none}
 #jqt .selectable,#jqt input,#jqt textarea{-webkit-user-select:auto}
 #jqt.notransform{-webkit-transform:none!important}
-/*
-#jqt>[data-ui=view]{
-position:absolute;
-left:0;
-top:0;
-z-index:0;
-overflow-x:hidden;
-display:-webkit-box;
-display:box;
-min-height:100%;
-width:100%;
--webkit-box-orient:vertical;
-box-orient:vertical;
-}
-*/
+#jqt>[data-ui=view]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;box-orient:vertical;-webkit-box-direction:normal;box-direction:normal;-webkit-flex-direction:column;flex-direction:column;position:absolute;left:0;top:0;z-index:0;overflow-x:hidden;min-height:100%;width:100%;}
 #jqt>.current{z-index:10}
 #jqt>:not(.current):not(.in):not(.out){display:none}
-/*
+
 #jqt.autoscroll:not(.animating3d),
 #jqt.touchscroll:not(.animating3d){overflow-y:auto;-webkit-overflow-scrolling:touch}
 #jqt.autoscroll:not(.animating3d)>[data-ui=view],
 #jqt.touchscroll:not(.animating3d)>[data-ui=view]{height:100%}
-*/
+
 #jqt.autoscroll:not(.animating3d) .scroll,
 #jqt.touchscroll:not(.animating3d) .scroll{position:relative;-webkit-box-flex:1;box-flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
 #jqt.touchscroll:not(.animating3d) .scroll{overflow-y:auto;}
 
-
 #jqt .scroll{-webkit-margin-collapse:separate}
+
+/*.*************************************************.*/
+
 #jqt .toolbar{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;z-index:10;padding:10px;height:44px;}
 #jqt .toolbar>h1{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:20px;font-weight:700;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
 
@@ -47,3 +44,4 @@ box-orient:vertical;
 #jqt .back{max-width:60px;overflow:visible;}
 #jqt .back,#jqt .cancel{left:10px;right:auto}
 #jqt .add{font-size:24px;line-height:24px;font-weight:700}
+

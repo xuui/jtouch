@@ -4,7 +4,7 @@
 /* ui */
 
 /* header */
-[data-ui=view] header{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;position:relative;z-index:1;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.13);height:48px;line-height:48px;text-align:center;}
+[data-ui=view] header{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;position:relative;z-index:1;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.13);min-height:48px;line-height:48px;text-align:center;}
 [data-ui=view] header .title{-webkit-box-flex:1;-webkit-flex:1;flex:1;width:0%;text-align:center;}
 
 [data-ui=view] header h1,[data-ui=view] header h2{
@@ -18,31 +18,34 @@ text-overflow:ellipsis;white-space:nowrap;
 
 /* footer */
 [data-ui=view] footer{
-  position:relative;z-index:1;
-  background:#fff;
-  box-shadow:0 0 3px rgba(0,0,0,.24);
-  height:48px;
-  line-height:48px;
-  text-align:center;
+position:relative;z-index:1;
+background:#fff;
+box-shadow:0 0 3px rgba(0,0,0,.24);
+min-height:48px;line-height:48px;
+text-align:center;
 }
 
+/* TabBar */
 [data-ui=view] [data-ui=tabbar]{
-  display:-webkit-box;display:-webkit-flex;display:flex;
-  -webkit-box-pack:justify;box-pack:justify;
-  -webkit-justify-content:space-between;justify-content:space-between;
-  -webkit-box-align:center;-webkit-align-items:center;align-items:center;
+display:-webkit-box;display:-webkit-flex;display:flex;
+-webkit-box-pack:justify;box-pack:justify;
+-webkit-justify-content:space-between;justify-content:space-between;
+-webkit-box-align:center;-webkit-align-items:center;align-items:center;
 
-  width:100%;
-  height:48px;
-  line-height:48px;
+width:100%;
+height:48px;line-height:48px;
 }
 [data-ui=tabbar] a{
-  display:block;
-  width:100%;
-  height:100%;
-  text-align:center;
-  text-decoration:none;
+display:block;
+width:100%;height:100%;
+text-align:center;
+text-decoration:none;
 }
 [data-ui=tabbar] a:hover{color:#000;}
 
-
+/* ToolBar */
+[data-ui=toolbar]{flex:none;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;position:relative;z-index:1;min-height:44px;line-height:44px;
+background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12);
+}
+footer [data-ui=toolbar]{box-shadow:none;}
+[data-ui=toolbar] .caption{flex:1;}

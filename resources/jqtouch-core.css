@@ -29,8 +29,10 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 
 /*.*************************************************.*/
 
-#jqt .toolbar>h1{position:absolute;overflow:hidden;left:50%;bottom:9px;margin:1px 0 0 -75px;width:150px;font-size:20px;font-weight:700;line-height:1.3em;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
-
+/*
 #jqt.black-translucent .toolbar{padding-top:30px;height:64px}
-#jqt.landscape .toolbar>h1{margin-left:-125px;width:250px}
 
+/*
+#jqt .toolbar>h1{}
+#jqt.landscape .toolbar>h1{margin-left:-125px;width:250px}
+*/

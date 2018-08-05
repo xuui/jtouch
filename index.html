@@ -23,18 +23,10 @@
 
   <article data-ui="view" id="home" class="current">
     <header>
-      <button class="f-btn">back</button>
-      <div class="title">
-        <h2>header</h2>
-      </div>
-      <button class="f-btn">right</button>
+      <button class="btn">back</button>
+      <h1 class="title">Xu-jTouch</h1>
+      <a class="btn slideup" href="#about">About</a>
     </header><!-- /header -->
-    <!--
-    <header class="toolbar">
-        <h1>Xu-jTouch</h1>
-        <a class="button slideup" href="#about">About</a>
-    </header>
-    -->
     <section data-ui="scroll">
       <h2>Most Popular</h2>
       <ul class="rounded">
@@ -66,47 +58,39 @@
     <footer>
       <div data-ui="tabbar">
         <a href="javascript:void(0)" role="tab"><span class="tab-title">tab1</span></a>
+        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab2</span></a>
         <a href="javascript:void(0)" role="tab"><span class="tab-title">tab3</span></a>
         <a href="javascript:void(0)" role="tab"><span class="tab-title">tab4</span></a>
-        <a href="javascript:void(0)" role="tab"><span class="tab-title">tab5</span></a>
       </div>
     </footer>
   </article>
   <!-- -->
   
   <article data-ui="view" id="about" class="selectable">
-    <header>
-      <div class="title">
-        <h2>About...</h2>
-      </div>
-      <a class="button slidedown" href="#home">Close</a>
-    </header>
-    <section class="scroll cont-box">
+    <section data-ui="scroll">
       <p><strong>jQTouch</strong><br>Version 1.0 beta</p>
       <p><a href="#" class="goback">Close</a></p>
     </section>
     <footer>
       footer
+      <a class="btn slidedown" href="#home">Close</a>
     </footer>
   </article>
   <!-- -->
   
   <article data-ui="view" id="animdemo">
     <header>
+      <a class="btn back" href="#">Back</a>
       <div class="title">
         <h2>Animations...</h2>
       </div>
-      <a class="back f-btn" href="#">Back</a>
     </header>
-    <section class="scroll cont-box">
+    <section data-ui="scroll">
       <div style="font-size: 1.5em; text-align: center; margin: 160px 0 90px; font-family: Marker felt;">
         Pretty smooth, eh?
       </div>
       <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="whiteButton goback">Go back</a>
     </section>
-    <footer>
-      footer
-    </footer>
   </article>
   <!-- -->
 
@@ -121,9 +105,6 @@ var jQT=new $.jQT({
 
 // Some sample Javascript functions:
 $(function(){});
-
-if(window.navigator.standalone){
-  $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
-}
+if(window.navigator.standalone){}
 </script>
 </html>

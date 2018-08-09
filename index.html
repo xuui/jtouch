@@ -27,7 +27,9 @@
       <h1 class="title">Xu-jTouch</h1>
       <a class="btn slideup" href="#about">About</a>
     </header><!-- /header -->
-    <section data-ui="scroll">
+    <section data-ui="scroll" class="tabPanel">
+      <div class="tabpanel">
+
       <div data-ui="searchbar">
         <span>搜索</span>
         <div class="input"><input type="text"></div>
@@ -82,9 +84,19 @@
       <p>p</p><p>p</p><p>p</p>
       <p>p</p><p>p</p><p>p</p>
 
+      </div>
+      <div class="tabpanel">
+          tab2 panel.
+      </div>
+      <div class="tabpanel">
+          tab3 panel.
+      </div>
+      <div class="tabpanel">
+          tab4 panel.
+      </div>
     </section>
     <footer>
-      <div data-ui="tabbar">
+      <div data-ui="tabbar" class="tabTit">
         <a class="current" href="javascript:void(0)" role="tab">tab1</a>
         <a href="javascript:void(0)" role="tab">tab2</a>
         <a href="javascript:void(0)" role="tab">tab3</a>
@@ -142,4 +154,5 @@ var jQT=new $.jQT({
 $(function(){});
 if(window.navigator.standalone){}
 </script>
+<script src="resources/xutabs.js"></script>
 </html>

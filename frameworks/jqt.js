@@ -91,7 +91,7 @@
       starter: $(document).ready,
       submitSelector: ".submit",
       touchSelector: "a, .touch",
-      updateHash: true,
+      updateHash: false,
       useAnimations: true,
       useFastTouch: true,
       useTouchScroll: true

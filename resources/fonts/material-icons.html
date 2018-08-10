@@ -10,10 +10,10 @@ body{margin:0;padding:0;background:#f5f5f5;color:#424242;}
 h1{background:#009688;margin:0;color:#fff;padding:16px 32px;font-size:30px;font-weight:400;}
 .hide{display:none}
 .mdicons{margin:0 auto;padding:30px 0;min-width:320px;max-width:960px;background:#fff;}
-.itemBox{display:inline-block;margin:0 -4px;padding:10px;width:124px;height:128px;vertical-align:top;text-align:center;}
-.itemBox i{display: block;width:48px;height:48px;font-size:48px;margin:0 auto;}
+.itemBox{display:inline-block;margin:0 -4px;padding:10px;width:168px;height:64px;vertical-align:top;text-align:center;}
+.itemBox i{display: block;width:24px;height:24px;font-size:24px;margin:0 auto;}
 .itemBox:hover i{color:#2196f3;}
-.itemBox .caption{font-size:13px;line-height:1.2}
+.itemBox .caption{display:block;font-size:13px;line-height:1.2}
 </style>
 <script src="../../frameworks/jquery.min.js"></script>
 <script>
@@ -25,7 +25,7 @@ $.getJSON('mdicons.json',function(data){
   }
   for(var i=0;i<mdicons.length;i++){
     //if(mdicons[i].group_id=='file'){
-      $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></li>');
+      $('#icons').append('<li class="itemBox '+mdicons[i].group_id+'"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span><span class="caption">&amp;#x'+mdicons[i].codepoint+';</span></li>');
     //}else{continue;}
   }
 });

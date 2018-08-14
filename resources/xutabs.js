@@ -4,9 +4,9 @@ var tabPanel,tabTit;
 (function(jQuery){
 $=jQuery.noConflict();
 $(document).ready(function(){
-  $('.tabNav a').click(function(){
+  $('[data-tab=nav] a').click(function(){
     $(this).addClass('current').siblings().removeClass();
-    $('.tabContent > [data-tab=panel]').eq($('.tabNav a').index(this)).addClass('current').show().siblings().hide();
+    $('[data-tab=content] > [data-tab=panel]').eq($('.tabNav a').index(this)).addClass('current').show().siblings().hide();
   });
 });
 })(jQuery);

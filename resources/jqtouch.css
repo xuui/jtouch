@@ -17,6 +17,7 @@ jQTouch may be freely distributed under the MIT license.
 [data-ui=scroll] a:hover{background:#fff;}
 
 
+.grid-view{padding:8px 4px;}
 .grid-view .grid-li{padding:0 4px;float:left;}
 .grid-view .grid-li{height:172px;}
 .grid-view .grid-li +.grid-li{height:82px;margin-bottom:8px;}

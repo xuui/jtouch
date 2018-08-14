@@ -12,11 +12,6 @@ jQTouch may be freely distributed under the MIT license.
 @import url(grids.css);
 
 
-
-[data-ui=scroll] a{padding:8px 16px;background:#f2f2f2;line-height:24px;}
-[data-ui=scroll] a:hover{background:#fff;}
-
-
 .grid-view{padding:8px 4px;}
 .grid-view .grid-li{padding:0 4px;float:left;}
 .grid-view .grid-li{height:172px;}
@@ -25,8 +20,3 @@ jQTouch may be freely distributed under the MIT license.
 .grid-view .item{background:#fff;height:100%;}
 .grid-view .item + .item{height:40px;}
 
-
-.s-img{background:#31bbee;margin-right:10px;width:50px;height:50px;}
-.s-tit,.s-desc{line-height:1.2;}
-.s-tit{font-size:20px;font-weight:bold;}
-.f-icon{flex:none;display:block;width:20px;height:20px;}

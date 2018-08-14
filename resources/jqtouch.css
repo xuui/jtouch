@@ -23,3 +23,9 @@ jQTouch may be freely distributed under the MIT license.
 .grid-view .grid-li +.grid-li +.grid-li{margin-bottom:0;}
 .grid-view .item{background:#fff;height:100%;}
 .grid-view .item + .item{height:40px;}
+
+
+.s-img{background:#31bbee;margin-right:10px;width:50px;height:50px;}
+.s-tit,.s-desc{line-height:1.2;}
+.s-tit{font-size:20px;font-weight:bold;}
+.f-icon{flex:none;display:block;width:20px;height:20px;}

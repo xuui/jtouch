@@ -51,3 +51,8 @@ footer [data-ui=toolbar]{box-shadow:none;}
 [data-ui=searchbar] .input{-webkit-box-flex:1;-webkit-flex:1;flex:1;border:1px solid #aaa;padding:0;height:36px;width:0%;}
 [data-ui=searchbar] .input input{border:none;width:100%;height:100%;}
 
+
+[data-ui=list]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;
+background:#fff;border-bottom:1px solid #ccc;padding:8px;}
+[data-ui=list] .item{-webkit-box-flex:1;-webkit-flex:1;flex:1;width:0%;}
+

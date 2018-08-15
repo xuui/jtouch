@@ -26,7 +26,7 @@ body{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
 #jqt.autoscroll:not(.animating3d),
 #jqt.touchscroll:not(.animating3d){overflow-y:auto;-webkit-overflow-scrolling:touch}
 
-[data-ui=scroll]{-webkit-margin-collapse:separate;-webkit-overflow-scrolling:touch;-webkit-box-flex:1;box-flex:1;-webkit-flex:1;flex:1;position:relative;overflow:auto;background:#e2e2e2;width:100%;height:auto;}
+[data-ui=scroll]{-webkit-margin-collapse:separate;-webkit-overflow-scrolling:touch;-webkit-box-flex:1;box-flex:1;-webkit-flex:1;flex:1;position:relative;overflow:auto;background:#eee;width:100%;height:auto;}
 
 /*.*************************************************.*/
 

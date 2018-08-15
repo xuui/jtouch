@@ -8,7 +8,6 @@ body{background:#000}
 #jqt .toolbar>h1{color:rgba(0,0,0,.87);}
 
 #jqt ul{list-style:none;padding:0 0 16px;}
-#jqt ul li{padding:8px 0;}
 
 
 [data-ui=view] .btn{

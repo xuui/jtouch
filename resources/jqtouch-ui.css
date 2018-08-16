@@ -51,5 +51,11 @@ footer [data-ui=toolbar]{box-shadow:none;}
 [data-ui=lists] .title,.intro{line-height:1.2;}
 [data-ui=lists] .title{font-size:16px;font-weight:bold;color:#212121;}
 [data-ui=lists] .intro{color:#757575;}
-[data-ui=lists] .icon{flex:none;display:block;margin-right:-8px;width:24px;height:24px;text-align:right;}
+[data-ui=lists] .icon{flex:none;display:block;margin-right:-8px;width:24px;height:24px;color:#757575;text-align:right;}
 
+
+
+[data-ui=notes]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;
+  background:#fff;border:1px solid #ddd;margin:12px 0;padding:16px;}
+[data-ui=notes] .intro{color:#212121;}
+[data-ui=notes] .icon{flex:none;display:block;margin-right:8px;width:24px;height:24px;color:#757575;text-align:right;}

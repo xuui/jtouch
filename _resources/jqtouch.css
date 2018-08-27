@@ -11,7 +11,6 @@ may be freely distributed under the MIT license.
 @import url(buttons.css);
 @import url(forms.css);
 @import url(animation.css);
-@import url(../fonts/material-icons.css);
 
 /* Base UI */
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}

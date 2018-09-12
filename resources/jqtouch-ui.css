@@ -23,6 +23,7 @@
 [data-ui=tabbar] .current{background-color:#f2f2f2;color:#06c;}
 [data-ui=tabbar] .current span{border-color:#06c;}
 
+
 /* Tab Panel */
 [data-tab=nav]{}
 [data-tab=content]{}
@@ -44,7 +45,7 @@ footer [data-ui=toolbar]{box-shadow:none;}
 
 /* List */
 [data-ui=lists]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;
-  background:#fff;border-bottom:1px solid #eee;padding:16px;}
+  background:#fff;border-bottom:1px solid #eee;padding:12px 16px;}
 [data-ui=lists] .item{-webkit-box-flex:1;-webkit-flex:1;flex:1;width:0%;}
 
 [data-ui=lists] .image{background:#31bbee;margin-right:16px;width:40px;height:40px;}
@@ -53,6 +54,7 @@ footer [data-ui=toolbar]{box-shadow:none;}
 [data-ui=lists] .intro{color:#757575;}
 [data-ui=lists] .icon{flex:none;display:block;margin-right:-8px;width:24px;height:24px;color:#757575;text-align:right;}
 
+[data-ui=lists] .title:only-child{font-weight:400;line-height:1;}
 
 
 [data-ui=notes]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;

@@ -22,7 +22,17 @@
 <body>
 <div id="jqt" class="">
 
-  <article data-ui="view" id="home" class="current">
+  <article data-ui="view" id="launch" class="launch current">
+    <section data-ui="scroll" data-tab="content">
+      <div>flash</div>
+    </section>
+    <footer data-ui="tabbar">
+      bottom
+      <a class="btn slideup" href="#home">跳过</a>
+    </footer>
+  </article>
+
+  <article data-ui="view" id="home" class="">
     <header>
       <button class="btn">back</button>
       <h1 class="title">Xu-jTouch</h1>
@@ -317,6 +327,14 @@ var jQT=new $.jQT({
 // Some sample Javascript functions:
 $(function(){});
 if(window.navigator.standalone){}
+
+//Launch image.
+/*
+setTimeout(function(){
+  jQT.goTo('#home','slideleft');
+},7000);
+*/
+
 </script>
 <script src="resources/xutabs.js"></script>
 </html>

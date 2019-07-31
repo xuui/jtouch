@@ -447,7 +447,7 @@
               head = $head.get(0);
               body = document.body;
               style = document.createElement("style");
-              style.textContent = "@media (transform-3d),(-o-transform-3d),(-moz-transform-3d),(-webkit-transform-3d){#jqt-3dtest{height:3px}}";
+              style.textContent = "@media (transform-3d),(-webkit-transform-3d){#jqt-3dtest{height:3px}}";
               div = document.createElement("div");
               div.id = "jqt-3dtest";
               head.appendChild(style);

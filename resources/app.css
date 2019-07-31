@@ -1,24 +1,9 @@
 /*
-jQTouch may be freely distributed under the MIT license.
+Xu.App.css
 */
 
 @import url(base.css);
-@import url(jqtouch-core.css);
-@import url(jqtouch-ui.css);
-@import url(jqtouch-button.css);
-@import url(jqtouch-animation.css);
-@import url(jqtouch-theme.css);
-
 @import url(grids.css);
-
-
-.grid-view{padding:8px 4px;}
-.grid-view .grid-li{padding:0 4px;float:left;}
-.grid-view .grid-li{height:172px;}
-.grid-view .grid-li +.grid-li{height:82px;margin-bottom:8px;}
-.grid-view .grid-li +.grid-li +.grid-li{margin-bottom:0;}
-.grid-view .item{background:#fff;height:100%;border-radius:4px;}
-.grid-view .item + .item{height:40px;}
 
 /* launch image */
 .launch .launchimg{background:url(launch.jpg) no-repeat 50% 50%;background-size:cover;}

@@ -4,9 +4,17 @@ Xu.App.css
 
 @import url(base.css);
 @import url(grids.css);
+@import url(flex.css);
+
+
+html,body,#jqt{height:100%;}
 
 /* launch image */
-.launch .launchimg{background:url(launch.jpg) no-repeat 50% 50%;background-size:cover;}
+.launch .launchimg{background:url(launch.jpg) no-repeat 0% 100%;background-size:cover;
+  height:100%;
+
+}
+/*
 
 .launch footer{overflow:hidden;background:#fff;box-shadow:0 -1px 0 rgba(0,0,0,.08);height:76px;}
 
@@ -27,5 +35,5 @@ Xu.App.css
   color:#999;
 }
 
-
+*/
 

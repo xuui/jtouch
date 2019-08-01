@@ -72,7 +72,7 @@
         selector: ".slideup"
       }, {
         name: "slideleft",
-        selector: ".slideleft, .slide, #jqt > * > ul li a"
+        selector: ".slideleft"
       }
     ];
 
@@ -616,7 +616,7 @@
           }
           navigationEndHandler = function(event) {
             if (support.animationEvents && animation && _this.settings.useAnimations) {
-              fromPage.off("webkitAnimationEnd", navigationEndHandler);
+              fromPage.off("animationend", navigationEndHandler);
               fromPage.removeClass(finalAnimationName + " out");
               if (finalAnimationName) {
                 toPage.removeClass(finalAnimationName);
@@ -678,7 +678,7 @@
               finalAnimationName = _this.settings.defaultAnimation;
             }
             console.warn("finalAnimationName:", finalAnimationName);
-            fromPage.on("webkitAnimationEnd", navigationEndHandler);
+            fromPage.on("animationend", navigationEndHandler);
             $body.addClass("animating" + is3d);
             toPage.addClass(finalAnimationName + " in current");
             fromPage.removeClass("current").addClass(finalAnimationName + " out");

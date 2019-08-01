@@ -3,12 +3,17 @@
 
 .page{position:relative;height:100%;width:100%;}
 [data-ui=view]{
-    display:-webkit-box;display:-webkit-flex;display:flex;
-    -webkit-box-orient:vertical;box-orient:vertical;-webkit-box-direction:normal;
-    box-direction:normal;-webkit-flex-direction:column;
-    flex-direction:column;
-    position:absolute;left:0;top:0;z-index:0;overflow-x:hidden;
-    min-height:100%;height:100%;width:100%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-orient:vertical;
+          box-orient:vertical;
+  -webkit-box-direction:normal;
+          box-direction:normal;
+  -webkit-flex-direction:column;
+          flex-direction:column;
+  position:absolute;left:0;top:0;z-index:0;overflow-x:hidden;
+  min-height:100%;height:100%;width:100%;
 }
 
 

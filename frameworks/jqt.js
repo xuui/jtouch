@@ -440,7 +440,7 @@
           var $touchSelectors, anatomyLessons, extFn, startHash, _i, _len, _ref;
           support = $.support || {};
           $.extend(support, {
-            animationEvents: typeof window.WebKitAnimationEvent !== "undefined",
+            animationEvents: typeof window.AnimationEvent !== "undefined",
             touch: (typeof window.TouchEvent !== "undefined") && (window.navigator.userAgent.indexOf("Mobile") > -1) && _this.settings.useFastTouch,
             transform3d: function() {
               var body, div, head, result, style;

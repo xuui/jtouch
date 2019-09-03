@@ -11,6 +11,8 @@ jQTouch may be freely distributed under the MIT license.
 
 @import url(grids.css);
 
+a{color:#4d4d4d;}
+a:hover{text-decoration:none;}
 
 .grid-view{padding:8px 4px;}
 .grid-view .grid-li{padding:0 4px;float:left;}

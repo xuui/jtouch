@@ -325,20 +325,15 @@
 -->
 <script src="frameworks/jqt.js"></script>
 <script>
-var jQT=new $.jQT({
-  preloadImages:[]
-});
+var jQT=new $.jQT({});
+//Launch image.
+setTimeout(function(){jQT.goTo('#home','dissolve');},7000);
 
 // Some sample Javascript functions:
 //$(function(){});
 //if(window.navigator.standalone){}
 
-//Launch image.
-/*
-setTimeout(function(){
-  jQT.goTo('#home','dissolve');
-},7000);
-*/
+
 
 </script>
 <script src="resources/xutabs.js"></script>

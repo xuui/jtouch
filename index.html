@@ -32,11 +32,11 @@
         APP Logo
       </div>
     </footer>
-  </article>
+  </article><!-- /#launch -->
 
   <article data-ui="view" id="home" class="">
     <header>
-      <button class="btn">back</button>
+      <button class="btn"><i class="icon md-icon">&#xe5d2;</i></button>
       <h1 class="title">Xu-jTouch</h1>
       <a class="btn slideup" href="#about">About</a>
     </header><!-- /header -->
@@ -48,6 +48,15 @@
         <div class="input"><input type="text"></div>
         <button class="btn">Search</button>
       </div>
+
+      <a data-ui="lists" href="#MaterialIcon">
+        <div class="image"></div>
+        <div class="item">
+          <p class="title">MaterialIcon</p>
+          <p class="intro">Material Design Icons</p>
+        </div>
+        <i class="icon md-icon">&#xe5cc;</i>
+      </a>
 
       <a data-ui="lists" href="#">
         <div class="image"></div>
@@ -76,7 +85,6 @@
         </div>
         <i class="icon md-icon">&#xe5cc;</i>
       </a>
-
 
       <ul>
         <li>
@@ -173,8 +181,6 @@
           <button class="f-btn">btn</button>
         </div>
       </div>
-      
-
       <p>p</p><p>p</p><p>p</p>
       <p>p</p><p>p</p><p>p</p>
       <p>p</p><p>p</p><p>p</p>
@@ -186,7 +192,7 @@
       <p>p</p><p>p</p><p>p</p>
       <p>p</p><p>p</p><p>p</p>
 
-      </div>
+      </div><!-- /.tabPanel -->
       <div data-tab="panel" class="tabPanel">
         <h2>Most Popular</h2>
         <ul class="rounded">
@@ -242,7 +248,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div><!-- /.tabPanel -->
       <div data-tab="panel" class="tabPanel">
         <div class="grid-view">
           <div class="xu-u-4 grid-li">
@@ -266,15 +272,15 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- /.tabPanel -->
       <div data-tab="panel" class="tabPanel">
           tab4 panel.
-      </div>
+      </div><!-- /.tabPanel -->
     </section>
     <footer>
       <div data-ui="tabbar" data-tab="nav" class="tabNav">
         <a class="current" href="javascript:void(0)" role="tab">
-          <i class="md-icon">&#xe8f1;</i><span>tab1</span>
+          <i class="md-icon">&#xe88a;</i><span>Home</span>
         </a>
         <a href="javascript:void(0)" role="tab">
           <i class="md-icon">&#xe1bd;</i><span>Animdemo</span>
@@ -283,12 +289,11 @@
           <i class="md-icon">&#xe919;</i><span>Grids</span>
         </a>
         <a href="javascript:void(0)" role="tab">
-          <i class="md-icon">&#xe42a;</i><span>Icons</span>
+          <i class="md-icon">&#xe7fd;</i><span>User</span>
         </a>
       </div>
     </footer>
-  </article>
-  <!-- -->
+  </article><!-- /#home -->
   
   <article data-ui="view" id="about" class="selectable">
     <section data-ui="scroll">
@@ -299,8 +304,7 @@
       footer
       <a class="btn slidedown" href="#home">Close</a>
     </footer>
-  </article>
-  <!-- -->
+  </article><!-- /#selectable -->
   
   <article data-ui="view" id="animdemo">
     <header>
@@ -322,13 +326,25 @@
         <a class="btn slideup" href="#about">About</a>
       </div>
     </footer>
-  </article>
-  <!-- -->
+  </article><!-- /#animdemo -->
+  
+  <article data-ui="view" id="MaterialIcon">
+    <header>
+      <a class="btn back" href="#home"><i class="md-icon">arrow_back</i></a>
+      <div class="title">
+        <h2>Material 图标</h2>
+      </div>
+    </header>
+    <section class="scroll">
+      <ul id="icons-cont" class="xu-g"></ul>
+    </section>
+  </article><!-- /#MaterialIcon -->
 
 </div>
 </body>
-<script src="frameworks/jquery.slim.min.js"></script>
+<script src="frameworks/jquery.min.js"></script>
 <!--
+<script src="frameworks/jquery.slim.min.js"></script>
 <script src="frameworks/zepto.min.js"></script>
 -->
 <script src="frameworks/jqt.js"></script>
@@ -341,6 +357,25 @@ var jQT=new $.jQT({});
 //$(function(){});
 //if(window.navigator.standalone){}
 
+
+$('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
+  if(info.direction=='in'){
+    if($('#MaterialIcon #icons-cont').html()==''){
+      $('#MaterialIcon #icons-cont').html('<li class="xu-u">Loadind Material Icon...</li>');
+      $.getJSON('resources/fonts/mdicons.json',function(data){
+        var mdicons=data.icons,icons_group='';
+        $('#MaterialIcon #icons-cont').html('');
+        for(var i=0;i<mdicons.length;i++){
+          if(icons_group!=mdicons[i].group_id){
+            icons_group=mdicons[i].group_id;
+            $('#MaterialIcon #icons-cont').append('<li class="xu-u">'+mdicons[i].group_id+'</li>');
+          }
+          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><a href="javascript:;"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></a></li>');// &#x'+mdicons[i].codepoint+';
+        }
+      });
+    }
+  }else{}
+});
 
 
 </script>

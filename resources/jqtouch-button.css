@@ -9,7 +9,7 @@
   height:48px;
   line-height:48px;
 }
-
+[data-ui=view] header .btn i{line-height:48px;}
 
 [data-ui=toolbar] .btn{
   height:44px;

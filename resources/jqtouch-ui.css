@@ -20,15 +20,19 @@
 [data-ui=tabbar] a i,[data-ui=tabbar] a span{display:block;}
 [data-ui=tabbar] a i{height:28px;line-height:28px;font-size:24px;}
 [data-ui=tabbar] a span{position:relative;display:inline-block;height:20px;line-height:20px;font-size:12px;}
-
 [data-ui=tabbar] .current,[data-ui=tabbar] .current:hover{background-color:transparent;color:#06c;}
-[data-ui=tabbar] .current span::after{
+[data-ui=tabbar] a span::after{
   display:block;
   background:#06c;
   position:absolute;
-  left:0;right:0;bottom:0;
+  left:49.5%;right:49.5%;bottom:1px;
   height:2px;border-radius:3px;
   content:'';
+  transition: all .24s ease-in;
+}
+[data-ui=tabbar] .current span::after{
+  background:#06c;
+  left:0;right:0;
 }
 
 

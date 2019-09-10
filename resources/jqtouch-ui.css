@@ -21,14 +21,12 @@
 [data-ui=tabbar] a i{height:28px;line-height:28px;font-size:24px;}
 [data-ui=tabbar] a span{position:relative;display:inline-block;height:20px;line-height:20px;font-size:12px;}
 [data-ui=tabbar] .current,[data-ui=tabbar] .current:hover{background-color:transparent;color:#06c;}
+[data-ui=tabbar] a,[data-ui=tabbar] a span,[data-ui=tabbar] a span::after{transition: all .24s ease-in;}
 [data-ui=tabbar] a span::after{
-  display:block;
-  background:#06c;
+  display:block;content:'';background:#06c;
   position:absolute;
   left:49.5%;right:49.5%;bottom:1px;
   height:2px;border-radius:3px;
-  content:'';
-  transition: all .24s ease-in;
 }
 [data-ui=tabbar] .current span::after{
   background:#06c;

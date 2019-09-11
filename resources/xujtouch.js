@@ -23,7 +23,7 @@ $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
             icons_group=mdicons[i].group_id;
             $('#MaterialIcon #icons-cont').append('<li class="xu-u">'+mdicons[i].group_id+'</li>');
           }
-          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><a href="javascript:;"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">'+mdicons[i].ligature+'</span></a></li>');// &#x'+mdicons[i].codepoint+';
+          $('#MaterialIcon #icons-cont').append('<li class="xu-u-3 '+mdicons[i].group_id+'"><a href="javascript:;"><i class="material-icons">'+mdicons[i].ligature+'</i> <span class="caption">&amp;#x'+mdicons[i].codepoint+'</span></a></li>');// &#x'+mdicons[i].codepoint+';
         }
         $('#MaterialIcon #icons-cont').append('<li class="clearer"></li>');
       });

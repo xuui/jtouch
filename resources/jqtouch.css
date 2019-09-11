@@ -14,12 +14,12 @@ jQTouch may be freely distributed under the MIT license.
 a{color:#4d4d4d;}
 a:hover{text-decoration:none;}
 
-.grid-view{padding:8px 4px;}
-.grid-view .grid-li{padding:0 4px;float:left;}
+.grid-view{padding:8px;}
+.grid-view .grid-li{padding:0 8px;float:left;}
 .grid-view .grid-li{height:172px;}
-.grid-view .grid-li +.grid-li{height:82px;margin-bottom:8px;}
+.grid-view .grid-li +.grid-li{height:78px;margin-bottom:16px;}
 .grid-view .grid-li +.grid-li +.grid-li{margin-bottom:0;}
-.grid-view .item{background:#fff;height:100%;border-radius:4px;}
+.grid-view .item{background:#fff;height:100%;border-radius:4px;padding:8px;}
 .grid-view .item + .item{height:40px;}
 
 /* launch view */
@@ -28,7 +28,7 @@ a:hover{text-decoration:none;}
 .launch footer{overflow:hidden;background:#fff;box-shadow:0 -1px 0 rgba(0,0,0,.08);height:72px;}
 .launch footer .applogo{position:relative;background-position:50% 50%;width:100%;text-align:center;line-height:76px;}
 .launch footer .applogo{font-size:18px;font-weight:300;}
-.launch footer #skip{position:absolute;right:16px;top:20px;background-color:transparent;border:1px solid rgba(0,0,0,.2);border-radius:24px;color:rgba(0,0,0,.5);line-height:32px;}
+.launch footer #skip{position:absolute;right:16px;top:19px;background-color:transparent;border:1px solid rgba(0,0,0,.2);border-radius:24px;color:rgba(0,0,0,.5);line-height:32px;}
 
 
 

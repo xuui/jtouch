@@ -25,7 +25,7 @@
 [data-ui=tabbar] a span::after{
   display:block;content:'';background:#06c;
   position:absolute;
-  left:49.5%;right:49.5%;bottom:1px;
+  left:50%;right:80%;bottom:1px;
   height:2px;border-radius:3px;
 }
 [data-ui=tabbar] .current span::after{

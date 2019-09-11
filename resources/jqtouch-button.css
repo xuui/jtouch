@@ -2,17 +2,9 @@
 * jqtouch-button.css
 */
 /* button */
-.btn,button{flex:none;display:inline-block;border:0;padding:0 1.2em;font-size:14px;font-weight:500;letter-spacing:0.04em;line-height:2.572em;text-align:center;text-overflow:ellipsis;text-decoration:none;white-space:nowrap;}
+.btn,button{flex:none;display:inline-block;border:0;padding:0 16px;font-size:14px;font-weight:500;letter-spacing:0.04em;line-height:2.572em;text-align:center;text-overflow:ellipsis;text-decoration:none;white-space:nowrap;}
 
-[data-ui=view] header .btn{
-  width:64px;
-  height:48px;
-  line-height:48px;
-}
-[data-ui=view] header .btn i{line-height:48px;}
-
-[data-ui=toolbar] .btn{
-  height:44px;
-  line-height:44px;
-}
+[data-ui=view] header .btn{width:56px;height:48px;}
+[data-ui=view] header .btn,[data-ui=view] header .btn i{line-height:48px;}
+[data-ui=toolbar] .btn{height:44px;line-height:44px;}
 

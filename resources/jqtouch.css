@@ -43,3 +43,5 @@ ul#icons-cont{padding:8px 4px;margin:0;list-style:none outside;}
 
 .swiper-container{height:100%;}
 .swiper-slide{background:rgba(0,0,0,.2)}
+.swiper-pagination .swiper-pagination-bullet{width:4px;height:4px;border-radius:4px;}
+.swiper-pagination .swiper-pagination-bullet-active{background:#fff;}

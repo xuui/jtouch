@@ -23,7 +23,7 @@ a:hover{text-decoration:none;}
 .grid-view .item + .item{height:40px;}
 
 /* launch view */
-.launch .launchimg{background:url(launch/launch.jpg) no-repeat 50% 100%;background-size:100% auto;margin:0;}
+.launch .launchimg{background:url(launch/launch.jpg) no-repeat 50% 100%;background-size:cover;margin:0;}
 .launch .center-cont{margin:0;padding:0;background:transparent;}
 .launch footer{overflow:hidden;background:#fff;box-shadow:0 -1px 0 rgba(0,0,0,.08);height:72px;}
 .launch footer .applogo{position:relative;background-position:50% 50%;width:100%;text-align:center;line-height:76px;}

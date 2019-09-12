@@ -4,9 +4,11 @@
 
 var jQT=new $.jQT({});
 //Launch image.
+/*
 setTimeout(function(){
   if(!$('#home').hasClass('current'))jQT.goTo('#home','dissolve');
 },7000);
+*/
 
 // Some sample Javascript functions:
 //$(function(){});

@@ -43,8 +43,7 @@ ul#icons-cont{padding:8px 4px;margin:0;list-style:none outside;}
 
 /* swiper */
 .swiper-container{height:100%;}
-.swiper-slide{background:rgba(0,0,0,.2)}
-.swiper-pagination-bullet{margin:0 2px;width:4px;height:4px;border-radius:4px;}
+.swiper-slide{width:100%;background:rgba(0,0,0,.2)}
+.swiper-pagination-bullet{margin:0 4px;width:7px;height:7px;border-radius:4px;}
 .swiper-pagination-bullet-active{background:#fff;}
-
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin:0 2px;}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin:0 4px;}

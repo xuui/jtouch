@@ -23,7 +23,7 @@ a:hover{text-decoration:none;}
 .grid-view .item + .item{height:40px;}
 
 /* launch view */
-.launch .launchimg{background:url(launch.jpg) no-repeat 50% 100%;background-size:100% auto;margin:0;}
+.launch .launchimg{background:url(launch/launch.jpg) no-repeat 50% 100%;background-size:100% auto;margin:0;}
 .launch .center-cont{margin:0;padding:0;background:transparent;}
 .launch footer{overflow:hidden;background:#fff;box-shadow:0 -1px 0 rgba(0,0,0,.08);height:72px;}
 .launch footer .applogo{position:relative;background-position:50% 50%;width:100%;text-align:center;line-height:76px;}
@@ -41,3 +41,5 @@ ul#icons-cont{padding:8px 4px;margin:0;list-style:none outside;}
 #icons-cont .xu-u-3 .caption{display:block;font-size:12px;line-height:1.3;word-break:break-all;}
 #icons-cont .xu-u-3:hover,#icons-cont .xu-u-3:hover i{color:#09f}
 
+.swiper-container{height:100%;}
+.swiper-slide{background:rgba(0,0,0,.2)}

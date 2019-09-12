@@ -10,6 +10,11 @@ var jQT=new $.jQT({});
 //$(function(){});
 //if(window.navigator.standalone){}
 
+var swiper = new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
 
 $('#MaterialIcon').bind('pageAnimationEnd',function(e,info){
   if(info.direction=='in'){

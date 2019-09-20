@@ -61,7 +61,7 @@ self.addEventListener('activate',function(e){ // 激活外壳(app shell)
   );
   return self.clients.claim();
 });
-/*
+/*/
 self.addEventListener('fetch',function(e){
   e.respondWith(caches.match(e.request).then(function(response){
     // caches.match() always resolves
@@ -80,12 +80,12 @@ self.addEventListener('fetch',function(e){
         });
         return response;
       }).catch(function () {
-        return caches.match('/sw-test/gallery/myLittleVader.jpg');
+        return caches.match('/jtouch/resources/icons/icon-256x256.png');
       });
     }
   }));
 });
-*/
+/*
 self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app shell)缓存，并不会删除数据缓存。
   console.log('[Service Worker] Fetch',e.request.url);
   var dataUrl = 'https://cdn.xuui.net/jtouch/resources/fonts/mdicons.json';
@@ -99,11 +99,6 @@ self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app she
       })
     );
   } else {
-    /*
-     * The app is asking for app shell files. In this scenario the app uses the
-     * "Cache, falling back to the network" offline strategy:
-     * https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network
-     */
     e.respondWith(
       caches.match(e.request).then(function(response) {
         return response || fetch(e.request);
@@ -111,3 +106,4 @@ self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app she
     );
   }
 });
+*/

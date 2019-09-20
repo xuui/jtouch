@@ -39,8 +39,7 @@ var filesToCache = [ // app shell 需要的缓存的文件列表
 
 this.addEventListener('install',function(event){
   event.waitUntil(
-    caches.open(cacheName).then(function(cache){
-      console.log('[ServiceWorker] Caching app shell');
+    caches.open('v1').then(function(cache) {
       return cache.addAll(filesToCache);
     })
   );
@@ -54,7 +53,7 @@ self.addEventListener('install',function(e){ // 注册 Service Worker
       return cache.addAll(filesToCache);
     })
   );*
-});
+});*/
 
 self.addEventListener('activate',function(e){ // 激活外壳(app shell)
   console.log('[ServiceWorker] Activate');

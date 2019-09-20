@@ -64,7 +64,7 @@ self.addEventListener('activate',function(e){ // 激活外壳(app shell)
 
 self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app shell)缓存，并不会删除数据缓存。
   console.log('[Service Worker] Fetch',e.request.url);
-  /*var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
+  var dataUrl = 'https://cdn.xuui.net/jtouch/resources/fonts/mdicons.json';
   if (e.request.url.indexOf(dataUrl) > -1) {
     /*
      * When the request URL contains dataUrl, the app is asking for fresh
@@ -72,7 +72,7 @@ self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app she
      * network and then caches the response. This is called the "Cache then
      * network" strategy:
      * https://jakearchibald.com/2014/offline-cookbook/#cache-then-network
-     *//*
+     */
     e.respondWith(
       caches.open(dataCacheName).then(function(cache) {
         return fetch(e.request).then(function(response){
@@ -86,11 +86,11 @@ self.addEventListener('fetch',function(e){ //清理应用程序的外壳(app she
      * The app is asking for app shell files. In this scenario the app uses the
      * "Cache, falling back to the network" offline strategy:
      * https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network
-     *//*
+     */
     e.respondWith(
       caches.match(e.request).then(function(response) {
         return response || fetch(e.request);
       })
     );
-  }*/
+  }
 });

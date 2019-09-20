@@ -1,4 +1,4 @@
-var cacheName = 'xuTtouch-final-1';// app shell 缓存名字
+var cacheName = 'xuTtouch-final-v1';// app shell 缓存名字
 var dataCacheName = 'xuTtouch-v1'; // app shell 的数据缓存
 var filesToCache = [ // app shell 需要的缓存的文件列表
   '',
@@ -37,6 +37,15 @@ var filesToCache = [ // app shell 需要的缓存的文件列表
   'resources/icons/icon-256x256.png'
 ];
 
+this.addEventListener('install',function(event){
+  event.waitUntil(
+    caches.open(cacheName).then(function(cache){
+      console.log('[ServiceWorker] Caching app shell');
+      return cache.addAll(filesToCache);
+    })
+  );
+});
+/*
 self.addEventListener('install',function(e){ // 注册 Service Worker
   console.log('[ServiceWorker] Install');
   /*e.waitUntil(
@@ -44,7 +53,7 @@ self.addEventListener('install',function(e){ // 注册 Service Worker
       console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(filesToCache);
     })
-  );*/
+  );*
 });
 
 self.addEventListener('activate',function(e){ // 激活外壳(app shell)

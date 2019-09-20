@@ -46,7 +46,7 @@ self.addEventListener('install',function(e){ // 注册 Service Worker
     })
   );
 });
-/*
+
 self.addEventListener('activate',function(e){ // 激活外壳(app shell)
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
@@ -61,7 +61,8 @@ self.addEventListener('activate',function(e){ // 激活外壳(app shell)
   );
   return self.clients.claim();
 });
-/*/
+
+/*
 self.addEventListener('fetch',function(e){
   e.respondWith(caches.match(e.request).then(function(response){
     // caches.match() always resolves

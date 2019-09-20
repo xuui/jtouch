@@ -1,6 +1,12 @@
 //xu.Touch.
 //(function(jQuery){
 //$=jQuery.noConflict();
+// TODO add service worker code here
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./service-worker.js').then(function(){
+    console.log('Service Worker Registered');
+  });
+}
 
 var jQT=new $.jQT({});
 //Launch image.

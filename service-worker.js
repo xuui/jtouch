@@ -30,6 +30,11 @@ var filesToCache = [ // app shell 需要的缓存的文件列表
   'resources/fonts/material-icons.css',
   'resources/fonts/mdicons.json',
   'resources/launch/launch.jpg',
+  'resources/icons/icon-128x128.png',
+  'resources/icons/icon-144x144.png',
+  'resources/icons/icon-152x152.png',
+  'resources/icons/icon-192x192.png',
+  'resources/icons/icon-256x256.png',
 ];
 
 self.addEventListener('install', function(e) { // 注册 Service Worker

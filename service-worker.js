@@ -39,17 +39,17 @@ var filesToCache = [ // app shell 需要的缓存的文件列表
 
 self.addEventListener('install',function(e){ // 注册 Service Worker
   console.log('[ServiceWorker] Install');
-  e.waitUntil(
+  /*e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(filesToCache);
     })
-  );
+  );*/
 });
 
 self.addEventListener('activate',function(e){ // 激活外壳(app shell)
   console.log('[ServiceWorker] Activate');
-  e.waitUntil(
+  /*e.waitUntil(
     caches.keys().then(function(keyList) {
       return Promise.all(keyList.map(function(key) {
         if (key !== cacheName && key !== dataCacheName) {
@@ -58,11 +58,11 @@ self.addEventListener('activate',function(e){ // 激活外壳(app shell)
         }
       }));
     })
-  );
+  );*/
   return self.clients.claim();
 });
 
-/*
+//*/
 self.addEventListener('fetch',function(e){
   e.respondWith(caches.match(e.request).then(function(response){
     // caches.match() always resolves

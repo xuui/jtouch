@@ -3,7 +3,7 @@
   'use strict';
   // TODO add service worker code here
   if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('./service-worker.js')
+    navigator.serviceWorker.register('/jtouch/service-worker.js')
       .then(function(){ console.log('Service Worker Registered'); });
   }
 })();

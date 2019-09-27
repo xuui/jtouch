@@ -3,7 +3,7 @@
   "short_name":"Xu Touch",
   "display":"standalone",
   //"orientation":"landscape",
-  "background_color":"#f0f0f0",
+  "background_color":"#fff",
   "theme_color":"#fff",
   "icons":[{
       "src":"resources/icons/icon-128x128.png",

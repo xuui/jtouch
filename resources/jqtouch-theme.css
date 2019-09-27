@@ -3,7 +3,7 @@
 */
 /* UI Theme */
 body{background:#000}
-#jqt>[data-ui=view]{background-color:#e6e6e6;color:rgba(0,0,0,.87);}
+#jqt>[data-ui=view]{background-color:#f2f2f2;color:rgba(0,0,0,.87);}
 #jqt .toolbar{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.13);}
 #jqt .toolbar>h1{color:rgba(0,0,0,.87);}
 

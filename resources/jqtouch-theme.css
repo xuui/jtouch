@@ -3,12 +3,14 @@
 */
 /* UI Theme */
 body{background:#000}
-#jqt>[data-ui=view]{background-color:#eee;color:rgba(0,0,0,.87);}
+#jqt>[data-ui=view]{background-color:#e6e6e6;color:rgba(0,0,0,.87);}
 #jqt .toolbar{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.13);}
 #jqt .toolbar>h1{color:rgba(0,0,0,.87);}
 
 #jqt ul{list-style:none;padding:0 0 16px;}
 
+[data-ui=view] header{background:#fff;}
+[data-ui=view] footer{background:#fff;}
 [data-ui=view] .btn{
   background:#06c;
   background:transparent;

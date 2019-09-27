@@ -12,7 +12,7 @@ body{background:#000}
 [data-ui=view] header{background:#fff;}
 [data-ui=view] footer{background:#fff;}
 [data-ui=view] .btn{
-  background:#06c;
+  background:#0078d4;
   background:transparent;
   /*color:#fff;*/
 }

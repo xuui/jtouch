@@ -20,16 +20,16 @@
 [data-ui=tabs] a i,[data-ui=tabs] a span{display:block;}
 [data-ui=tabs] a i{height:28px;line-height:28px;font-size:24px;}
 [data-ui=tabs] a span{position:relative;display:inline-block;height:20px;line-height:20px;font-size:12px;}
-[data-ui=tabs] .current,[data-ui=tabs] .current:hover{background-color:transparent;color:#06c;}
+[data-ui=tabs] .current,[data-ui=tabs] .current:hover{background-color:transparent;color:#0078d4;}
 [data-ui=tabs] a,[data-ui=tabs] a span,[data-ui=tabs] a span::after{transition: all .24s ease-in;}
 [data-ui=tabs] a span::after{
   position:absolute;
-  display:block;content:'';background:#06c;
+  display:block;content:'';background:#0078d4;
   left:50%;right:80%;bottom:1px;
   height:2px;border-radius:3px;
 }
 [data-ui=tabs] .current span::after{
-  background:#06c;
+  background:#0078d4;
   left:0;right:0;
 }
 

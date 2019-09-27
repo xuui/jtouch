@@ -11,6 +11,11 @@ jQTouch may be freely distributed under the MIT license.
 
 @import url(grids.css);
 
+:root{
+  --pcl:#0078d4;
+}
+
+
 a{color:#4d4d4d;}
 a:hover{text-decoration:none;}
 
@@ -47,3 +52,6 @@ ul#icons-cont{padding:8px 4px;margin:0;list-style:none outside;}
 .swiper-pagination-bullet{margin:0 4px;width:7px;height:7px;border-radius:4px;}
 .swiper-pagination-bullet-active{background:#fff;}
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin:0 4px;}
+
+
+[data-ui=view] header{position:fixed;top:0;left:0;right:0;}

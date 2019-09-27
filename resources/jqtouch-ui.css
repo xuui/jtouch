@@ -13,22 +13,22 @@
 [data-ui=view] footer{position:relative;z-index:1;box-shadow:0 0 1px rgba(0,0,0,.12);min-height:48px;text-align:center;}
 
 /* TabBar */
-[data-ui=view] [data-ui=tabbar]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;
+[data-ui=view] [data-ui=tabs]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;
   width:100%;min-height:48px;}
-[data-ui=tabbar] a{display:block;width:100%;line-height:1;text-align:center;text-decoration:none;}
-[data-ui=tabbar] a:hover{color:#000;}
-[data-ui=tabbar] a i,[data-ui=tabbar] a span{display:block;}
-[data-ui=tabbar] a i{height:28px;line-height:28px;font-size:24px;}
-[data-ui=tabbar] a span{position:relative;display:inline-block;height:20px;line-height:20px;font-size:12px;}
-[data-ui=tabbar] .current,[data-ui=tabbar] .current:hover{background-color:transparent;color:#06c;}
-[data-ui=tabbar] a,[data-ui=tabbar] a span,[data-ui=tabbar] a span::after{transition: all .24s ease-in;}
-[data-ui=tabbar] a span::after{
+[data-ui=tabs] a{display:block;width:100%;line-height:1;text-align:center;text-decoration:none;}
+[data-ui=tabs] a:hover{color:#000;}
+[data-ui=tabs] a i,[data-ui=tabs] a span{display:block;}
+[data-ui=tabs] a i{height:28px;line-height:28px;font-size:24px;}
+[data-ui=tabs] a span{position:relative;display:inline-block;height:20px;line-height:20px;font-size:12px;}
+[data-ui=tabs] .current,[data-ui=tabs] .current:hover{background-color:transparent;color:#06c;}
+[data-ui=tabs] a,[data-ui=tabs] a span,[data-ui=tabs] a span::after{transition: all .24s ease-in;}
+[data-ui=tabs] a span::after{
   position:absolute;
   display:block;content:'';background:#06c;
   left:50%;right:80%;bottom:1px;
   height:2px;border-radius:3px;
 }
-[data-ui=tabbar] .current span::after{
+[data-ui=tabs] .current span::after{
   background:#06c;
   left:0;right:0;
 }

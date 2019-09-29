@@ -10,7 +10,7 @@
 [data-ui=view] header h1,[data-ui=view] header h2{overflow:hidden;margin:0;font-size:20px;font-weight:500;letter-spacing:0.02em;text-align:center;text-overflow:ellipsis;white-space:nowrap;}
 
 /* footer */
-[data-ui=view] footer{position:relative;z-index:1;box-shadow:0 0 1px rgba(0,0,0,.12);min-height:48px;text-align:center;}
+[data-ui=view] footer{position:relative;z-index:1;box-shadow:0 0 1px rgba(0,0,0,.12);min-height:44px;text-align:center;}
 
 /* TabBar */
 [data-ui=view] [data-ui=tabs]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;

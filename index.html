@@ -54,7 +54,7 @@
     <header>
       <button class="btn"><i class="icon md-icon">&#xe5d2;</i></button>
       <h1 class="title">Xu-jTouch</h1>
-      <a class="btn slideup" href="#about">About</a>
+      <a class="btn slideup" href="#about"><i class="icon md-icon">&#xe8fd;</i></a>
     </header><!-- /header -->
     <section data-ui="scroll" data-tab="content" class="tabContent">
       <div data-tab="panel" class="tabPanel current">
@@ -290,7 +290,13 @@
         </div>
       </div><!-- /.tabPanel -->
       <div data-tab="panel" class="tabPanel">
-          tab4 panel.
+        <div data-ui="tabs" data-tab="nav" class="">
+          <a class="current" href="javascript:void(0)" role="tab"><span>All</span></a>
+          <a href="javascript:void(0)" role="tab"><span>By</span></a>
+          <a href="javascript:void(0)" role="tab"><span>Send</span></a>
+          <a href="javascript:void(0)" role="tab"><span>Error</span></a>
+        </div>
+        <p>tab4 panel.</p>
       </div><!-- /.tabPanel -->
     </section>
     <footer>
@@ -307,13 +313,13 @@
         <a href="javascript:void(0)" role="tab">
           <i class="md-icon">&#xe7fd;</i><span>User</span>
         </a>
-      </div><!-- tabs --><!--
+      </div><!-- tabbar --><!--
       <div data-ui="tabs" data-tab="nav" class="tabNav">
         <a class="current" href="javascript:void(0)" role="tab"><span>Home</span></a>
         <a href="javascript:void(0)" role="tab"><span>Animdemo</span></a>
         <a href="javascript:void(0)" role="tab"><span>Grids</span></a>
         <a href="javascript:void(0)" role="tab"><span>User</span></a>
-      </div><-- tabbar -->
+      </div><-- tabs -->
     </footer>
   </article><!-- /#home -->
   
@@ -323,8 +329,9 @@
       <p><a href="#" class="goback">Close</a></p>
     </section>
     <footer>
-      footer
-      <a class="btn slidedown" href="#home">Close</a>
+      <div data-ui="toolbar">
+        <a href="javascript:void(0)" href="#home" role="tab" class="btn slidedown"><span>Close</span></a>
+      </div>
     </footer>
   </article><!-- /#selectable -->
   

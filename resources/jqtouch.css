@@ -54,4 +54,5 @@ ul#icons-cont{padding:8px 4px;margin:0;list-style:none outside;}
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin:0 4px;}
 
 
-[data-ui=view] header{position:fixed;top:0;left:0;right:0;}
+[data-ui=view].fixed-header header{position:fixed;top:0;left:0;right:0;}
+[data-ui=view].fixed-header section{padding-top:48px;}
